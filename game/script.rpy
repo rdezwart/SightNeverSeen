@@ -1,6 +1,6 @@
 # Main Characters
-define leo = Character("Leo", image="leo")
-define lyr = Character("Lyra", image="lyra")
+define leo = Character("Leo")
+define lyr = Character("Lyra")
 define ewa = Character("Ewan")
 
 # Love Interests
@@ -18,7 +18,9 @@ label start:
     show lyr
     lyr "Awesome! I'm testing, too!"
     hide lyr
-    
-    ewa "Let\'s try this!"
+
+    show ewa
+    ewa "Let's try this!"
+    hide ewa
 
     return
