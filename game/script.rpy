@@ -24,9 +24,7 @@ label start:
     lyr """
     Apparently, magicians have been causing a ruckus around Veritas!
 
-    You don't believe that right?
-
-    I bet it's just rumors made up by some teenagers to try and scare people!
+    You don't believe that right? I bet it's just rumors made up by some teenagers to try and scare people!
     """
 
     leo "That's true, I mean, magicians like us tend to lay low because of our bad status anyway. It might be a good idea to be careful though, I don't want you to cause trouble."
@@ -40,6 +38,8 @@ label start:
     """
 
     lyr "That was when we were kids! It's different now!"
+
+    # scene change
 
     "When they approach the meeting spot, Lyra spots Ewan and waves her hand."
 
@@ -60,14 +60,18 @@ label start:
     menu:
         "Marketplace":
             leo "chose market"
+            jump market
 
         "Library":
             leo "chose library"
+            jump library
 
         "Park":
             lyr "chose park"
+            jump park
 
         "Cafe":
             lyr "chose cafe"
+            jump cafe
 
     return
