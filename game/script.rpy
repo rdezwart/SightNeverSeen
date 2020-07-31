@@ -55,6 +55,13 @@ label start:
 
     ewa "Ah, since I don't know the town that well, maybe you guys can decide?"
 
+    jump choice
+
+
+label choice:
+
+    scene choice
+
     "Leo and Lyra look at each other, and they both start thinking."
 
     menu:
@@ -73,5 +80,3 @@ label start:
         "Cafe":
             lyr "chose cafe"
             jump cafe
-
-    return
