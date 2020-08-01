@@ -11,9 +11,13 @@ define aur = Character("Aurora", image="aurora")
 
 label start:
 
-    leo "Lyra, hurry up or we'll be late to meet Ewan."
+    scene house
 
-    lyr "I'm hurrying, I'm hurrying!"
+    show leo long at left
+    leo "Lyra, hurry up or we'll be late to meet Ewan." (multiple=2)
+
+    show lyr long at right
+    lyr "I'm hurrying, I'm hurrying!" (multiple=2)
 
     "..."
 
@@ -39,7 +43,7 @@ label start:
 
     lyr "That was when we were kids! It's different now!"
 
-    # scene change
+    scene meeting
 
     "When they approach the meeting spot, Lyra spots Ewan and waves her hand."
 
@@ -55,14 +59,12 @@ label start:
 
     ewa "Ah, since I don't know the town that well, maybe you guys can decide?"
 
+    "Leo and Lyra look at each other, and they both start thinking."
+
     jump choice
 
 
 label choice:
-
-    scene choice
-
-    "Leo and Lyra look at each other, and they both start thinking."
 
     menu:
         "Marketplace":
