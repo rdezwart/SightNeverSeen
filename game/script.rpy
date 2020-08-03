@@ -1,5 +1,23 @@
+# Transforms
+transform close:
+    linear 0.1 zoom 1.1
+
+transform default:
+    linear 0.1 zoom 1.0
+
+init python:
+    def speakZoom(event, interact=True, **kwargs):
+        if not interact:
+            return
+        if event == "begin":
+            if renpy.showing("leo"):
+                renpy.show("leo", at_list=[close])
+        elif event == "end":
+            if renpy.showing("leo"):
+                renpy.show("leo", at_list=[default]);
+
 # Main Characters
-define leo = Character("Leo", image="leo")
+define leo = Character("Leo", image="leo", callback=speakZoom)
 define lyr = Character("Lyra", image="lyra")
 define ewa = Character("Ewan", image="ewan")
 
@@ -13,13 +31,18 @@ label start:
 
     scene house
 
-    show leo long at left
-    leo "Lyra, hurry up or we'll be late to meet Ewan." (multiple=2)
+    show leo long at topleft
+
+    "narration"
+
+    leo "Lyra, hurry up or we'll be late to meet Ewan."
 
     show lyr long at right
-    lyr "I'm hurrying, I'm hurrying!" (multiple=2)
+    lyr "I'm hurrying, I'm hurrying!"
 
     "..."
+
+    return
 
     lyr "I'm not sure if you heard, since you tend to mind your own business, but there's been some concerning rumors going around."
 
