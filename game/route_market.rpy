@@ -687,3 +687,155 @@ label .day7:
     leo "(That's...)"
 
     "Lyra gives me a worried expression."
+    menu:
+        "Go check up on Silas.":
+            # +1 affection point
+            $ affection += 1
+            call .day7_good
+
+        "Trust Silas to handle the situation.":
+            # +0 affection point
+            $ affection = affection
+            call .day7_bad
+
+    return
+
+label .day7_good:
+
+    """
+    The situation is bad.
+
+    I abruptly stand up.
+    """
+
+    leo "Sorry! There's something important I remembered I have to do. I gotta run, see you later!"
+
+    "Before Lyra or Ewan could react, I run off--but not in the direction of home, but rather in the direction of the Trade Headquarters."
+
+    lyr "Don't worry, Ewan! Leo is just worried abou that flower-loving, grouchy-faced businessman. After all, they managed to become friends!"
+
+    ewa "Yeah."
+
+    # TODO: Change scene to TRADE OFFICE
+    scene bc tradeOffice
+
+    """
+    When I entered the trade headquarters, I noticed that the amount of bodyguards has increased. Heightened security, possibly?
+
+    I hide behind a pillar to contemplate my thoughts.
+    """
+
+    leo "(I don't think they'll let me in so easily. Maybe I can use magic?)"
+
+    """
+    I went to a secluded location and checked thoroughly to make sure no one could see me. Once I knew the coast was clear, I used my magic to divert attention away from me.
+
+    It was almost like invisibility, but not quite. I just lowered my presence so I could sneak in.
+    """
+
+    leo "(Sometimes I think magic is really too overpowered. Ah, whatever, I'll worry about it another time!)"
+
+    """
+    I took my time to sneak into Silas' office. With the help of my magic, everything was considerably easier with nobody looking for me.
+
+    When I got to the hall before Silas' office, i noticed that there was virtually no one around.
+    """
+
+    leo """
+    (Surprisingly, there aren't many people inside.)
+
+    (It's probably save now...)
+    """
+
+    "I increased my pace, but came face to face with Hugh, who was standing in front of the door."
+
+    leo "(Damn, I let my guard down too easily! I forgot this guy's always near Silas-)"
+
+    hug "Mr. Leo? How did you get in here? Maybe it's better not to ask. Sorry, I'm going to have to ask you to leave. Silas said to keep everyone out."
+
+    leo """
+    (That guy is an even bigger pain than I thought he'd be!)
+
+    (I don't have time to waste...)
+
+    And keep me in the hidden about an incident that involved me? Unfortunately, I'm not going to leave until I beat some common sense into that anthophile!
+    """
+
+    hug "Anthophile?"
+
+    "I had just insulted Silas to Hugh's face, but he just started laughing."
+
+    leo "Huh?"
+
+    hug "It's just, I've been serving Silas since he was a child. I've never seen him enjoy himself as much as he did until you were around, so go ahead! Give him a good beating."
+
+    leo "(Since Silas was a child...?)"
+
+    "Hugh nodded towards me and gestured to the door. I look at him one last time, and open the door to Silas' office."
+
+    # TODO: Change scene to SILAS' OFFICE
+    scene bg silasOffice
+
+    """
+    As I entered the office, Silas immediately noticed me.
+
+    However, he didn't look okay at all--in fact, he looked like he was in a daze.
+    """
+
+    sil "That's strange. I swear I didn't call for Leo today, but he's standing in front of me."
+
+    leo "(Is Silas okay? He looks like he's really out of it. Plus, whatever he's saying means he doesn't think I'm actually here.)"
+
+    sil "Maybe the stress is making me hallucinate? It hasn't been that long since I saw him, but my mind is probably playing tricks on me because I wanted to see him again."
+
+    leo """
+    ...
+
+    (Yeah, I don't think he's alright.)
+    """
+
+    "I walk up to Silas and grab his shoulders and start shaking him."
+
+    leo "Am! I! Still! An! Illusion! When I'm standing right in front of you?"
+
+    sil "Leo?"
+
+    leo "(About time he snapped out of it.)"
+
+    sil "Why are you here? I didn't call for you."
+
+    leo """
+    (He seriously...)
+
+    "And I just so happen to hear about the rumours going around town about me, that you've been trying to hide?
+    """
+
+    sil "It doesn't concern you. I can handle it myself."
+
+    leo """
+    Of course it does!
+
+    Those rumours have come out because of me hanging around your office. How could it not involve me? Why are you like this?
+
+    There's no point in trying to hide anything anymore, because aren't we already in this together? I'll find out eventually, so if you don't tell me now it'll just make everything worse! And I'm kind of pissed right now!
+    """
+
+    sil """
+    Sorry. You're right.
+
+    I was acting under the pressures of stress, so I didn't think it would be fair to involve you.
+
+    I'll tell you everything after I investigate something, then I'm yours.
+    """
+
+    leo "I trust you to tell me everything afterwards."
+
+    sil "By the way, how did you get in here?"
+
+    "I laugh sheepishly. About that..."
+
+    leo "Ah. Uhm. Right. It's just some magic. Don't worry, I'll leave the same way so no one gets suspicious."
+
+    "Now that I said what was on my mind, I smile and wave at Silas as I leave the way I came in."
+
+    return
