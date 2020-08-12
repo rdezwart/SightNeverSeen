@@ -5,7 +5,7 @@
 define grd = Character("???")
 define sus = Character("Suspicious Man")
 define bod = Character("Bodyguard")
-define hug = Characteer("Hugh")
+define hug = Character("Hugh")
 define jul = Character("Julius")
 
 # Main flow
@@ -577,11 +577,13 @@ label .day5:
 
     # TODO: Affection points
     menu:
-        "It's a bit odd, but I'm having more fun than I expected."
+        "It's a bit odd, but I'm having more fun than I expected.":
             # +1 affection point
+            $ affection = 1
 
-        "It's a bit tough recently, but I'm keeping up."
+        "It's a bit tough recently, but I'm keeping up.":
             # +0 affection point
+            $ affection = 0
 
     ewa "I see. I'm glad you're doing fine, though. Don't push yourself too hard, alright?"
 
