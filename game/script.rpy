@@ -29,24 +29,17 @@ define aur = Character("Aurora", image="aurora")
 
 label start:
 
-    scene house
-
-    show leo long at topleft
-
-    "narration"
-
+    show leo long at left
     leo "Lyra, hurry up or we'll be late to meet Ewan."
 
     show lyr long at right
     lyr "I'm hurrying, I'm hurrying!"
 
-    "..."
+    # TODO: Change BG to meeting spot
 
-    return
+    lyr "I'm not sure if you heard, since you tend to mind your own business, but there have been some concerning rumours going around."
 
-    lyr "I'm not sure if you heard, since you tend to mind your own business, but there's been some concerning rumors going around."
-
-    leo "What kind of rumors?"
+    leo "What kind of rumours?"
 
     lyr """
     Apparently, magicians have been causing a ruckus around Veritas!
@@ -66,19 +59,19 @@ label start:
 
     lyr "That was when we were kids! It's different now!"
 
-    scene meeting
-
+    # QUESTION: Maybe scene change?
     "When they approach the meeting spot, Lyra spots Ewan and waves her hand."
 
     lyr "Ewan! It's been so long!"
+    # TODO: Insert running sounds
 
     leo "Sorry if we kept you waiting. Lyra took a long time to get ready."
 
     ewa "Hey, it’s fine, I just arrived as well, and Lyra, I see some things never change."
 
-    lyr "It's been a loong while since the three of us were together! We haven't gotten a chance to see you that often."
+    lyr "It's been a looong while since the three of us were together! We haven't gotten a chance to see you that often."
 
-    leo "We've finally got some free time, since our trading business has been going well. Is there anywhere you want to go?"
+    leo "We've finally got some free time since our trading business has been going well. Is there anywhere you want to go?"
 
     ewa "Ah, since I don't know the town that well, maybe you guys can decide?"
 
@@ -89,19 +82,18 @@ label start:
 
 label choice:
 
+    # TODO: Add animations showing protags
     menu:
-        "Marketplace":
-            leo "chose market"
+        "Go to Marketplace":
             jump market
 
-        "Library":
-            leo "chose library"
+        "Go to Library":
             jump library
 
-        "Park":
-            lyr "chose park"
+        "Go to Park":
             jump park
 
-        "Cafe":
-            lyr "chose cafe"
+        "Go to Cafe":
             jump cafe
+
+        # TODO: Add secret route
