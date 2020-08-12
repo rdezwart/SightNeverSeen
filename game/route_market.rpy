@@ -6,6 +6,7 @@ define grd = Character("???")
 define sus = Character("Suspicious Man")
 define bod = Character("Bodyguard")
 define hug = Characteer("Hugh")
+define jul = Character("Julius")
 
 # Main flow
 label market:
@@ -23,9 +24,11 @@ label market:
     call .day3
 
     call .day4
-    
+
     # TODO: Change scene to SILAS' OFFICE
     scene bg silasOffice
+
+    call .day5
 
 # Market, Day 1
 label .day1:
@@ -497,3 +500,115 @@ label .day4:
     "Silas puts down \"Samantha\" and walks towards the exit, and I follow him out. I couldn't help laugh at what had unfolded before my eyes."
 
     leo "(That sudden change in person is kind of funny!)"
+
+# Market, Day 5
+label .day5:
+
+    """
+    A few days later.
+
+    I was sitting in Silas' office, doing the usual thing Silas wanted from me, when he stopped all of a sudden.
+    """
+
+    sil "Do you know about the language of the flowers?"
+
+    leo "Huh? I know a little bit, but it's not something I know very well."
+
+    sil "I see. Well, the other day, I-"
+
+    leo """
+    (Aha. He just wants someone to talk about his hobbies, I guess? You wouldn't have imagined someone as business-like as Silas to be so passionate about flowers and gardening, of all things.)
+
+    You seem to know a lot about this topic? Where did you learn?
+    """
+
+    "Silas stops for a moment."
+
+    sil "Gather your belongings. We're heading out somewhere."
+
+    leo """
+    Huh?! Wait, where are we going?
+
+    (And why do I have to go with him?!)
+    """
+
+    "I run after Silas."
+
+    # TODO: Change scene to TOWN PLAZA
+    scene bg plaza
+
+    leo "Wait, I still don't know where we're going."
+
+    sil "I just have something to pick up. Follow me."
+
+    leo "(Aah. Maybe I should start getting used to this straightforwardly vague aspect of him.)"
+
+    # TODO: Change scene to FLOWERSHOP
+    scene bg flower
+
+    leo "A flower shop?"
+
+    sil "We're heading inside."
+
+    leo "Right."
+
+    "When we entered the flower shop, I saw Lyra and Ewan."
+
+    lyr "Leo? What are you doing here?"
+
+    leo "Silas had something he had to pick up here, and made me follow him. Though, I could ask you the same thing."
+
+    lyr "Apparently, Ewan knows the florist who works here! His name is Julius!"
+
+    "The florist --Julius-- approached Silas."
+
+    sil "I'm here to pick up some flowers."
+
+    jul "Ah, Mr. Silas, I've been expecting you. I'll have it ready right away."
+
+    "Julius leads Silas away to look at some flowers. Lyra puts one hand on my shoulders and whispers something into my ear."
+
+    # NOTE: Maybe make italic?
+    lyr "I didn't think that someone like Silas would personally come and pick out flowers for himself!"
+
+    leo "Aha."
+
+    ewa "I haven't seen you in a while, have you been doing well?"
+
+    # TODO: Affection points
+    menu:
+        "It's a bit odd, but I'm having more fun than I expected."
+            # +1 affection point
+
+        "It's a bit tough recently, but I'm keeping up."
+            # +0 affection point
+
+    ewa "I see. I'm glad you're doing fine, though. Don't push yourself too hard, alright?"
+
+    leo "Yeah, thanks."
+
+    lyr "It's so lonely without Leo, ever since Mr. Grouchy Businessman keeps calling for him every single day!"
+
+    "Lyra skips over to Silas and Julius."
+
+    lyr "If you overwork Leo, then I won't hesitate to throw hands!"
+
+    sil "Hm?"
+
+    leo "Lyra, don't threaten Silas like that."
+
+    "As Silas pays for his initial purchase, Julius hands him an extra bundle of yellow flowers."
+
+    jul "Take these as well."
+
+    sil "Hmm? What type of flowers are these?"
+
+    jul "Haha, I'll tell you next time."
+
+    "While saying so, Julius looked at me and winked."
+
+    leo """
+    (Did he just wink at me?)
+
+    (I don't know if this is a good omen or not...)
+    """
