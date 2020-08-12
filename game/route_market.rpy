@@ -7,6 +7,8 @@ define sus = Character("Suspicious Man")
 define bod = Character("Bodyguard")
 define hug = Character("Hugh")
 define jul = Character("Julius")
+define tp1 = Character("Townsperson 1")
+define tp2 = Character("Townsperson 2")
 
 # Main flow
 label market:
@@ -34,6 +36,11 @@ label market:
     scene bg silasOffice
 
     call .day6
+
+    # TODO: Change scene to OUTSIDE LEO AND LYRA'S HOUSE
+    scene bg house outside
+
+    call .day7
 
     return
 
@@ -644,5 +651,39 @@ label .day6:
     leo """
     Ah, sure. See you later, then.
 
-    (I'm surpsised he let me leave early, when he's usually so stingy the other times. Something serious must've come up.
+    (I'm surprised he let me leave early, when he's usually so stingy the other times. Something serious must've come up.
     """
+
+# Market, Day 7
+label .day7:
+
+    """
+    The next day.
+
+    When I left my house, I saw no bodyguard waiting to escort me. I checked inside the mailbox and there was no letter, either.
+    """
+
+    leo "It seems like I'm finally free today."
+
+    lyr "Really?! Yay! You can come hang out with Ewan and I today!"
+
+    "Lyra happily grabs my arm and drags me to meet with Ewan."
+
+    # TODO: Change scene to TOWN PLAZA
+    scene bg plaza
+
+    lyr "I'm so happy we could all hang out like this! It's been such a long time."
+
+    leo "Sorry, I didn't exactly expect to be caught up in that whole ordeal, leading to this and that."
+
+    ewa "I'm glad you're doing okay! It's nice to have the three of us together again."
+
+    "As we wander around town, we decide to take a rest on a bench."
+
+    tp1 "Did you hear about the rumour recently? Apparently, the head of the famous trade company in town might be harbouring a magician!"
+
+    tp2 "That's terrible! How could anyone hide a magician like that... There's a law that states we have to turn in magicians for a reason! Maybe we should stop relying on his company."
+
+    leo "(That's...)"
+
+    "Lyra gives me a worried expression."
