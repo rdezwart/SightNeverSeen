@@ -47,6 +47,11 @@ label market:
 
     call .day8
 
+    # TODO: Change scene to SILAS' OFFICE
+    scene bg silasOffice
+
+    call .day9
+
     return
 
 # Market, Day 1
@@ -883,5 +888,41 @@ label .day8:
 
     leo "Yeah, I will."
 
-    # TODO: Change scene to SILAS' OFFICE
-    scene bg silasOffice
+# Market, Day 9
+label .day9:
+
+    """
+    A few days later.
+
+    I was called to Silas' office, after a few days of no communication.
+    """
+
+    sil """
+    I should properly explain to you what happened.
+
+    There were rumours about me harbouring a magician, and while that's true, it's not something the general public should know. Because of the recent spike in incidents as well, people have been warier.
+    """
+
+    leo "I guess people are willing to blame those incidents on magicians?"
+
+    sil """
+    Yes. The public is also demanding answers from me, and business partners have been pressuring me.
+
+    I've been trying to solve it without getting you involved, but people have noticed you frequenting and are getting suspicious.
+    """
+
+    leo "(Silas looks way more stressed than I've ever seen him. There's probably something I can do to help.)"
+
+    sil "There are even rumours about how I've been using a magician to do underhanded tactics, like taking out my rivals."
+
+    leo """
+    (Ah, I know what I can do.)
+
+    I can investigate the incidents for you, if that helps? You look way more stressed than usual, so I feel a bit bad.
+    """
+
+    sil "But-"
+
+    leo "Also, you should be handling your own business affairs for now, so just leave everything else to me."
+
+    sil "If you say so. I'll trust you to handle the investigation."
