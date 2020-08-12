@@ -99,5 +99,4 @@ label choice:
 
         "Go to Cafe":
             jump cafe
-
         # TODO: Add secret route

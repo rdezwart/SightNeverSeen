@@ -9,7 +9,6 @@ define sus = Character("Suspicious Man")
 label market:
 
     call .day1
-
     call .day2
 
 # Story, Day 1
