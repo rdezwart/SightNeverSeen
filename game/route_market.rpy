@@ -42,6 +42,11 @@ label market:
 
     call .day7
 
+    # TODO: Change scene to INSIDE LEO AND LYRA'S HOUSE
+    scene bg house inside
+
+    call .day8
+
     return
 
 # Market, Day 1
@@ -698,8 +703,6 @@ label .day7:
             $ affection = affection
             call .day7_bad
 
-    return
-
 # Market, Day 7 (Good)
 label .day7_good:
 
@@ -808,7 +811,7 @@ label .day7_good:
     leo """
     (He seriously...)
 
-    "And I just so happen to hear about the rumours going around town about me, that you've been trying to hide?
+    And I just so happen to hear about the rumours going around town about me, that you've been trying to hide?
     """
 
     sil "It doesn't concern you. I can handle it myself."
@@ -839,8 +842,6 @@ label .day7_good:
 
     "Now that I said what was on my mind, I smile and wave at Silas as I leave the way I came in."
 
-    return
-
 # Market, Day 7 (Bad)
 label .day7_bad:
 
@@ -857,4 +858,30 @@ label .day7_bad:
 
     "I tried to get my mind off whatever those two townspeople said. If something was seriously happening, then Silas could handle it... right?"
 
-    return
+# Market, Day 8
+label .day8:
+
+    """
+    A few days later.
+
+    Lyra looks outside nervously.
+    """
+
+    lyr "Uwah. It's getting dangerous around town recently."
+
+    leo "Yeah, ever since we heard about the rumour from those townspeople, there have been a lot of strange incidents."
+
+    lyr "Earlier when I was out, there was a fire that suddenly broke out in one of the homes! I was there and it just.. randomly exploded! No one was home, either, it's so strange."
+
+    leo "Haven't a lot of shops recently had their windows suddenly breaking, too? It's kind of concerning, it's like some form of bad omen."
+
+    lyr "I'm worried. They're going to blame magicians for these incidents, aren't they?"
+
+    leo "I can't deny that."
+
+    lyr "Leo, you should be careful. Especially because of everything that has happened around you recently."
+
+    leo "Yeah, I will."
+
+    # TODO: Change scene to SILAS' OFFICE
+    scene bg silasOffice
