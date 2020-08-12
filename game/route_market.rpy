@@ -296,3 +296,26 @@ label .day2:
     "I stand up and walk towards the door."
 
     leo "(Should I be expecting more calls from that guy soon?)"
+
+# Market, Day 3
+label .day3:
+
+    """
+    The next day.
+
+    A familiar sight greeted Lyra and I as we walked out the door: the same bodyguard was waiting in the same position, presumably to take me to see Silas again.
+    """
+
+    lyr "Today again?!"
+
+    leo """
+    I guess so. Expect the same as yesterday, I guess.
+
+    (Ah... I have a feeling it's going to be like this for a little while.)
+    """
+
+    """
+    Unfortunately for me, I was right. The next few days pass quickly with always the same routine: the bodyguard would be at our front doors to take me to Silas for questioning.
+
+    When can I catch a break...?
+    """
