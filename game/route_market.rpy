@@ -13,49 +13,54 @@ define tp2 = Character("Townsperson 2")
 # Main flow
 label market:
 
-    call .day1
+    call .day01
 
     # TODO: Change scene to outside LEO AND LYRA'S HOUSE
     scene bg house out
 
-    call .day2
+    call .day02
 
     # TODO: Change scene to outside LEO AND LYRA'S HOUSE
     scene bg house out
 
-    call .day3
+    call .day03
 
-    call .day4
+    call .day04
 
     # TODO: Change scene to SILAS' OFFICE
     scene bg silasOffice
 
-    call .day5
+    call .day05
 
     # TODO: Change scene to SILAS'S OFFICE
     scene bg silasOffice
 
-    call .day6
+    call .day06
 
     # TODO: Change scene to OUTSIDE LEO AND LYRA'S HOUSE
     scene bg house outside
 
-    call .day7
+    call .day07
 
     # TODO: Change scene to INSIDE LEO AND LYRA'S HOUSE
     scene bg house inside
 
-    call .day8
+    call .day08
 
     # TODO: Change scene to SILAS' OFFICE
     scene bg silasOffice
 
-    call .day9
+    call .day09
+
+    # TODO: Change scene to TOWN PLAZA
+    scene bg plaza
+
+    call .day10
 
     return
 
-# Market, Day 1
-label .day1:
+# Market, Day 01
+label .day01:
 
     leo "What about the marketplace? It is what Veritas is known for, anyways."
 
@@ -235,8 +240,8 @@ label .day1:
 
     leo "(Everything will be okay... right?)"
 
-# Market, Day 2
-label .day2:
+# Market, Day 02
+label .day02:
 
     """
     The next day.
@@ -330,8 +335,8 @@ label .day2:
 
     leo "(Should I be expecting more calls from that guy soon?)"
 
-# Market, Day 3
-label .day3:
+# Market, Day 03
+label .day03:
 
     """
     The next day.
@@ -353,8 +358,8 @@ label .day3:
     When can I catch a break...?
     """
 
-# Market, Day 4
-label .day4:
+# Market, Day 04
+label .day04:
     """
     A few more days later.
 
@@ -525,8 +530,8 @@ label .day4:
 
     leo "(That sudden change in person is kind of funny!)"
 
-# Market, Day 5
-label .day5:
+# Market, Day 05
+label .day05:
 
     """
     A few days later.
@@ -639,8 +644,8 @@ label .day5:
     (I don't know if this is a good omen or not...)
     """
 
-# Market, Day 6
-label .day6:
+# Market, Day 06
+label .day06:
 
     """
     A few days later.
@@ -664,8 +669,8 @@ label .day6:
     (I'm surprised he let me leave early, when he's usually so stingy the other times. Something serious must've come up.
     """
 
-# Market, Day 7
-label .day7:
+# Market, Day 07
+label .day07:
 
     """
     The next day.
@@ -701,15 +706,15 @@ label .day7:
         "Go check up on Silas.":
             # +1 affection point
             $ affection += 1
-            call .day7_good
+            call .day07_good
 
         "Trust Silas to handle the situation.":
             # +0 affection point
             $ affection = affection
-            call .day7_bad
+            call .day07_bad
 
-# Market, Day 7 (Good)
-label .day7_good:
+# Market, Day 07 (Good)
+label .day07_good:
 
     """
     The situation is bad.
@@ -847,8 +852,8 @@ label .day7_good:
 
     "Now that I said what was on my mind, I smile and wave at Silas as I leave the way I came in."
 
-# Market, Day 7 (Bad)
-label .day7_bad:
+# Market, Day 07 (Bad)
+label .day07_bad:
 
     # TODO: Change scene to TOWN PLAZA
     scene bg plaza
@@ -863,8 +868,8 @@ label .day7_bad:
 
     "I tried to get my mind off whatever those two townspeople said. If something was seriously happening, then Silas could handle it... right?"
 
-# Market, Day 8
-label .day8:
+# Market, Day 08
+label .day08:
 
     """
     A few days later.
@@ -888,8 +893,8 @@ label .day8:
 
     leo "Yeah, I will."
 
-# Market, Day 9
-label .day9:
+# Market, Day 09
+label .day09:
 
     """
     A few days later.
