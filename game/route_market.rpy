@@ -30,6 +30,13 @@ label market:
 
     call .day5
 
+    # TODO: Change scene to SILAS'S OFFICE
+    scene bg silasOffice
+
+    call .day6
+
+    return
+
 # Market, Day 1
 label .day1:
 
@@ -613,4 +620,29 @@ label .day5:
     (Did he just wink at me?)
 
     (I don't know if this is a good omen or not...)
+    """
+
+# Market, Day 6
+label .day6:
+
+    """
+    A few days later.
+
+    I was at Silas' office, as per usual, when a bodyguard came rushing in.
+    """
+
+    bod "Sir! I have something I need to discuss with you in private."
+
+    "Silas stands up, and the bodyguard whispers something to him."
+
+    leo "(I wonder if it's somethign serious? Silas looks a bit concerned.)"
+
+    "Afterwards, Silas came up to me."
+
+    sil "Something came up, and I have to take care of it. You can leave early today."
+
+    leo """
+    Ah, sure. See you later, then.
+
+    (I'm surpsised he let me leave early, when he's usually so stingy the other times. Something serious must've come up.
     """
