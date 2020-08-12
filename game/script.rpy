@@ -29,6 +29,9 @@ define aur = Character("Aurora", image="aurora")
 
 label start:
 
+    # TODO: Start game with LEO HOUSE
+    scene bg house
+
     show leo long at left
     leo "Lyra, hurry up or we'll be late to meet Ewan."
 
@@ -36,6 +39,7 @@ label start:
     lyr "I'm hurrying, I'm hurrying!"
 
     # TODO: Change BG to meeting spot
+    scene bg meeting
 
     lyr "I'm not sure if you heard, since you tend to mind your own business, but there have been some concerning rumours going around."
 

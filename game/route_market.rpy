@@ -10,6 +10,8 @@ label market:
 
     call .day1
 
+    call .day2
+
 # Story, Day 1
 label .day1:
 
@@ -20,6 +22,7 @@ label .day1:
     ewa "Let's head off then."
 
     # TODO: Change scene to marketplace
+    scene bg market
 
     lyr """
     Oh wow, the market sells some extravagantly expensive items, like those crystals.
@@ -74,6 +77,7 @@ label .day1:
     "I run after the strange man, and I see him turn into the corner of an alleyway. This might be my chance!"
 
     # TODO: Change scene to ALLEYWAY
+    scene bg alley
 
     leo "(It's dangerous to use my magic in public, but the alleyway is secluded enough to be fine, I think.)"
 
@@ -126,6 +130,7 @@ label .day1:
     leo "(What have I done? I hope I don't get Lyra into trouble as well...)"
 
     # TODO: Change scene to marketplace
+    scene bg market
 
     "I sigh, and exit the alleyway. Making a mental note to inform Lyra that our secret was out, I go to look for Lyra and Ewan."
 
@@ -150,6 +155,7 @@ label .day1:
     "Lyra and I wave goodbye to Ewan and head out separate ways. Lyra skips ahead of my happily."
 
     # TODO: Change scene to INSIDE LEO/LYR HOUSE
+    scene bg house
 
     "As soon as we both entered our house, I closed the door and slumped against it."
 
@@ -186,3 +192,8 @@ label .day1:
     "I step towards Lyra and pat her back in an attempt to console her."
 
     leo "(Everything will be okay... right?)"
+
+# Story, Day 2
+label .day2:
+
+    "This is local day 2."
