@@ -5,6 +5,7 @@
 define grd = Character("???")
 define sus = Character("Suspicious Man")
 define bod = Character("Bodyguard")
+define hug = Characteer("Hugh")
 
 # Main flow
 label market:
@@ -20,6 +21,11 @@ label market:
     scene bg house out
 
     call .day3
+
+    call .day4
+    
+    # TODO: Change scene to SILAS' OFFICE
+    scene bg silasOffice
 
 # Market, Day 1
 label .day1:
@@ -319,3 +325,175 @@ label .day3:
 
     When can I catch a break...?
     """
+
+# Market, Day 4
+label .day4:
+    """
+    A few more days later.
+
+    I head out the front door expecting a bodyguard again, but surprisingly, there's no one there. Lyra skips ahead of me and looks into the mailbox.
+    """
+
+    lyr "Leo, there's something here for you."
+
+    "She takes the letter out and hands it to me. I open it to find a single slip of paper reading \"Come.\""
+
+    leo "This letter would have only come from one place."
+
+    "I sigh and slip the letter into my pocket. Even if there was no signature or anything, I had already known it came from Silas. And here's to thinking I'd get a break..."
+
+    leo "Seems like I have to head over again."
+
+    lyr "Aw, again? You've been saying that for the past few days, and it gets lonely with only Ewan and I."
+
+    leo "It can't be helped. At least he didn't send a bodyguard this time."
+
+    lyr "That's true. I'll see you later, then?"
+
+    leo "Yeah."
+
+    # TODO: Change scene to INSIDE TRADE OFFICE
+    scene bg tradeOffice
+
+    "When I arrived at the Trade Headquarters, the bodyguards take notice of me."
+
+    bod "The meeting isn't for another hour."
+
+    leo """
+    Ah, okay. I'll come back in an hour, then.
+
+    (Sheesh, I wish they'd written a time on the letter, at least...)
+    """
+
+    "As I turn to leave, another bodyguard stops me."
+
+    leo "(This person is... I think I heard Silas call him Hugh a few times?)"
+
+    hug "Excuse me. It's actually fine that you're early. Please follow me."
+
+    leo "Huh?"
+
+    "Hugh stars heading towards an exit, and I rush to go follow him."
+
+    leo "Uhm. Where are we going, exactly?"
+
+    "Hugh doesn't reply, and keeps walking."
+
+    # TODO: Change scene to OUTSIDE GREENHOUSE
+    scene bg greenhouse outside
+
+    "Eventually, a greenhouse comes into view. Hugh stops a short distance from the entrance."
+
+    hug "Silas is inside the greenhouse."
+
+    """
+    Hugh gestures towards the building. Am I supposed to go in...?
+
+    I look at Hugh, but he's not giving me any instructions.
+
+    What am I supposed to do...? Am I allowed to go inside?
+
+    I look at Hugh again, then back towards the greenhouse.
+
+    I steel myself, and head towards the entrance.
+    """
+
+    leo "(It should be okay, right? I mean, why else would they lead me here?)"
+
+    # TODO: Change scene to INSIDE GREENHOUSE
+    scene bg greenhouse inside
+
+    "When I stepped inside the greenhouse, I notice the abundant amount of flowers immediately. There were more kinds than I could name, and they all look well taken care of."
+
+    leo "(These flowers are really nice! Whoever looks after the greenhouse probably works hard to keep it nice.)"
+
+    """
+    I peer around, trying to look for Silas.
+
+    He should be inside here... right? I hope the bodyguards aren't playing a prank on me.
+
+    I spot Silas a distance away, his back turned from me. I begin to approach him.
+    """
+
+    sil "Samantha!"
+
+    "I freeze in my tracks."
+
+    leo "(Oh god, did I come at a bad time? First having my magic being found out by this man, and now I'm probably intruding on a moment between him and his secret lover?! What's with all these landmines I'm stepping on recently?!)"
+
+    "In the middle of my mental dillema and lamenting, I squint to take a closer look to try and calm myself. In Silas' arms is... a plant?"
+
+    leo """
+    (Samantha is a plant? Ah, that means Silas is the person who tends the greenhouse. I guess even someone like him would have hobbies.)
+
+    (Maybe it would be better if I left and pretended like I didn't see anything. He does have an image to maintain, after all.)
+    """
+
+    """
+    I turn to leave. It'd be best to sneak out and pretend like I was clueless. Right. Feign ignorance.
+
+    Unfortunately, my plan was short-lived as I stepped on a branch, or was it a twig?
+
+    Whatever it was, it made a crack sound that could draw anyone's attention in the midst of a quiet atmosphere like this.
+    """
+    # TODO: Make the crack word italic
+
+    leo "(Not good, not good! I stepped on another land mine! Is he going to chew me out for catching him in the act?! How am I going to explain this?!)"
+
+    "I cursed silently"
+
+    leo """
+    Um.
+
+    (I don't have any options, so I'll just talk it out.)
+    """
+
+    """
+    I turn and approach Silas.
+
+    He looks a bit uneasy, and I point to the plant in his hands. Maybe if I compliment him, he'll let me go?
+    """
+
+    leo "Um. Is gardening your hobby? If it is, then your greenhouse is really nice! I'm, err, not saying that just to flatter you or anything, I really do think it's nice! All the plants here look well taken care of."
+
+    sil "So you're not here to find out about my secrets?"
+
+    leo """
+    Uh, no? I mean, I DID find out, but it was by accident. I don't think it's a big deal, because maintaining a greenhouse like this just proves you work hard?
+
+    Also, you have bigger leverage over me with my identity as a magician.
+    """
+
+    """
+    At any rate, Silas could turn me over as a magician any time, and I can't really do anything about it.
+
+    As Silas registered what I said, he makes a surprised expression but quickly recovers.
+    """
+
+    sil "I see. Thank you. Since you're here this early, do you want to see the rest of the greenhouse?"
+
+    leo "Oh, sure. Uhh, your letter just had the words \"Come.\", and I'm a little confused."
+
+    "Silas ignores me and starts talking about his various plants in the greenhouse. I try to keep up, but at some point, his words went out one ear to another. Before I knew it, an hour had already passed."
+
+    leo "(He must really like plants.)"
+
+    "Hoever much he likes plants, I notice that it's about time for our meeting. If we don't leave now, we would be late."
+
+    leo "Silas, isn't it time for our meeting?"
+
+    "Silas doesn't hear me and keeps talking."
+
+    leo "(He's really into the plant talk, but I have to snap him out of it.)"
+
+    "I lightly tug at his sleeve."
+
+    leo "Uhhh, isn't it time for us to get going for our appointed meeting?"
+
+    sil "Right. Let us be on our way."
+
+    leo "Mhmm."
+
+    "Silas puts down \"Samantha\" and walks towards the exit, and I follow him out. I couldn't help laugh at what had unfolded before my eyes."
+
+    leo "(That sudden change in person is kind of funny!)"
