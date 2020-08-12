@@ -4,14 +4,24 @@
 # Side Characters
 define grd = Character("???")
 define sus = Character("Suspicious Man")
+define bod = Character("Bodyguard")
 
 # Main flow
 label market:
 
     call .day1
+
+    # TODO: Change scene to outside LEO AND LYRA'S HOUSE
+    scene bg house out
+
     call .day2
 
-# Story, Day 1
+    # TODO: Change scene to outside LEO AND LYRA'S HOUSE
+    scene bg house out
+
+    call .day3
+
+# Market, Day 1
 label .day1:
 
     leo "What about the marketplace? It is what Veritas is known for, anyways."
@@ -192,7 +202,97 @@ label .day1:
 
     leo "(Everything will be okay... right?)"
 
-# Story, Day 2
+# Market, Day 2
 label .day2:
 
-    "This is local day 2."
+    """
+    The next day.
+
+    As Lyra and I were heading out for the day again, I notice a person standing by the entrance. They seemed to be dressed in a bodyguard outfit. Lyra and I exchange eye contact and we approach the person. Who are they exactly?
+    """
+
+    leo "Uhm. Is there something you need?"
+
+    bod "Yes. Silas has asked to meet with you today."
+
+    leo """
+    Huh? Already?
+
+    (I wonder how they even managed to find where I live?)
+    """
+
+    lyr "Wait! If you're going to take Leo, I'm coming too!"
+
+    bod "Who is this young lady?"
+
+    leo """
+    Ah, she's like my family member.
+
+    Lyra, it's okay. I can go alone. Plus, we still have to show Ewan around, right? Tell him something came up for me.
+    """
+
+    "Lyra looks like she wants to protest my words."
+
+    lyr "Fine. But you better tell me what happens later!"
+
+    leo "Yeah. Sorry, I'll see you later, okay?"
+
+    "I try to give Lyra a reassuring smile, then wave goodbye to her as I follow the bodyguard."
+
+    # TODO: Change scene to INSIDE TRADE OFFICE
+    scene bg tradeOffice
+
+    "When we arrive at the Trade Headquarters, I couldn't help but look around."
+
+    leo "(Woah. This place is way bigger on the inside than it seemed.)"
+
+    """
+    Even though I've been living in Veritas for a while, I've never actually had to step foot in here before.
+
+    The bodyguard made a gesture at me to continue following them, and I obliged.
+    """
+
+    # TODO: Change scene to SILAS' OFFICE
+    scene bg silasOffice
+
+    "When I stepped into the office, I take notice of Silas immediately. I walk up to his desk."
+
+    leo "We only met yesterday, but you called me in pretty quickly."
+
+    sil "..."
+
+    leo "So, what was it that you called me for?"
+
+    sil "I want to see what the capabilities of a magician are. Since people like you hide yourself all the time, it would be wise to take advantage of this situation, no?"
+
+    leo "(Huh, so that's what he wanted to know?)"
+
+    sil "So, let's see... Try making that table float for a bit."
+
+    """
+    Silas gestures at the table right in front of him.
+
+    I'm a bit unsure of wheteher or not I should use magic so openly... but I guess it didn't really matter in the end, since this guy already knows.
+
+    I raise my hand and make the table float a bit in midair. The potted plant on the table tumbles, but Silas stands up to catch it.
+    """
+
+    leo "Is this fine?"
+
+    sil "Hm. That's fine. There are some questions I'd like to ask you too."
+
+    """
+    Silas starts rapid-firing questions relating to magic towards me, and I tried my best to keep up.
+
+    At some point his questions started going in one ear and out the other, I'm surprised I even managed to answer all of them.
+    """
+
+    leo "(Is this like an interview or something?)"
+
+    sil "I think that's all for today. You may leave now."
+
+    leo "Right."
+
+    "I stand up and walk towards the door."
+
+    leo "(Should I be expecting more calls from that guy soon?)"
