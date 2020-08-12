@@ -17,7 +17,7 @@ init python:
                 renpy.show("leo", at_list=[default]);
 
 # Main Characters
-define leo = Character("Leo", image="leo", callback=speakZoom)
+define leo = Character("Leo", image="leo")
 define lyr = Character("Lyra", image="lyra")
 define ewa = Character("Ewan", image="ewan")
 
