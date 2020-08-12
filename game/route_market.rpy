@@ -700,6 +700,7 @@ label .day7:
 
     return
 
+# Market, Day 7 (Good)
 label .day7_good:
 
     """
@@ -837,5 +838,23 @@ label .day7_good:
     leo "Ah. Uhm. Right. It's just some magic. Don't worry, I'll leave the same way so no one gets suspicious."
 
     "Now that I said what was on my mind, I smile and wave at Silas as I leave the way I came in."
+
+    return
+
+# Market, Day 7 (Bad)
+label .day7_bad:
+
+    # TODO: Change scene to TOWN PLAZA
+    scene bg plaza
+
+    leo """
+    (It might be best to lay low. I can trust Silas to handle this situation, I think.)
+
+    Should we get going? We've rested enough and I think there are some places Lyra still wants to check out.
+    """
+
+    lyr "Right! Let's get going!"
+
+    "I tried to get my mind off whatever those two townspeople said. If something was seriously happening, then Silas could handle it... right?"
 
     return
