@@ -68,7 +68,7 @@ label market:
 
     call .day12
 
-    return
+    "end of route"
 
 # Market, Day 01
 label .day01:
@@ -251,6 +251,8 @@ label .day01:
 
     leo "(Everything will be okay... right?)"
 
+    return
+
 # Market, Day 02
 label .day02:
 
@@ -346,6 +348,8 @@ label .day02:
 
     leo "(Should I be expecting more calls from that guy soon?)"
 
+    return
+
 # Market, Day 03
 label .day03:
 
@@ -368,6 +372,8 @@ label .day03:
 
     When can I catch a break...?
     """
+
+    return
 
 # Market, Day 04
 label .day04:
@@ -541,6 +547,8 @@ label .day04:
 
     leo "(That sudden change in person is kind of funny!)"
 
+    return
+
 # Market, Day 05
 label .day05:
 
@@ -655,6 +663,8 @@ label .day05:
     (I don't know if this is a good omen or not...)
     """
 
+    return
+
 # Market, Day 06
 label .day06:
 
@@ -679,6 +689,8 @@ label .day06:
 
     (I'm surprised he let me leave early, when he's usually so stingy the other times. Something serious must've come up.
     """
+
+    return
 
 # Market, Day 07
 label .day07:
@@ -723,6 +735,8 @@ label .day07:
             # +0 affection point
             $ affection = affection
             call .day07_bad
+
+    return
 
 # Market, Day 07 (Good)
 label .day07_good:
@@ -863,6 +877,8 @@ label .day07_good:
 
     "Now that I said what was on my mind, I smile and wave at Silas as I leave the way I came in."
 
+    return
+
 # Market, Day 07 (Bad)
 label .day07_bad:
 
@@ -878,6 +894,8 @@ label .day07_bad:
     lyr "Right! Let's get going!"
 
     "I tried to get my mind off whatever those two townspeople said. If something was seriously happening, then Silas could handle it... right?"
+
+    return
 
 # Market, Day 08
 label .day08:
@@ -903,6 +921,8 @@ label .day08:
     lyr "Leo, you should be careful. Especially because of everything that has happened around you recently."
 
     leo "Yeah, I will."
+
+    return
 
 # Market, Day 09
 label .day09:
@@ -942,6 +962,8 @@ label .day09:
     leo "Also, you should be handling your own business affairs for now, so just leave everything else to me."
 
     sil "If you say so. I'll trust you to handle the investigation."
+
+    return
 
 # Market, Day 10
 label .day10:
@@ -999,6 +1021,8 @@ label .day10:
             # +0 affection
             $ affection = affection
             call .day10_bad
+
+    return
 
 # Market, Day 10 (Good)
 label .day10_good:
@@ -1111,6 +1135,8 @@ label .day10_good:
 
     "Lyra pushes me inside as I smile."
 
+    return
+
 # Market, Day 10 (Bad)
 label .day10_bad:
 
@@ -1134,6 +1160,8 @@ label .day10_bad:
 
     (He probably needs some time to process what happened. I hope he's okay.)
     """
+
+    return
 
 # Market, Day 11
 label .day11:
@@ -1161,6 +1189,8 @@ label .day11:
 
     (There have to be some leads somewhere...)
     """
+
+    return
 
 # Market, Day 12
 label .day12:
@@ -1347,6 +1377,8 @@ label .day12:
     else:
         call .day12_bad
 
+    return
+
 # Market, Day 12 (Good)
 label .day12_good:
 
@@ -1446,10 +1478,16 @@ label .day12_good:
     Ewan is, once again, gone without a trace.
     """
 
+    return
+
 # Market, Day 12 (End)
 label .day12_end:
     "day 12 end"
 
+    return
+
 # Market, Day 12 (Bad)
 label .day12_bad:
     "day 12 bad"
+
+    return
