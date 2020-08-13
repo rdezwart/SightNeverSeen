@@ -10,6 +10,7 @@ define jul = Character("Julius")
 define tp1 = Character("Townsperson 1")
 define tp2 = Character("Townsperson 2")
 define mys = Character("Mysterious Hooded Person")
+define gls = Character("Group of Girls")
 
 # Main flow
 label market:
@@ -1478,11 +1479,120 @@ label .day12_good:
     Ewan is, once again, gone without a trace.
     """
 
+    call .day12_end
+
     return
 
 # Market, Day 12 (End)
 label .day12_end:
-    "day 12 end"
+
+    # TODO: Change scene to OUTSIDE LEO AND LYRA'S HOUSE
+    scene bg house outside
+
+    """
+    A couple days pass after the incident.
+
+    Once Lyra recovers enough, I explain to her what happened.
+    """
+
+    leo "So, yeah, Ewan was the magician behind the incidents that were going around town. He disappeared in an explosion of daffodils as he was being taken away."
+
+    lyr "Ewan... I want to say I would've never expected it, but after seeing those fireflies I wanted to convince myself it was a lie."
+
+    "I open the mailbox and see two letters."
+
+    leo "This one's from Silas, and the other is from--"
+
+    lyr "Ewan?"
+
+    "I nod. Lyra peers over my shoulder as I read Ewan's letter."
+
+    # NOTE: Italic?
+    ewa "Don't look for me, I'll be fine. I wish you two happiness."
+
+    "Lyra and I give each other a glance, then I tuck the letters into my pocket."
+
+    leo "You wanted to go to the flower shop today, right? I'll walk you there before heading to Silas' office."
+
+    lyr "Yeah! Julius sent some cryptic letter yesterday, saying to come to his shop to see some daffodil flowers and \"something interesting\". I figured, why not?"
+
+    leo "Flowers, huh?"
+
+    "Lyra gives me a mischievous grin and skips ahead."
+
+    lyr """
+    Hehehe, maybe you can find something for Silas before you head over!
+
+    I still can't believe you managed to catch the interest of a rich man! Maybe we can finally live without worrying about expenses, and--
+    """
+
+    leo "Don't say it like that."
+
+    "I run after Lyra, who laughs at me before running even further ahead."
+
+    # TODO: Change scene to FLOWER SHOP
+    scene bg flower
+
+    lyr "Julius, I'm here!"
+
+    gls "Kyaa-! That new worker here is soooo my type!"
+
+    """
+    Lyra and I turn our attention to where the noise was coming from, a small crowd of girls swarming around someone.
+
+    While they were busy gawking, Julius approaches us.
+    """
+
+    jul "Ah. That's my new worker."
+
+    leo "That's..."
+
+    "Lyra pats my back."
+
+    lyr "You should probably get going now. Thanks for walking me here!"
+
+    leo "Yeah. I'll see you later."
+
+    "I turn to leave the flower shop."
+
+    lyr "That guy. He's--"
+
+    jul "It's probably better not to say anything."
+
+    lyr "I guess so."
+
+    # TODO: Change scene to SILAS' OFFICE
+    scene bg silasOffice
+
+    "As I arrive at Silas' Office, I call out in greeting."
+
+    leo """
+    You finally remembered to write down the meeting time, instead of just \"Come\"!
+
+    You know you don't have to send threatening letters every time, right? I'll come here every day, it's become a habit anyways.
+    """
+
+    "Silas just gives me a glance and nods. I go to sit down where I usually do, and notice a pot of red flowers."
+
+    leo "Hm? These flowers are so pretty!"
+
+    sil "They're yours, after all."
+
+    leo """
+    Huh?
+
+    Wait, they're mine?!
+    """
+
+    sil "I'm giving them to you."
+
+    leo "Hmm, these are... red asters? They're beautiful, thank you."
+
+    """
+    I hold up the pot of vibrant red asters and smile at Silas.
+
+    He finally looks at me and smiles warmly.
+    """
 
     return
 
