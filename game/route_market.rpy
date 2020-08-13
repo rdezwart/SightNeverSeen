@@ -1133,5 +1133,25 @@ label .day10_bad:
 label .day11:
 
     """
-    asda
+    A few days later.
+
+    Lyra and Ewan had offered to help me with my investigations today.
+    """
+
+    lyr "It's the same as last time. No one knows what's happening."
+
+    leo "This is getting really concerning."
+
+    ewa "Maybe things aren't what they seem? There's probably something deeper to it."
+
+    leo "(Something deeper, huh...?)"
+
+    lyr "We can try investigating another day. Ewan, didn't you say you have something to do later? Sorry for taking some of your time."
+
+    ewa "It's fine. You two should head home. I have to get going, I'll see you later."
+
+    leo """
+    See you.
+
+    (There have to be some leads somewhere...)
     """
