@@ -57,6 +57,11 @@ label market:
 
     call .day10
 
+    # TODO: Change scene to TOWN PLAZA
+    scene bg plaza
+
+    call .day11
+
     return
 
 # Market, Day 01
@@ -982,12 +987,12 @@ label .day10:
         "Run inside the greenhouse and attempt to save that 'one' plant.":
             # +1 affection
             $ affection += 1
-            call day10_good
+            call .day10_good
 
-        "Tell Silas to not act rashly."
+        "Tell Silas to not act rashly.":
             # +0 affection
             $ affection = affection
-            call day10_bad
+            call .day10_bad
 
 # Market, Day 10 (Good)
 label .day10_good:
@@ -1122,4 +1127,11 @@ label .day10_bad:
     Okay.
 
     (He probably needs some time to process what happened. I hope he's okay.)
+    """
+
+# Market, Day 11
+label .day11:
+
+    """
+    asda
     """
