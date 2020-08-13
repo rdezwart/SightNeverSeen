@@ -86,6 +86,8 @@ label start:
 
     jump choice
 
+label finale:
+    "end of game"
 
 label choice:
 

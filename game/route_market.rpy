@@ -71,6 +71,8 @@ label market:
 
     "end of route"
 
+    jump finale
+
 # Market, Day 01
 label .day01:
 
