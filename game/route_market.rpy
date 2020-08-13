@@ -1598,6 +1598,66 @@ label .day12_end:
 
 # Market, Day 12 (Bad)
 label .day12_bad:
-    "day 12 bad"
+
+    sil """
+    ...
+
+    You're right. The thought of having to bear that pain might be too much for me to handle.
+
+    After all, I have to keep a good face and maintain my reputation. I don't think I was ready for this kind of thing, even from the start.
+    """
+
+    "Silas turns to me, as if he's about to leave, and places his hand on my shoulder."
+
+    sil "Sorry. For everything. And thank you for your service. I won't report you, since you kept your end of the deal by providing information, but as of right now, I'll end our ties."
+
+    leo "Huh?"
+
+    """
+    Silas walks away. I try to reach out my hand, but I stop as the reality of the situation hits me.
+
+    Ewan walks up beside me, and all I can see is his sad smile. I turn back to watch Silas walks off.
+    """
+
+    leo "(So, this is how it all ends?)"
+
+    # TODO: Change scene to INSIDE LEO AND LYRA'S HOUSE
+    scene bg house inside
+
+    leo """
+    (Ngh.)
+
+    (A voice...?)
+    """
+
+    lyr "Leo, wake up! It's already noon!"
+
+    leo "Lyra...?"
+
+    lyr "Are you alright? When you returned home yesterday, you went straight to bed and passed out almost instantly."
+
+    leo "So it wasn't all just a fever dream?"
+
+    lyr "Also, Ewan is gone. He disappeared suddenly, I haven't seen him in days. I tried looking all over time for him this morning, but it's as if he was never here."
+
+    leo """
+    Huh?!
+
+    (Ewan is... gone?!)
+    """
+
+    lyr "Also, I can't feel any more traces of magic left in me. Is it the same for you?"
+
+    leo """
+    (So strange... does this really mean...?)
+
+    Yeah, I think mine's gone too. I feel lighter than before, as if something heavy has been lifted.
+    """
+
+    lyr "Leo, what happened?"
+
+    "I grip my blanket and try to process everything that's happened to me."
+
+    leo "Well..."
 
     return
