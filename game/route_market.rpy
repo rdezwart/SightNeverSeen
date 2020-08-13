@@ -1343,6 +1343,7 @@ label .day12:
 
     if affection >= 2:
         call .day12_good
+        call .day12_end
     else:
         call .day12_bad
 
@@ -1444,3 +1445,11 @@ label .day12_good:
 
     Ewan is, once again, gone without a trace.
     """
+
+# Market, Day 12 (End)
+label .day12_end:
+    "day 12 end"
+
+# Market, Day 12 (Bad)
+label .day12_bad:
+    "day 12 bad"
