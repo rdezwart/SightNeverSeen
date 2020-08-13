@@ -976,3 +976,126 @@ label .day10:
 
     (What should I do...?)
     """
+
+    menu:
+
+        "Run inside the greenhouse and attempt to save that 'one' plant.":
+            # +1 affection
+            $ affection += 1
+            call day10_good
+
+        "Tell Silas to not act rashly."
+            # +0 affection
+            $ affection = affection
+            call day10_bad
+
+# Market, Day 10 (Good)
+label .day10_good:
+
+    leo "(Well, if I can't use magic, then I should at least...)"
+
+    "This might've been a dumb decision, but I broke out into a run towards the greenhouse."
+
+    sil "Leo?!"
+
+    # TODO: Change scene to INSIDE BURNING GREENHOUSE
+    scene bg greenhouse burn
+
+    leo """
+    (Everything really is up in flame, this entire place is a fire hazard!)
+
+    (I should just 'Samantha' and leave as fast as I can.)
+    """
+
+    "I look around and spot 'Samantha'."
+
+    leo """
+    (There it is!)
+
+    (Thank goodness it's okay! At least the one plant Silas is fond of ended up being unharmed.)
+
+    (It's dangerous for me to stay inside here for any longer. I should get out while I still can.)
+    """
+
+    # TODO: Change scene to OUTSIDE GREENHOUSE
+    scene bg greenhouse outside
+
+    "When I arrived back outside, I turn to look at the greenhouse. The bodyguards are going everything they can to put out the fire."
+
+    leo "Whoah. The greenhouse is more like a flame-house."
+
+    "When I turned back around, Silas was immediately in front of me, shaking my shoulders."
+
+    sil """
+    What were you thinking?! Why did you run inside a flaming building like that!
+
+    Don't you know how worried I was?! If something happened to you, then-
+    """
+
+    leo """
+    Oh. Uhm. Sorry?
+
+    I couldn't rescue more of your plants. I know they're important to you, but-
+    """
+
+    "I hold up the plant Silas referred to as 'Samantha' in front of him."
+
+    leo "I got Samantha at least?"
+
+    "Silas stops."
+
+    leo "Are you alright? You look like you want to cry."
+
+    "Silas lets go of me and turns around."
+
+    sil "The bodyguards will handle everything here. You look like a mess. We should head back."
+
+    "I look at myself and realized I was covered in soot. Lyra's going to freak out at me later..."
+
+    leo "Oh. You're right, I didn't notice."
+
+    """
+    Silas starts walking away, but I turn around to give one last look to the greenhouse.
+
+    Out of the corner of my eyes, I notice something.
+    """
+
+    leo """
+    (Hm? Are those... Fireflies?)
+
+    (I probably shouldn't think much of it.)
+    """
+
+    """
+    I blink my eyes a few times and noticed the fireflies were gone again, probably just my imagination.
+
+    I try to catch up with Silas, still carrying 'Samantha'.
+    """
+
+    # TODO: Change scene to SILAS' OFFICE
+    scene bg silasOffice
+
+    "After making myself presentable again, Silas spoke."
+
+    sil "I don't have anything for you to do, so... you can leave for the day."
+
+    leo """
+    Huh? Okay.
+
+    (He probably needs some time to process what happened. Is he okay, though? He hasn't turned his face to look at me once since earlier.)
+    """
+
+    # TODO: Change scene to OUTSIDE LEO AND LYRA'S HOUSE
+    scene bg house outside
+
+    "As I arrived in front of our house, Lyra rushes out."
+
+    lyr "Leo?! Why are you covered in soot?"
+
+    leo "Aha. Some things happened earlier."
+
+    lyr "I'd demand you to tell me what happened, but go get washed up first! Then you HAVE to tell me, or else I'm gonna get real mad..."
+
+    leo "Aren't you already freaking out right now, though?"
+
+    "Lyra pushes me inside as I smile."
