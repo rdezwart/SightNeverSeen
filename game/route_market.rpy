@@ -17,55 +17,25 @@ label market:
 
     call .day01
 
-    # TODO: Change scene to outside LEO AND LYRA'S HOUSE
-    scene bg house out
-
     call .day02
-
-    # TODO: Change scene to outside LEO AND LYRA'S HOUSE
-    scene bg house out
 
     call .day03
 
     call .day04
 
-    # TODO: Change scene to SILAS' OFFICE
-    scene bg silasOffice
-
     call .day05
-
-    # TODO: Change scene to SILAS'S OFFICE
-    scene bg silasOffice
 
     call .day06
 
-    # TODO: Change scene to OUTSIDE LEO AND LYRA'S HOUSE
-    scene bg house outside
-
     call .day07
-
-    # TODO: Change scene to INSIDE LEO AND LYRA'S HOUSE
-    scene bg house inside
 
     call .day08
 
-    # TODO: Change scene to SILAS' OFFICE
-    scene bg silasOffice
-
     call .day09
-
-    # TODO: Change scene to TOWN PLAZA
-    scene bg plaza
 
     call .day10
 
-    # TODO: Change scene to TOWN PLAZA
-    scene bg plaza
-
     call .day11
-
-    # TODO: Change scene to SILAS' OFFICE
-    scene bg silasOffice
 
     call .day12
 
@@ -216,7 +186,7 @@ label .day01:
     "Lyra and I wave goodbye to Ewan and head out separate ways. Lyra skips ahead of my happily."
 
     # TODO: Change scene to INSIDE LEO/LYR HOUSE
-    scene bg house
+    scene bg house inside
 
     "As soon as we both entered our house, I closed the door and slumped against it."
 
@@ -259,6 +229,9 @@ label .day01:
 # Market, Day 02
 label .day02:
 
+    # TODO: Change scene to outside LEO AND LYRA'S HOUSE
+    scene bg house outside
+
     """
     The next day.
 
@@ -294,7 +267,7 @@ label .day02:
     "I try to give Lyra a reassuring smile, then wave goodbye to her as I follow the bodyguard."
 
     # TODO: Change scene to INSIDE TRADE OFFICE
-    scene bg tradeOffice
+    scene bg trade
 
     "When we arrive at the Trade Headquarters, I couldn't help but look around."
 
@@ -307,7 +280,7 @@ label .day02:
     """
 
     # TODO: Change scene to SILAS' OFFICE
-    scene bg silasOffice
+    scene bg office
 
     "When I stepped into the office, I take notice of Silas immediately. I walk up to his desk."
 
@@ -356,6 +329,9 @@ label .day02:
 # Market, Day 03
 label .day03:
 
+    # TODO: Change scene to outside LEO AND LYRA'S HOUSE
+    scene bg house outside
+
     """
     The next day.
 
@@ -380,6 +356,7 @@ label .day03:
 
 # Market, Day 04
 label .day04:
+
     """
     A few more days later.
 
@@ -405,7 +382,7 @@ label .day04:
     leo "Yeah."
 
     # TODO: Change scene to INSIDE TRADE OFFICE
-    scene bg tradeOffice
+    scene bg trade
 
     "When I arrived at the Trade Headquarters, the bodyguards take notice of me."
 
@@ -555,6 +532,9 @@ label .day04:
 # Market, Day 05
 label .day05:
 
+    # TODO: Change scene to SILAS' OFFICE
+    scene bg office
+
     """
     A few days later.
 
@@ -586,7 +566,7 @@ label .day05:
     "I run after Silas."
 
     # TODO: Change scene to TOWN PLAZA
-    scene bg plaza
+    scene bg plaza day
 
     leo "Wait, I still don't know where we're going."
 
@@ -671,6 +651,9 @@ label .day05:
 # Market, Day 06
 label .day06:
 
+    # TODO: Change scene to SILAS'S OFFICE
+    scene bg office
+
     """
     A few days later.
 
@@ -698,6 +681,9 @@ label .day06:
 # Market, Day 07
 label .day07:
 
+    # TODO: Change scene to OUTSIDE LEO AND LYRA'S HOUSE
+    scene bg house outside
+
     """
     The next day.
 
@@ -711,7 +697,7 @@ label .day07:
     "Lyra happily grabs my arm and drags me to meet with Ewan."
 
     # TODO: Change scene to TOWN PLAZA
-    scene bg plaza
+    scene bg plaza day
 
     lyr "I'm so happy we could all hang out like this! It's been such a long time."
 
@@ -759,7 +745,7 @@ label .day07_good:
     ewa "Yeah."
 
     # TODO: Change scene to TRADE OFFICE
-    scene bc tradeOffice
+    scene bc trade
 
     """
     When I entered the trade headquarters, I noticed that the amount of bodyguards has increased. Heightened security, possibly?
@@ -816,7 +802,7 @@ label .day07_good:
     "Hugh nodded towards me and gestured to the door. I look at him one last time, and open the door to Silas' office."
 
     # TODO: Change scene to SILAS' OFFICE
-    scene bg silasOffice
+    scene bg office
 
     """
     As I entered the office, Silas immediately noticed me.
@@ -886,7 +872,7 @@ label .day07_good:
 label .day07_bad:
 
     # TODO: Change scene to TOWN PLAZA
-    scene bg plaza
+    scene bg plaza day
 
     leo """
     (It might be best to lay low. I can trust Silas to handle this situation, I think.)
@@ -902,6 +888,9 @@ label .day07_bad:
 
 # Market, Day 08
 label .day08:
+
+    # TODO: Change scene to INSIDE LEO AND LYRA'S HOUSE
+    scene bg house inside
 
     """
     A few days later.
@@ -929,6 +918,9 @@ label .day08:
 
 # Market, Day 09
 label .day09:
+
+    # TODO: Change scene to SILAS' OFFICE
+    scene bg office
 
     """
     A few days later.
@@ -971,6 +963,9 @@ label .day09:
 # Market, Day 10
 label .day10:
 
+    # TODO: Change scene to TOWN PLAZA
+    scene bg plaza day
+
     """
     The next day.
 
@@ -982,7 +977,7 @@ label .day10:
     leo "Yeah, same here. It doesn't seem like we've found any leads at all."
 
     # TODO: Change scene to SILAS' OFFICE
-    scene bg silasOffice
+    scene bg office
 
     leo """
     Sorry, I couldn't find more information about the incidents after all. They all seemed like random attacks more than anything.
@@ -995,7 +990,7 @@ label .day10:
     leo "Sure. That sounds like a good idea."
 
     # TODO: Change scene to OUTSIDE GREENHOUSE
-    scene bg greenhouse outside
+    scene bg greenhouse outside fire
 
     "As we were heading towards the greenhouse, a bodyguard runs up to us."
 
@@ -1037,7 +1032,7 @@ label .day10_good:
     sil "Leo?!"
 
     # TODO: Change scene to INSIDE BURNING GREENHOUSE
-    scene bg greenhouse burn
+    scene bg greenhouse inside fire
 
     leo """
     (Everything really is up in flame, this entire place is a fire hazard!)
@@ -1056,7 +1051,7 @@ label .day10_good:
     """
 
     # TODO: Change scene to OUTSIDE GREENHOUSE
-    scene bg greenhouse outside
+    scene bg greenhouse outside fire
 
     "When I arrived back outside, I turn to look at the greenhouse. The bodyguards are going everything they can to put out the fire."
 
@@ -1111,7 +1106,7 @@ label .day10_good:
     """
 
     # TODO: Change scene to SILAS' OFFICE
-    scene bg silasOffice
+    scene bg office
 
     "After making myself presentable again, Silas spoke."
 
@@ -1154,7 +1149,7 @@ label .day10_bad:
     "We watched as the bodyguards frantically put out the fire. Afterwards, we head back to Silas' office."
 
     # TODO: Change scene to SILAS' OFFICE
-    scene bg silasOffice
+    scene bg office
 
     sil "I don't have anything for you to do, so... You can leave for the day."
 
@@ -1168,6 +1163,9 @@ label .day10_bad:
 
 # Market, Day 11
 label .day11:
+
+    # TODO: Change scene to TOWN PLAZA
+    scene bg plaza day
 
     """
     A few days later.
@@ -1197,6 +1195,9 @@ label .day11:
 
 # Market, Day 12
 label .day12:
+
+    # TODO: Change scene to SILAS' OFFICE
+    scene bg office
 
     """
     A few days later.
@@ -1262,7 +1263,7 @@ label .day12:
     "I nodded at Hugh to take care of Lyra. Silas and I set off to follow the trail of fireflies."
 
     # TODO: Change scene to SECLUDED AREA / FIELD
-    scene bg field
+    scene bg woods
 
     leo "The fireflies are gone now."
 
@@ -1434,7 +1435,7 @@ label .day12_good:
     "Silas and I lead Ewan out of the secluded area. Ewan showed no sign of resistance, only a sad smile on his face."
 
     # TODO: Change scene to TOWN PLAZA
-    scene bg plaza
+    scene bg plaza day
 
     "Silas and I turned Ewan into the authorities who placed him into a carriage, ready be transported to the magician's equivalent of prison."
 
@@ -1564,7 +1565,7 @@ label .day12_end:
     lyr "I guess so."
 
     # TODO: Change scene to SILAS' OFFICE
-    scene bg silasOffice
+    scene bg office
 
     "As I arrive at Silas' Office, I call out in greeting."
 
