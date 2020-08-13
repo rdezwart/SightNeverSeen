@@ -27,6 +27,9 @@ define sil = Character("Silas", image="silas")
 define ern = Character("Ernest", image="ernest")
 define aur = Character("Aurora", image="aurora")
 
+# Variables
+default affection = 0
+
 label start:
 
     # TODO: Start game with LEO HOUSE
