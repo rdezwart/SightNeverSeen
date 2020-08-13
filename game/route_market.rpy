@@ -931,3 +931,48 @@ label .day09:
     leo "Also, you should be handling your own business affairs for now, so just leave everything else to me."
 
     sil "If you say so. I'll trust you to handle the investigation."
+
+# Market, Day 10
+label .day10:
+
+    """
+    The next day.
+
+    Lyra had offered to help me with the investigation. We talked to people around town to see if they knew anything, then regrouped after.
+    """
+
+    lyr "Sorry, Leo. Everyone I asked only had the same information that we do."
+
+    leo "Yeah, same here. It doesn't seem like we've found any leads at all."
+
+    # TODO: Change scene to SILAS' OFFICE
+    scene bg silasOffice
+
+    leo """
+    Sorry, I couldn't find more information about the incidents after all. They all seemed like random attacks more than anything.
+
+    Are you alright? You look even worse than last time.
+    """
+
+    sil "Why don't we head to the greenhouse and get some fresh air?"
+
+    leo "Sure. That sounds like a good idea."
+
+    # TODO: Change scene to OUTSIDE GREENHOUSE
+    scene bg greenhouse outside
+
+    "As we were heading towards the greenhouse, a bodyguard runs up to us."
+
+    bod "Sir! We've got trouble! The greenhouse, it's on-"
+
+    leo "Fire?"
+
+    "Silas and I rush over, and see the greenhouse engulfed in flames."
+
+    leo """
+    (Aah, Silas looks like he wants to faint!)
+
+    (I can probably use magic to put out the fire, but it wouldn't be a great idea because Silas' reputation would likely go up in flames as well.
+
+    (What should I do...?)
+    """
