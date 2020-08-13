@@ -9,6 +9,10 @@ define hug = Character("Hugh")
 define jul = Character("Julius")
 define tp1 = Character("Townsperson 1")
 define tp2 = Character("Townsperson 2")
+define mys = Character("Mysterious Hooded Person")
+
+# Variables
+default affection = 0
 
 # Main flow
 label market:
@@ -61,6 +65,11 @@ label market:
     scene bg plaza
 
     call .day11
+
+    # TODO: Change scene to SILAS' OFFICE
+    scene bg silasOffice
+
+    call .day12
 
     return
 
@@ -1154,4 +1163,179 @@ label .day11:
     See you.
 
     (There have to be some leads somewhere...)
+    """
+
+# Market, Day 12
+label .day12:
+
+    """
+    A few days later.
+
+    I had come to report my findings to Silas.
+    """
+
+    leo "Ah. Lyra promised that she would help me investigate the incidents today."
+
+    sil "Is that so?"
+
+    "Silas stops for a moment, as if needing to think about something."
+
+    sil "I'll go with you today."
+
+    leo "Huh? Will that be okay? I mean, sure, I don't think she'll mind."
+
+    sil "Don't worry, we'll be bringing Hugh with us."
+
+    "Silas gestures to Hugh, who gives me a smile."
+
+    leo "(Is it really okay for someone like Silas to waltz around town casually like that?)"
+
+    # TODO: Change scene to OUTSIDE LEO AND LYRA'S HOUSE
+    scene bg house outside
+
+    "When we arrive at the meeting spot Lyra and I had organized, I noticed her laying on the floor. I immediately run up to her in worry. I held up her head as she tried to speak."
+
+    leo "Lyra?! What happened?!"
+
+    lyr "Those incidents, I think I found a lead, but someone attacked me. The fireflies..."
+
+    "Before Lyra could finish, she passed out."
+
+    leo """
+    It can't be...
+
+    I think I know who's the culprit of these incidents. Watch after Lyra for me while I confront them.
+    """
+
+    "I handed Lyra to Hugh, and was about to take off when-"
+
+    sil """
+    Wait. Hugh, watch after the girl.
+
+    Leo, I'll go with you.
+    """
+
+    leo "Huh? Will that be okay?"
+
+    "Silas quietly reveals a hidden rapier to me."
+
+    leo "You just carry that kind of weapon around town?"
+
+    sil "You can never be too careful."
+
+    leo """
+    (I don't know if I should even be shocked anymore, considering everything that he's pulled.)
+
+    Alright, let's go then.
+    """
+
+    "I nodded at Hugh to take care of Lyra. Silas and I set off to follow the trail of fireflies."
+
+    # TODO: Change scene to SECLUDED AREA / FIELD
+    scene bg field
+
+    leo "The fireflies are gone now."
+
+    sil "It seems so. Keep your guard up."
+
+    "I look around and see a mysterious person draped in a cloak, concealing their identity."
+
+    leo """
+    ?!
+
+    You're-
+    """
+
+    mys "I've been expecting you."
+
+    sil "Who are you?!"
+
+    "The hooded person doesn't respond. Instead, they begin to unleash an attack, shooting off particles and beams of magic as Silas and I try not to get hit."
+
+    leo "Wait, I've never fought before in my entire life!"
+
+    sil "I don't think that matters when someone's out to kill us!"
+
+    """
+    Trying my best to dodge everything, I begin to fire my own bursts of magic in retaliation.
+
+    The feeling of using magic for the sole purpose of hurting others feels bad...
+
+    I don't like it at all.
+    """
+
+    leo "(I need to fight back, but I've never used magic like this before, and I hate the feeling. Maybe I can unmask the person...)"
+
+    "In a last-ditch effort, I send of burst of wind flying at the mysterious person."
+
+    leo "(Please!)"
+
+    "The gust of wind manages to blow the hood off the person, revealing..."
+
+    ewa "Ah."
+
+    sil "So, it's you!"
+
+    leo "Ewan..."
+
+    ewa "I didn't want you to discover my involvement in the incidents. Everything that happened around town was my doing."
+
+    leo "Ewan... why?"
+
+    """
+    I was unable to process the fact that Ewan was the one behind all the incidents.
+
+    Furthermore, Ewan is... a magician.
+
+    Taking advantage of the fact that I had been thrown off, Ewan lets loose a projectile of magic at me.
+
+    Before I could act, Silas steps in front of me and blocks the attack with his rapier. With a flash of light, the rapier fizzled out of existence.
+    """
+
+    sil """
+    Hm?
+
+    You. You're not actually aiming at us seriously, are you?
+    """
+
+    leo "Huh?"
+
+    sil """
+    I couldn't keep up when you two were casting magic, but don't think I didn't notice. Your hands are shaking.
+
+    That blast of magic you just sent, if you really wanted to kill us, then my rapier wouldn't have been able to disperse it so easily.
+
+    None of your actions make sense; if you actually wanted us dead, you could've done so easily. Why are you hesitating?
+    """
+
+    "Ewan flinches."
+
+    ewa "None of you understand! The way we magicians are treated! I'm sick of it! We're less than human to everyon, and for what?! For just possessing magic? And it's just..."
+
+    sil "Just what?"
+
+    ewa "Leo and Lyra are important to me. Your involvement with Leo is making him suffer, do you really think you can make him happy?"
+
+    leo """
+    (Those incidents around town, they were strange, but no one actually got hurt. Why is Ewan doing all of this? Why--)
+
+    --are you trying to take the fall for me?
+    """
+
+    ewa "Huh?"
+
+    leo "I get it now. But why? Why are you acting like this, as if it'll make me happy?"
+
+    ewa "I do want you to be happy. That's why I'm willing to bear the burden of these crimes! That's why--"
+
+    "Ewan points at Silas."
+
+    ewa """
+    -- I have some questions for you.
+
+    Are you fine with living in fear? Will you be fine with being chased if people really do find out about Leo's status?
+
+    You do know the stigma of those who are magicians, don't you? To be further involved with Leo means facing pain, and possibly the notion of throwing everything away.
+
+    Are you fine with this constant risk if it means Leo can be by your side?
     """
