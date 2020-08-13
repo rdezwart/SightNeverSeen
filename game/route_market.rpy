@@ -1099,3 +1099,27 @@ label .day10_good:
     leo "Aren't you already freaking out right now, though?"
 
     "Lyra pushes me inside as I smile."
+
+# Market, Day 10 (Bad)
+label .day10_bad:
+
+    leo """
+    (Even though this situation is bad...)
+
+    Don't act rashly. Your position is delicat right now.
+    """
+
+    sil "You're right..."
+
+    "We watched as the bodyguards frantically put out the fire. Afterwards, we head back to Silas' office."
+
+    # TODO: Change scene to SILAS' OFFICE
+    scene bg silasOffice
+
+    sil "I don't have anything for you to do, so... You can leave for the day."
+
+    leo """
+    Okay.
+
+    (He probably needs some time to process what happened. I hope he's okay.)
+    """
