@@ -610,11 +610,11 @@ label .day05:
     menu:
         "It's a bit odd, but I'm having more fun than I expected.":
             # +1 affection point
-            $ affection = 1
+            $ affection += 1
 
         "It's a bit tough recently, but I'm keeping up.":
             # +0 affection point
-            $ affection = 0
+            $ affection = affection
 
     ewa "I see. I'm glad you're doing fine, though. Don't push yourself too hard, alright?"
 
@@ -1377,7 +1377,6 @@ label .day12:
 
     if affection >= 2:
         call .day12_good
-        call .day12_end
     else:
         call .day12_bad
 
