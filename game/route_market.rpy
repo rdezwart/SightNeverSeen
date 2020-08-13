@@ -12,35 +12,23 @@ define tp2 = Character("Townsperson 2")
 define mys = Character("Mysterious Hooded Person")
 define gls = Character("Group of Girls")
 
-# Main flow
+# Main Flow
 label market:
 
     call .day01
-
     call .day02
-
     call .day03
-
     call .day04
-
     call .day05
-
     call .day06
-
     call .day07
-
     call .day08
-
     call .day09
-
     call .day10
-
     call .day11
-
     call .day12
 
     "end of route"
-
     jump finale
 
 # Market, Day 01
