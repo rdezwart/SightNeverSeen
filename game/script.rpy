@@ -22,13 +22,24 @@ define lyr = Character("Lyra", image="lyra")
 define ewa = Character("Ewan", image="ewan")
 
 # Love Interests
-define nox = Character("Nox", image="nox")
 define sil = Character("Silas", image="silas")
+define nox = Character("Nox", image="nox")
 define ern = Character("Ernest", image="ernest")
 define aur = Character("Aurora", image="aurora")
 
+# Available Routes
+default silRoute = True
+default noxRoute = False
+default ernRoute = True
+default aurRoute = False
+
+default ewaRoute = False
+
 # Variables
 default affection = 0
+
+# Config
+define config.menu_include_disabled = True
 
 label start:
 
@@ -85,18 +96,19 @@ label start:
     "Leo and Lyra look at each other, and they both start thinking."
 
     # TODO: Add animations showing protags
-    menu:
-        "Go to Marketplace":
+    menu routeChoice:
+        "Go to Marketplace" if silRoute:
             jump market
 
-        "Go to Library":
+        "Go to Library" if noxRoute:
             jump library
 
-        "Go to Park":
+        "Go to Park" if ernRoute:
             jump park
 
-        "Go to Cafe":
+        "Go to Cafe" if aurRoute:
             jump cafe
+
         # TODO: Add secret route
 
 label finale:
