@@ -11,9 +11,6 @@ define tp1 = Character("Townsperson 1")
 define tp2 = Character("Townsperson 2")
 define mys = Character("Mysterious Hooded Person")
 
-# Variables
-default affection = 0
-
 # Main flow
 label market:
 
@@ -1338,4 +1335,112 @@ label .day12:
     You do know the stigma of those who are magicians, don't you? To be further involved with Leo means facing pain, and possibly the notion of throwing everything away.
 
     Are you fine with this constant risk if it means Leo can be by your side?
+    """
+
+    # BRANCH
+    # GOOD ENDING: >= 2 affection
+    # BAD ENDING: < 2 affection
+
+    if affection >= 2:
+        call .day12_good
+    else:
+        call .day12_bad
+
+# Market, Day 12 (Good)
+label .day12_good:
+
+    sil """
+    ...
+
+    Is that all? If that's all I need to face to Leo by my side, then so be it.
+    """
+
+    ewa "So, that's your answer?"
+
+    sil """
+    As a businessman, even I understand the notion of high risk, high reward.
+
+    You asked me if I was willing to throw away everything to keep Leo by my side, Right? If it's to make Leo happy, then I'd gladly give up my status right now.
+    """
+
+    leo "(W-wait, how can he say that with a straight face when I'm standing right here?!)"
+
+    ewa "I see."
+
+    sil "If you don't believe me, then I can establish a contract to cover the case in which I don't keep my word and betray Leo --"
+
+    "I grab Silas' arm to cut him off."
+
+    leo "Wait! Wait, no contracts or anything. I'm fine, I've already heard enough! No need to write it down officially on paper!"
+
+    sil "I-If that's what you want."
+
+    "Ewan starts laughing, drawing both Silas and my attention back to him."
+
+    ewa """
+    I'm glad to hear it. That means I can trust you with Leo.
+
+    I'm happy it didn't end up like last time.
+    """
+
+    leo "Huh?"
+
+    "Silas coughs."
+
+    sil "With this situation handled, we probably have to hand Ewan over to the authorities to clear up your name, Leo."
+
+    "I shoot Ewan a worried glance."
+
+    ewa "It's fine. I expected this outcome. I just wanted to make sure you would be fine at the end of all this."
+
+    leo "(So... is this the end?)"
+
+    "Silas and I lead Ewan out of the secluded area. Ewan showed no sign of resistance, only a sad smile on his face."
+
+    # TODO: Change scene to TOWN PLAZA
+    scene bg plaza
+
+    "Silas and I turned Ewan into the authorities who placed him into a carriage, ready be transported to the magician's equivalent of prison."
+
+    sil "So, we've finally caught the magician behind the strange incidents."
+
+    leo "Ewan--"
+
+    ewa "I'm sorry for hiding that I was a magician. It's fine."
+
+    """
+    Ewan gives me a sad smile as he was taken away, and we watched as the carriage began to move down the road.
+
+    Before it left our view, the sound of an explosion filled the air.
+    """
+    # NOTE: Sound effect?
+
+    leo "That sound was--"
+
+    sil "An explosion?"
+
+    """
+    I shield my eyes as a flash of bright light fills the plaza. Once I can can open my eyes without going blind, I see a cluster of bright yellow flowers.
+
+    Ewan is gone. Flowers fill the carriage that he used to be in, with more gently fluttering down from the sky.
+    """
+
+    leo "These flowers are..."
+
+    """
+    I remember that man --Julius-- from the flower shop.
+
+    After he had given that extra bundle of flowers to Silas, I went back and looked into what kind they were. Call it paranoia, but I wanted to be sure that they weren't a bad omen.
+
+    Those flowers are... daffodils.
+    """
+
+    leo "(So that guy is also...)"
+
+    sil "I figured it wouldn't be that easy to turn over a magician."
+
+    """
+    Silas and I just watch the spectacle, daffodils raining down around us.
+
+    Ewan is, once again, gone without a trace.
     """
