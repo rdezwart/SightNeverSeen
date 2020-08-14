@@ -738,3 +738,35 @@ label .day06_good:
     "We walk back to the town plaza together."
 
     return
+
+# Park, Day 06 (Bad)
+label .day06_bad:
+
+    # TODO: [Change scene to PARK]
+    scene bg park
+
+    "I had to make him stop talking before people started getting suspicious."
+    "But he seemed in pain, thinking about the sake of us magicians, I felt a bit bad. "
+    "I was touched, but also it's not a topic you should deluge into in public. "
+    "So I suddenly hugged him. "
+
+    ern "W-wha?! Lyra?!!"
+    lyr "That's enough."
+    lyr "(If you care about us magicians so much then...)"
+    lyr "You're a good person, Ernest."
+    ern "H-huh? Yeah..."
+
+    "I didn't know what to say to him. "
+    "When I let go of him, Ernest seemed to be a bit flustered from when I suddenly gave him a hug."
+
+    lyr "Uhm. I'm sorry about that, suddenly--"
+    ern "N-no! It's fine! Really!"
+
+    "Ernest averts his eyes, and he suddenly stands up. "
+
+    ern "Let's head back to the town!"
+    lyr "Hm? Sure."
+
+    "Ernest hurries ahead, and I run after him."
+
+    return
