@@ -10,6 +10,7 @@ label secret:
 
     call .day01
     call .day02
+    call .day03
 
     "end of route"
     jump finale
@@ -240,5 +241,196 @@ label .day02:
     lyr "They're so pretty! It's like some kind of night-light!"
     ewa "It seems that fireflies like me a lot."
     leo "Well I can tell just by looking at you."
+
+    return
+
+
+# Secret, Day 03
+label .day03:
+
+    # TODO: [Change scene to MARKETPLACE]
+    scene bg market
+
+    "A few days later. "
+    "Leo and Lyra are out shopping for themselves, as Ewan said he has his own plans for the day."
+    "Lyra is wandering around by herself."
+
+    lyr "Leo said to meet him back at the entrance in an hour, so I'll look around for myself a bit."
+
+    "Lyra skips around the marketplace, looking at various booths. Whenever she saw an item she liked, but was too expensive, she lamented in her mind. "
+    "After walking around for a while, Lyra notices a booth that is selling flowers. "
+
+    lyr "Ah! This booth sells flowers!"
+
+    "Lyra walks up to the booth. As she's walking up to the booth, she accidentally runs into Silas' back."
+
+    lyr "I-I'm sorry!"
+    sil "It's fine."
+
+    "Lyra checks to see if her face is alright. She then notices Silas looking at the flowers intensely."
+
+    lyr "Uhm. Do you like flowers a lot?"
+    sil "Yes."
+
+    "Lyra stands next to Silas, as she's looking at the flowers. It could be nice if she could get some for Leo or Ewan, she thought, or maybe decorate the house? "
+    "A bunch of  daisy-like red flowers catches her eyes."
+
+    lyr "Ehh. Those flowers are pretty. Maybe I'll get some for Leo and Ewan."
+    sil "The meaning behind those flowers is \"undying devotion.\""
+    lyr "Eh?"
+
+    "Lyra is caught off guard by Silas' sudden interruption."
+
+    sil "If you're planning on giving flowers to someone, it's a good idea to know what the meaning behind them entails."
+    lyr "I see. Hmm. Maybe I'll get them after all. Thank you, uhm Mr-?"
+    sil "My name is Silas."
+    lyr "Thank you Mr. Silas!"
+
+    "Lyra pauses, but then realizes who she was talking to."
+
+    lyr "Ah. Wait, sorry I didn't realize you were the head of that famous trade company. Sorry for my rudeness."
+    sil "It's fine."
+
+    "Lyra purchases the red aster flowers and leaves to meet Leo at the entrance. She turns around, and notices that Silas is still standing at the flower booth."
+
+    lyr "(Hmm. He doesn't seem like a bad person at all. I guess he really likes flowers.)"
+
+    # TODO: [Switch to Leo]
+    # transition maybe?
+
+    "During the time Lyra was looking at flowers, Leo holds a list of supplies that he had to stock up."
+
+    leo "I think we ran out of this as well."
+
+    "As Leo is walking, Ernest bumps into him, and Ernest drops all the papers and items he was holding."
+
+    ern "Oh! Sorry about that!"
+    leo "No. I wasn't looking where I was going. Let me help you out."
+
+    "Leo bends down, and helps Ernest pick up all the items and papers."
+
+    ern "Thanks for your help!"
+    leo "Don't mention it"
+
+    "As Leo is about to continue on his way, Leo stops and notices Ernest looking down at a piece of paper with a troubled expression."
+
+    leo "(Is that guy alright? I feel kind of bad for him.)"
+
+    "Leo sighs internally at himself."
+
+    leo "Are you alright? If you're lost, then I can help you out for a bit."
+    ern "Y-yeah. Actually, this place seemed to have opened recently, but the marketplace is so big I don't know based on the instructions given to me."
+
+    "Ernest shows Leo the piece of paper, and Leo peers over to take a look."
+
+    leo "Ah. I think I know where this place is. I can bring you there."
+    ern "Really? I owe you one! Oh, sorry I'm being rude, but my name is Ernest!"
+    leo "It's nothing much. I'm Leo."
+
+    "Leo leads Ernest to the location specified on the piece of paper. Upon reaching the destination, Ernest grabs Leo's hands."
+
+    ern "You really saved me there! I owe you big time! I'll be sure to return the favor!"
+    leo "It's fine, really."
+
+    "Ernest excitedly waves goodbye to Leo as he leaves."
+
+    leo "(That guy is somewhat of an energetic type. He doesn't seem like a bad person, but definitely has lot of energy.)"
+
+    "..."
+    "At the time they decided on, Leo and Lyra meet up at the entrance of the marketplace."
+    "Lyra is already there waiting for Leo, and he notices the flowers in her hands."
+
+    leo "Did you buy some flowers?"
+    lyr "Yeah! They're for you and Ewan!"
+    leo "Well we can also make our home look nicer."
+    lyr "Mhmm!"
+
+    # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE]
+    scene bg house inside night
+
+    "Later that night. "
+    "The lights suddenly go out. In a flash, the then lit room suddenly turned pitch black. "
+    "Leo hears Lyra's footsteps running at him."
+
+    lyr "Leooo!"
+    leo "Lyra. Calm down. I can't see you, but I can feel you running into my arm."
+    lyr "It's pitch black. I guess whatever system the city was using to fire up our lamps suddenly died."
+    leo "Well it's only the two of us so it should be fine to use magic."
+    lyr "Oh that's true!"
+
+    "Lyra waves her wave (not that Leo could see her) and summons a lamp out of thin air. The newly summoned lamp illuminates the room."
+
+    lyr "Whew. Now I can see you!"
+    leo "Yeah. Actually, I don't exactly remember the details but when we were little, didn't we both go looking for Ewan in the darkness once?"
+    lyr "Oh yeah! I think Ewan was afraid of the dark, so when we found him, he was up in tears!"
+
+    "A silence passed between them as they realized what they had just discussed."
+
+    lyr "Wait. This power outage. Will Ewan be alright?"
+    leo "Well, he's an adult now right there's no way..."
+
+    "Lyra narrows her eyes at Leo, and Leo understands what she wants with a glance."
+
+    leo "Maybe it wouldn't hurt to check up on him."
+
+    # TODO: [Change scene to OUTSIDE LEO AND LYRA'S HOUSE (NIGHT)]
+    scene bg house outside night
+
+    "When the two step out of their homes, they notice that there is barely any light from the town at all."
+
+    lyr "The city is completely pitch black."
+    leo "Yeah, no kidding. I think I can only make some of the things out because of the stars in the sky."
+    lyr "Well, it's a good thing we have this lamp with us. Let's go check up on Ewan!"
+
+    # TODO: [Change scene to TOWN PLAZA (NIGHT)]
+    scene bg plaza night
+
+    lyr "Could it be he's not home right now?"
+    leo "Probably. But where could he be? It's completely pitch black out here."
+
+    "From the corner of her eyes, Lyra notices a source of flickering light that wasn't from the lamp Leo was holding. When she turns her head, she notices a trail of fireflies."
+    "To the untrained eyes, the fireflies would seem scattered at random, however they were actually making way for a small path. "
+
+    lyr "Hm? Leo, there are fireflies."
+    leo "You're right."
+
+    "Leo and Lyra look at each other and nodded. They knew what each other were thinking: if they followed the trails of these fireflies, then they would find Ewan for sure. "
+
+    # TODO: [Change scene to OPEN FIELD (NIGHT)]
+    scene bg field
+
+    "Upon following the fireflies, Leo and Lyra end up in an open field near the outskirts of town. They spot Ewan, surrounded by a cluster of fireflies that lit his surroundings. "
+
+    lyr "Ewan?"
+    ewa "Ah. Leo, Lyra."
+    leo "We were worried about you, since it seems like all sources of light just went out. But it seems like you're fine."
+    ewa "It's only because I have these fireflies with me. I'm still not very good with darkness."
+    lyr "Hm? These fireflies seem to surround you a lot. I've noticed it before, but now that I see it up close, it's like they're protecting you or something."
+
+    "Ewan pauses. He shifts his eyes around, and takes a breath. "
+
+    ewa "The truth is, I'm actually a magician."
+
+    "A moment of silence pass through the three. Leo and Lyra stare at Ewan, before Leo decides to break the silence. "
+
+    leo "That makes the three of us then."
+    lyr "Yeah!"
+    ewa "I've known for a long time now."
+
+    "The three watches the fireflies in silence for a while. "
+
+    leo "I guess we should head back now."
+    ewa "That's true."
+
+    "Lyra suddenly grabs Ewan's hands."
+
+    lyr "You're still not good with the dark right? Me and Leo will walk you back home! After all you can't be bringing his huge hoard of fireflies back to town with you!"
+
+    "Leo laughs, and proceeds to take Ewan's other hand."
+
+    leo "That's right. You've got us with you, so there's nothing to be worried about."
+    ewa "Thank you."
+
+    "Lyra pulls ahead, dragging Ewan and Leo with her. The three walk back to town, hand in hand, while idyllically talking about nothing at all. "
 
     return
