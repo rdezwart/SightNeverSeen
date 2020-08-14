@@ -691,3 +691,50 @@ label .day06:
             call .day06_bad
 
     return
+
+# Park, Day 06 (Good)
+label .day06_good:
+
+    # TODO: [Change scene to PARK]
+    scene bg park
+
+    "I'm sure Ernest had good intentions towards us magicians. "
+    "I'm absolutely sure. "
+    "But his naiveness in the end of only going to cause trouble and pain for me--no, every magician that possibly lived in Veritas. "
+    "I try to give him a wake up call. So I slapped him. "
+    "It wasn't my proudest moment, but I had to get my point across!"
+
+    "Ernest was surprised at my action."
+
+    ern "Wha..."
+    lyr "I'm sure you have good intentions, but..."
+    lyr "You shouldn't speak for every magician like that."
+    lyr "Especially if you don't know what it's like, personally."
+
+    "Ernest seemed a bit shell shocked at what I did, that he might not have been able to process my words. He could only weakly reply back. "
+
+    ern "R-right. Sorry."
+
+    "I glance around. I hope people don't think this is a lovers quarrel or something. "
+    "I started to feel bad for hitting him. "
+
+    lyr "No, I'm also sorry. For hitting you suddenly like that."
+    lyr "It's just if you kept talking, everyone would've gotten the wrong idea."
+    lyr "If my identity was found out, then I'd be in danger."
+    ern "..."
+    ern "Sorry, I wasn't thinking about that earlier..."
+
+    "Ernest looks a bit disheartened. "
+
+    lyr "(Now I feel really bad for scolding him.)"
+    lyr "(But... it was necessary.)"
+
+    "We sit in silence for a while, before Ernest gets up. "
+
+    ern "How about we head back to town? Since it's been a while since we've hung out. "
+    lyr "It's only been a few days though..."
+    lyr "But sure!"
+
+    "We walk back to the town plaza together."
+
+    return
