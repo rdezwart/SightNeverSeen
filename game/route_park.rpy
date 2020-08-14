@@ -6,6 +6,7 @@ define man = Character("Man")
 define per = Character("Person")
 define mys = Character("Mysterious Hooded Person")
 define tp1 = Character("Townsperson 1")
+define spo = Character("???")
 
 # Main Flow
 label park:
@@ -1425,5 +1426,55 @@ label .day11_end:
     leo "But whatever the case, welcome back..."
     leo "Ewan."
     ewa "Yeah. I'm back."
+
+    return
+
+# Park, Day 11 (Bad)
+label .day11_bad:
+
+    ern "..."
+
+    "Before the mysterious hooded person could grab me, Ernest had taken out a knife. "
+
+    lyr "Y-you had a knife?!"
+    ern "I always carry it around-! For self defence! And in case a bad ending would strike us!"
+
+    "Ernest stabs the mysterious hooded person, and they fall to the ground. "
+
+    lyr "?!"
+    ern "S-sorry... but it was to protect you."
+
+    "Ernest's hands are shaking."
+
+    lyr "I... I was saved by you but..."
+    ern "I-it's fine right? This person... they were a bad magician. If you're a bad person, then terrible fate would wait for you if you kept doing bad things.... Right?"
+
+    "Had I... blindly encouraged Ernest's ideals of good magicians too much?"
+    "I look at Ernest's face. He seemed pale, and was trying to convince himself what he did was right. "
+    "There were no laws for killing a magician; after all magicians were treated as less than humans in the eyes of society. "
+    "But... Ernest had clearly seems traumatized by what he did. "
+    "I grab Ernest's hands. "
+
+    lyr "We... we should head back to town and report the bad magician. It won't do us any good to stand around here."
+
+    "I would've offered to go back so Ernest could watch the body, but clearly Ernest was in a fragile state of mind right now. "
+    "I couldn't... just leave him alone like this. "
+    "Since we're in the middle of nowhere, no one would come around. If we hurry back quick enough after informing the authorities then...!"
+
+    ern "Y-yeah."
+
+    "We both run back to town, with that plan in mind."
+
+    "..."
+
+    spo "You shouldn't have tried so hard."
+
+    "Julius comes out of the shadows after Lyra and Ernest ran back to town."
+
+    jul "Even a puppy can be dangerous once provoked."
+
+    "Julius bends down, and picks up the body."
+
+    jul "... you only live one life you know? You didn't have to throw it away so easily like this."
 
     return
