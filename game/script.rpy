@@ -101,7 +101,7 @@ label routeChoice:
             "Go to the Cafe - Coming Soon" if aurRoute:
                 jump cafe
 
-            "Walk around Veritas - New" if ewaRoute:
+            "Walk around Veritas - Unlocked" if ewaRoute:
                 jump secret
 
     # If first time through
