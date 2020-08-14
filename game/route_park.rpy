@@ -3,6 +3,7 @@
 
 # Side Characters
 define man = Character("Man")
+define per = Character("Person")
 
 # Main Flow
 label park:
@@ -13,6 +14,7 @@ label park:
     call .day04
     call .day05
     call .day06
+    call .day07
 
     "end of route"
     jump finale
@@ -768,5 +770,81 @@ label .day06_bad:
     lyr "Hm? Sure."
 
     "Ernest hurries ahead, and I run after him."
+
+    return
+
+# Park, Day 07
+label .day07:
+
+    # TODO: [Change scene to TOWN PLAZA (DAY)]
+    scene bg plaza day
+
+    "As Ernest and I were walking back, a question appeared in my mind. "
+
+    lyr "Oh yeah. The other day, why did you run off?"
+    ern "The other day...? Oh!"
+
+    "Ernest averts his eyes from me."
+
+    ern "Uhh. That's a secret."
+    lyr "Huh. I see."
+    lyr "(Well if he doesn't want to tell me, that's fine.) "
+
+    "Ernest stops all of a sudden, and he peers through one of the alleyways. "
+
+    ern "...!"
+
+    "Ernest grabs my hand, and run into the alleyway."
+
+    lyr "E-Ernest?!"
+
+    # TODO: [Change scene to ALLEYWAY]
+    scene bg alley
+
+    "Upon entering the alleyway, I spot an injured person. They were laying on the floor, and I could easily tell they seemed really badly injured. "
+
+    ern "Lyra! There's an injured person here! We have to help them!"
+    lyr "They look like they've lost a lot of blood... how can I..."
+    ern "Magic! Use your magic! If you heal then, then maybe then everyone will recognize how great magicians are...!"
+    lyr "But I..."
+
+    "I hesitate."
+
+    lyr "I don't think this is-"
+    ern "Please! They might actually die, unless we do something!"
+
+    "Seeing a person die in front of you can be pretty traumatic. I reluctantly put my hands on the body of the injured person and began to heal them."
+    "Almost in an instant, the injured person was no longer injured, as if their wounds were never there in the first place. "
+
+    per "Huh...?"
+
+    "The person looked surprised when they saw all their injuries had disappeared. They stared at me straight in the eyes. Their hands are shaking."
+
+    per "Y-you.... Healed me...? With magic?"
+    per "So you're... a magician..?"
+    lyr "..."
+
+    "I divert my eyes. I knew what was coming next. Even though it was never directed at me straight before, I knew I could never be ready for it."
+
+    per "You're a magician.... You monster! What did you do to me?!"
+    ern "Huh?!"
+
+    "Ernest wasn't expecting that kind of reaction from someone who had just been saved, so he stood there in shock. "
+    "I had to get out of here. My body moved on instinct, and I bolted out of the alleyway. "
+
+    # TODO: [Change scene to OUTSIDE LEO AND LYRA'S HOUSE]
+    scene bg house outside
+
+    "I had ran all the way home. When I reached the entrance, I didn't realize how hard I was panting."
+
+    leo "Lyra?!"
+    leo "What happened?! Are you alright? You're crying..."
+    lyr "Leo..."
+
+    "I touch my face. Ah, he was right, I am crying. "
+
+    lyr "(Aah. This is pathetic.)"
+
+    "Leo grabs my hand, and pushes me inside the house. I have to explain to him what happened..."
 
     return
