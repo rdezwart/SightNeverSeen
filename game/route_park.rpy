@@ -15,6 +15,7 @@ label park:
     call .day05
     call .day06
     call .day07
+    call .day08
 
     "end of route"
     jump finale
@@ -846,5 +847,133 @@ label .day07:
     lyr "(Aah. This is pathetic.)"
 
     "Leo grabs my hand, and pushes me inside the house. I have to explain to him what happened..."
+
+    return
+
+# Park, Day 08
+label .day08:
+
+    # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE (DAY)]
+    scene bg house inside
+
+    "A week had passed since that incident. I didn't know what to do."
+
+    leo "This is bad... you know that person you said you healed?"
+    lyr "Yeah...?"
+    leo "Apparently there are rumours that they mysteriously passed away..."
+    leo "I don't know how true it is, since I have no way of confirming it myself."
+    leo "People have also said it was a magician behind it, so everyone is being more cautious now."
+
+    "Leo stares at me. "
+
+    lyr "So what if I did cause their death...?"
+    leo "That's not possible. You healed their injuries right?"
+    lyr "Yeah..."
+
+    "Leo puts out his hand. "
+
+    leo "Use the same healing magic on me that you used on that person."
+    lyr "Huh? Sure..."
+    leo "You can check up on me in a few days. I won't be dead."
+    lyr "..."
+    leo "What?"
+    lyr "Is this your way of reassuring me?"
+    leo "If I had just told you it isn't your fault, you wouldn't believe me."
+
+    "There's a knocking sound from the front door. "
+
+    leo "Oh, that's probably Ewan. He wanted to come to see if you were okay."
+    lyr "Ah..."
+
+    "Leo opens the door, and I peer over his shoulder to see Ewan. "
+
+    # TODO: [Change scene to OUTSIDE LEO AND LYRA'S HOUSE (DAY)]
+    scene bg house outside
+
+    ewa "I heard from Leo you weren't feeling well all week. Are you okay?"
+    lyr "Ah, I wish I can say I am now... it might've gotten worse."
+
+    "Ewan gives me a worried look. "
+
+    lyr "Sorry for worrying you."
+    ewa "It's fine, you didn't do anything wrong. I was worried because there were rumours going around about Ernest."
+    lyr "Leo told me that apparently someone disappeared? Or mysteriously died all of a sudden..."
+    ewa "Someone... mysteriously disappeared?"
+
+    "Ewan makes a really serious face upon hearing what I said. Leo looks confused. It wasn't a face that Ewan had usually wore. When Ewan had noticed us looking at him, concerned, he smiled reassuringly. "
+
+    ewa "What do you plan on doing today? I heard you stayed home all week. If you don't want to go out, I'll just head out with Leo again today."
+
+    "I ponder what I wanted to do. I had stayed home for the entire week following that incident."
+
+    lyr "(What should I...?)"
+
+    "I couldn't keep moping around like this. There was one place I had to go. "
+
+    lyr "No I... There's somewhere I have to go today."
+    leo "Do you want us to come with you?"
+    lyr "I can go alone, it's fine. Keep Ewan company."
+
+    "I wave goodbye to Leo and Ewan, and head out."
+    "If there's one place Ernest could be it's there right?"
+    "I couldn't keep avoiding him forever."
+
+    # TODO: [Change scene to FLOWER SHOP]
+    scene bg flower
+
+    "I rush in and push open the door of the flower shop. I had ended up running to the flower shop before I could stop myself."
+    "I looked around and saw no one at first, but then I heard Julius' voice. "
+
+    jul "Ernest? You're back again? We've talked about this befo-"
+
+    "Julius appeared and realized that I am not Ernest."
+    "He laughs."
+
+    jul "Oh,I apologize. I thought you were Ernest."
+    lyr "N-no, it's fine. Sorry for coming suddenly."
+    jul "No need. You and Ernest have been hanging around each other so much recently, you've picked up some of his habits."
+    lyr "Huh?"
+    jul "The only person who'd haphazardly run in and open the door to the shop without a care like that is Ernest. Most customers usually worry about slamming the door into something, wouldn't they?"
+    lyr "Oh! Uhm- I didn't mean to-"
+
+    "He was talking about how I suddenly swung open the door. I felt embarrassed. "
+
+    lyr "Ah! You mentioned Ernest right? Was he here earlier?"
+    jul "Are you looking for him?"
+    lyr "..."
+    jul "..."
+    jul "He's been coming around more often, looking like a sad lost puppy."
+    jul "... but not the kind I like to tease."
+    jul "It's usually not like him to be down for this long."
+    lyr "I, I see..."
+    jul "You were involved right? That incident that Ernest got himself into."
+    lyr "...!"
+    lyr "Is it that obvious?"
+    jul "Well, you seem to have an huge effect on how Ernest acts these days."
+    lyr "I..."
+    lyr "(I can't deny that.)"
+
+    "I've already noticed that, but I pretended not to. "
+
+    jul "That incident, you used magic right?"
+    lyr "Yeah."
+    lyr "(Of course Julius would figure it out, he is also a magician that knows what Ernest is like.)"
+    jul "Then back during the incident, what did you think about Ernest?"
+    lyr "What I thought..?"
+
+    # DECISION 3:
+    # → "Naive" (+1 good end point)
+    # → "Well-intentioned" (no increase in good end point)
+
+    menu:
+        "Naive.":
+            # +1 affection
+            $ affection += 1
+            call .day08_good
+
+        "Well-intentioned.":
+            # +0 affection
+            $ affection = affection
+            call .day08_bad
 
     return
