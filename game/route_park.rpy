@@ -519,3 +519,114 @@ label .day04:
     "I ended up spending the entire day with him."
 
     return
+
+# Park, Day 05
+label .day05:
+
+    # TODO: [Change scene to FLOWER SHOP]
+    scene bg flower
+
+    "A few days later. "
+    "Ernest brings me to the flower shop again. "
+    "He seems to like annoying Julius a lot. But I don't think Julius seems to mind, considering how Julius seems used to whatever Ernest pulls. "
+
+    ern "Julius! I'm here again! And with Lyra!"
+
+    "Ernest opens the door of the flower shop and shouts inside. "
+
+    jul "Welcome back."
+    lyr "Welcome back?"
+    jul "Ernest was here this morning."
+
+    "Julius smiles at me."
+
+    jul "Oh right. You know of Ewan right?"
+    lyr "Ewan? Yeah I do."
+
+    "Julius steps to the back, and comes out with some flowers. "
+
+    jul "Pass these to Ewan next time you see him. Tell them they're from me."
+    lyr "Huh..? Sure."
+    ern "Ewan? Whose that?"
+    lyr "Oh! He's one of my friends. Uhm, you remember Leo right? Ewan is with him today."
+    ern "Julius! You didn't tell me you had other friends than me!"
+
+    "Julius laughs. "
+
+    jul "We're not friends. More like 'partners'? Or would 'partners in crime' be better?"
+    lyr "I'm not sure if I want to know what that means."
+
+    "We chat with Julius for a bit before leaving. Ernest drags me out of the flower shop, and I weakly wave goodbye to Julius as we head out the door. "
+    "Now that I think about it, I've been spending a lot of time with Ernest recently haven't I?"
+    "Well that can't be helped, since he always seems to invite me out whenever I see him around town."
+
+    # TODO: [Change scene to TOWN PLAZA (DAY)]
+    scene bg plaza day
+
+    "Ernest and I head out from the flower shop. I was still holding onto the bunches of flowers Julius had told me to give to Ewan. I didn't know what kind of flowers they were, and Julius didn't tell me either. "
+    "I look up, and I just happen to see the person in question: Ewan was standing with Leo, a bit off in the distance. "
+    "I tug Ernest's sleeve. "
+
+    lyr "Over there, that's Ewan."
+
+    "Ernest squints. "
+
+    ern "Oh! The purple haired person standing next to Leo?"
+    lyr "Mhmm!"
+    lyr "Leo! Ewan!"
+
+    "I call out to Leo and Ewan. They take notice of me, and I hurry over with Ernest. "
+
+    ewa "Lyra. I haven't seen you in a while. Are you doing fine?"
+    leo "You have flowers?"
+    lyr "Mhmm! Uhm, Julius says it's for you, Ewan."
+
+    "I smile and hand over the flowers to Ewan. Ewan accepts it, but narrows his eyes. "
+
+    ewa "Julius...?"
+
+    "Ewan looks at the flowers. He smiles, but I don't sense something pleasant at all?!"
+    "Before I could analyze what Ewan was possibly thinking, he gave me his usual kind smile."
+
+    ewa "Thank you."
+
+    "Ewan takes notice of Ernest. "
+
+    ewa "Oh. You must be Ernest. Leo told me about you."
+    ern "A-ah. Yeah. I heard Lyra and Julius talk about you earlier. It's finally nice to meet you."
+    ewa "You've been hanging out with Lyra recently right? Thank you for taking care of her. Leo's always worried that she's causing trouble for the people around her."
+    lyr "I'm not causing trouble this time! Leo!"
+    leo "Uh-huh. Right."
+
+    "I hit Leo's arm lightly. "
+    "When I turn back to Ernest, I notice him staring at me. "
+
+    lyr "Ernest? Are you okay?"
+
+    "Ernest snaps out of it. "
+
+    ern "I-i'm fine!"
+
+    "Ernest looks around a bit. "
+
+    ern "Ah! I have to do something now! I'll see you later!"
+
+    "Before any of us could reply, Ernest runs off back in the direction of the flower shop. "
+    "Is he really alright...?"
+
+    lyr "I wonder if he's okay..."
+
+    "Leo sighs, and Ewan laughs nervously. "
+
+    leo "Maybe you should be more aware of your surroundings."
+    lyr "What's that supposed to mean?!"
+    ewa "Ahaha..."
+    lyr "(I was supposed to hang out with Ernest but he just ran off all of sudden like that.)"
+    lyr "What are you two doing today? Ernest said he'd take me somewhere but he ran off earlier."
+    leo "Well he ran off for sure... this is a hopeless case for him."
+    ewa "We were just going to walk around the marketplace again. Would you like to come?"
+    lyr "Mhmm!"
+
+    "I spent the rest of the day with Leo and Ewan, while wondering why Ernest had run off earlier. He was giving me a weird look too..."
+
+    return
