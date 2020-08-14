@@ -977,3 +977,19 @@ label .day08:
             call .day08_bad
 
     return
+
+# Park, Day 08 (Good)
+label .day08_good:
+
+    lyr "I think... Ernest is naive."
+    jul "Naive?"
+    lyr "You and I have constantly told Ernest that it's not good to talk about magicians when he's not one himself right?"
+    lyr "I don't think he means any harm, but he's blindly following his own ideal when he's not actually seeing the whole picture."
+    lyr "So that's why I think... he's naive."
+    jul "I thought so as well. I'm glad you can see his faults and aren't blinded by his good intentions."
+    jul "He's the type that blindly follows his heart and don't realize what he's done wrong until someone gets hurt."
+    lyr "Ah. So he doesn't realize his actions have consequences."
+    jul "That's a harsh way to put it, but yes."
+    jul "But the fact that you're able to see this, and able to criticize him, is why I think you two are a good match."
+
+    return
