@@ -745,7 +745,7 @@ label .day07_good:
     ewa "Yeah."
 
     # TODO: Change scene to TRADE OFFICE
-    scene bc trade
+    scene bg trade
 
     """
     When I entered the trade headquarters, I noticed that the amount of bodyguards has increased. Heightened security, possibly?
