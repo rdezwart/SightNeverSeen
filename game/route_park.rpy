@@ -993,3 +993,18 @@ label .day08_good:
     jul "But the fact that you're able to see this, and able to criticize him, is why I think you two are a good match."
 
     return
+
+# Park, Day 08 (Bad)
+label .day08_bad:
+
+    lyr "He... has good intentions. I think."
+    jul "You can speak honestly, but if that's really what you think..."
+    lyr "???"
+    jul "No nevermind. It's nothing. I wouldn't be able to support him like that the way you do."
+
+    "He laughs then looked at me with a somewhat sad smile. It kind of reminded me of Ewan's... "
+    "Maybe they're closer than I had thought. "
+
+    jul "Being supportive can only take someone so far sometimes but if that's the path you chose then I won't tell you otherwise."
+
+    return
