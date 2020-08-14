@@ -11,6 +11,7 @@ label secret:
     call .day01
     call .day02
     call .day03
+    call .day04
 
     "end of route"
     jump finale
@@ -432,5 +433,65 @@ label .day03:
     ewa "Thank you."
 
     "Lyra pulls ahead, dragging Ewan and Leo with her. The three walk back to town, hand in hand, while idyllically talking about nothing at all. "
+
+    return
+
+
+# Secret, Day 04
+label .day04:
+
+    # TODO: [Change scene to TOWN PLAZA (DAY)]
+    scene bg plaza day
+
+    "A few days later. "
+    "After the power outage incident, Lyra insisted to Leo that they should go to the flower shop again. The two walk towards the flower shop."
+
+    leo "You've really started liking flowers ever since you brought those red asters home, haven't you?"
+    lyr "They make the place look nice!"
+
+    # TODO: [Change scene to FLOWER SHOP]
+    scene bg flower
+
+    "When they walk in, the two sees Julius talking to Ernest. Julius notices Leo and Lyra enter the shop, and gives them a wave."
+
+    leo "Hm? That's..."
+    jul "Oh, Leo and Lyra. How can I help you today?"
+    ern "Oh! We meet again."
+    leo "Y-yeah."
+
+    "Lyra tugs at Leo's sleeves."
+
+    lyr "Do you know him?"
+    leo "Oh. I helped him out at the marketplace a few days ago. His name's Ernest."
+    lyr "H-hello! I'm Lyra."
+    ern "Nice to meet you! So, are you and Leo siblings? He really helped me out before!"
+    leo "We're not related, but she's like a younger sister to me."
+
+    "Ernest starts chatting with Lyra, and helps her look for flowers."
+
+    jul "Ooh. So, you helped Ernest out before, Leo?"
+    leo "It wasn't really a big deal though."
+    jul "Aah. Don't mind that, Ernest is really persistent when it comes to things like returning favors."
+    leo "Hmm. Are you two close?"
+    jul "We used to work together. Ernest kept pestering me, and eventually we became friends."
+
+    "Leo nods his head in understanding. Leo then remembers the entire reason why they came to the flower shop."
+
+    leo "Oh right. I think Lyra wanted more flowers. Doesn't matter what kind, as long as it's pretty I guess?"
+
+    "Julius put his hands to his chin, then smiles. He walks to the back, and reappears with a pot of flowers that Leo didn't recognize."
+
+    lyr "Ooh! Those are pretty! Uhm. They look like roses?"
+    jul "Not quite. It's begonias."
+    lyr "I'll take some of those then! How much?"
+
+    "Leo is about to reach his hand towards his wallet, when Julius stops him."
+
+    jul "No need. I'll give them to you on the house."
+    leo "Huh? This is the second time you've given us flowers for free, so I feel a bit bad."
+    jul "It's fine. Maybe these flowers will tell you something about the future."
+    lyr "Waah! Thank you!"
+
+    "After receiving the flowers from Julius, Leo and Lyra head home."
 
     return
