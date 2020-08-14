@@ -14,6 +14,7 @@ label secret:
     call .day03
     call .day04
     call .day05
+    call .day06
 
     "end of route"
     jump finale
@@ -606,5 +607,63 @@ label .day05:
     ewa "Here. A spell just for you guys."
 
     "Ewan lifts his hand, and...."
+
+    return
+
+
+# Secret, Day 06
+label .day06:
+
+    # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE (DAY)]
+    scene bg house inside day
+
+    "The next day. "
+    "Leo and Lyra wakes up in their beds. Neither of them remembered what happened before they fell asleep the day prior. What were they doing?"
+
+    leo "Hmm? Did we have this much free time?"
+    lyr "I wonder if we booked it off in advance or something..."
+    leo "Well we can have time to relax now, I guess."
+    lyr "Mhmm!"
+
+    "They both decide to head out for the day."
+
+    # TODO: [Change scene to TOWN PLAZA (DAY)]
+    scene bg plaza day
+
+    "As the two walk around, they pass a particular spot. "
+
+    lyr "Hey Leo... were we supposed to meet up with someone today?"
+    leo "No, no that I know of but..."
+    leo "Hmm? I don't know, were we?"
+    lyr "..."
+    lyr "There's a gap in my memory."
+    leo "Please don't depend on me in case of memory failure."
+    lyr "I'm not! I'm not getting old yet!"
+    leo "Right, right. Let's head to the marketplace, maybe we'll find something you want to buy."
+    lyr "You're paying?"
+    leo "...."
+    leo "Maybe this once."
+    lyr "Yay!"
+
+    "Lyra runs ahead, as Leo chases after her."
+    "The two still can't help but feel like something is missing though..."
+
+    # TODO: [Change scene to MARKETPLACE]
+    scene bg market
+
+    "When the two enter the marketplace, Leo stops Lyra by grabbing her hand."
+
+    leo "Hold on. If I'm paying that means you're not allowed to run off like you did last time."
+    lyr " Oh, you're right."
+    leo "Don't 'oh' me. We're walking together this time."
+    lyr "Okaaay."
+    lyr "Hm... have we had this conversation before?"
+    leo "Huh."
+    leo "It feels like we did, but I don't remember...."
+    lyr "Is there something wrong with both of our memories today?"
+    leo "If it happens once, then it's a coincidence, but twice is..."
+    lyr "Okay maybe twice is okay. If it happens again, then something is definitely up."
+
+    "The two walk around the marketplace, and Lyra gets Leo to pay for her stuff. "
 
     return
