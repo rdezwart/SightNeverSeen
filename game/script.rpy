@@ -32,11 +32,11 @@ default silRoute = True
 default noxRoute = False
 default ernRoute = True
 default aurRoute = False
-
-default ewaRoute = False
+default ewaRoute = True
 
 # Variables
 default affection = 0
+default persistent.secretRoute = False
 
 # Config
 define config.menu_include_disabled = True
@@ -96,21 +96,52 @@ label start:
     "Leo and Lyra look at each other, and they both start thinking."
 
     # TODO: Add animations showing protags
-    menu routeChoice:
-        "Go to Marketplace" if silRoute:
-            jump market
+    jump routeChoice
 
-        "Go to Library" if noxRoute:
-            jump library
 
-        "Go to Park" if ernRoute:
-            jump park
+# Menu label for route
+label routeChoice:
 
-        "Go to Cafe" if aurRoute:
-            jump cafe
+    # If game has been finished at least once
+    if persistent.secretRoute:
+        menu:
 
-        # TODO: Add secret route
+            "Go to the Market - Play as Leo" if silRoute:
+                jump market
 
+            "Go to the Library - Coming Soon" if noxRoute:
+                jump library
+
+            "Go to the Park - Play as Lyra" if ernRoute:
+                jump park
+
+            "Go to the Cafe - Coming Soon" if aurRoute:
+                jump cafe
+
+            "Walk around Veritas - New" if ewaRoute:
+                jump secret
+
+    # If first time through
+    else:
+        menu:
+
+            "To the Market - Play as Leo" if silRoute:
+                jump market
+
+            "To the Library - Coming Soon" if noxRoute:
+                jump library
+
+            "To the Park - Play as Lyra" if ernRoute:
+                jump park
+
+            "To the Cafe - Coming Soon" if aurRoute:
+                jump cafe
+
+
+# Label for ending the game
 label finale:
     "end of game"
+
+    $ persistent.secretRoute = True
+
     return
