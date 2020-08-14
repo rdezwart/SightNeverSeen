@@ -9,6 +9,7 @@ label park:
 
     call .day01
     call .day02
+    call .day03
 
     "end of route"
     jump finale
@@ -244,5 +245,143 @@ label .day02:
     lyr "(But he doesn't seem to be a bad person.)"
 
     "I head home for the day."
+
+    return
+
+# Park, Day 03
+label .day03:
+
+    # TODO: [Change scene to OUTSIDE LEO AND LYRA'S HOUSE (DAY)]
+    scene bg house outside
+
+    "The next day. "
+
+    leo "Are you going to meet, uhm, Ernest again? That's his name right?"
+    lyr "Yeah. He said he wanted to introduce me to another one of us."
+    leo "I didn't think there would be another person like us in town."
+    leo "I'll show Ewan around again, so be careful."
+    lyr "See you later!"
+
+    "I head off to the flower shop Ernest had mentioned the day before. "
+
+    # TODO: [Change scene to TOWN PLAZA (DAY)]
+    scene bg plaza day
+
+    "I see Ernest standing outside the mentioned flower shop."
+
+    ern "Lyra!"
+
+    "I run over to him."
+
+    lyr "Hmm? I've never been here before."
+    ern "Let's go inside!"
+
+    # TODO: [Change scene to FLOWER SHOP]
+    scene bg flower
+
+    "When Ernest and I walked inside, there was no customers inside. However, the florist noticed us. "
+
+    ern "Julius!"
+
+    "The man Ernest called 'Julius' gives us a teasing smile. "
+
+    jul "Oh? You're with a girl? I didn't know you had it in you~ I was starting to think you only liked men."
+    ern "That's not the point! This girl is also a ma-"
+
+    "Before Ernest could say the word 'magician,' Julius was already over in a speed of light and shoved whatever flowers he had in his hands into Ernest's mouth. "
+
+    lyr "Ehh?! Eh?"
+
+    "Ernest coughs on the flowers, and I pat his back."
+
+    ern "Julius... tulips don't taste very good, you know."
+    lyr "Uhmm, Ernest? You shouldn't be shouting the word 'magician' out in public so loudly like that."
+
+    "I look at Julius. So he's a magician too?"
+
+    jul "My apologies for the commotion. As you've heard from Ernest, I'm Julius."
+    lyr "Oh! I'm Lyra."
+    lyr "So, I'm guessing you're the magician that Ernest told me about..."
+    jul "Ernest told you?"
+    ern "I didn't say much! Or barely anything!"
+    lyr "He just said that he had a friend who is also a magician like I am."
+    jul "I've mentioned it a couple of times, but you just never seem to listen, do you."
+
+    "Julius doesn't look phased at all, as if he was expecting this to happen."
+
+    jul "The topic of magicians is received quite unfavorably around these parts, not everyone is as open as you."
+    jul " Plus, you should be careful, not just from the public ears but also not all of us are good people, you know?"
+
+    "As he's saying that, Julius makes a smile that seems to suggest something I can't figure out."
+
+    ern "That's not true! Both you and Lyra are good people and magicians! People will understand!"
+
+    "Julius turns to look at me."
+
+    jul "What do you think Lyra?"
+    lyr "Huh?! Well-"
+
+    # DECISION 1:
+    # "We can't speak for every magician out there." (+1 good end point)
+    # "If you're a good person, then people would surely understand." (no increase in good end point)
+
+    menu:
+        "We can't speak for every magician out there.":
+            # +1 affection
+            $ affection += 1
+
+        "If you're a good person, then people would surely understand.":
+            # +0 affection
+            $ affection = affection
+
+    # This decision is for points only that add up at the end to determine whether or not you get the good or bad end.
+    # [*Ernest is good end point instead of affection point bc we constantly need to disprove of his naive thinking LMAOOO]
+
+    jul "Mhmm. I see."
+    lyr "But that's just what I think, so.."
+
+    "I look around the shop to try to divert the talk away from the topic of magicians. If we talk about it any longer, there'll only be conflict..."
+
+    lyr "Oh! There are a lot of pretty flowers here. Maybe I should buy some to bring home."
+    jul "If there's anything that catches your eye, then please tell me."
+    ern "Oh! I'll help you look for flowers then!"
+
+    "Ernest grabs my hand, and drags me around the shop to look at the flowers. "
+    "In the end, Julius just gave me some azalea flowers as a gift for our meeting. "
+    "Azaleas huh... they're quite pretty. "
+
+    jul "Feel free to come back anytime, even if you're running into trouble."
+    lyr "You're making yourself sound like a consultant booth and a flower shop at the same time."
+    ern "I'll walk you to the plaza!"
+
+    "We say goodbye to Julius, and head out."
+
+    # TODO: [Change to TOWN PLAZA (NIGHT)]
+    scene bg plaza night
+
+    "I didn't realize how late it was until we had left the flower shop. "
+
+    ern "You know Lyra, I was thinking about what you said earlier."
+    ern "I don't think magicians are bad people."
+    ern "When I first met Julius, he wasn't close to anyone, but he didn't try to get close to anyone either."
+    ern "I managed to befriend him by hanging around him because he always seemed lonely."
+    lyr "(That's...)"
+
+    "I skipped ahead of Ernest, then turn back to face him. "
+
+    lyr "If you're worried about me not having anyone to rely on, then you don't need to worry."
+    lyr "Did you maybe see Julius in me?"
+    ern "No-! Well, I-"
+
+    "I laugh. He's really an honest person. "
+
+    lyr "You don't need to worry about me at all, there's someone that I can confide in."
+    lyr "Plus now you and Julius both know right? So I'm not alone anymore."
+
+    "Ernest smiles."
+
+    ern "Yeah! You're right. You can trust me and Julius!"
+
+    "Afterwards, I part ways with Ernest and head home. "
 
     return
