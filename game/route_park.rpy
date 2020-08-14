@@ -6,7 +6,7 @@ define man = Character("Man")
 define per = Character("Person")
 define mys = Character("Mysterious Hooded Person")
 define tp1 = Character("Townsperson 1")
-define spo = Character("???")
+define spk = Character("???")
 
 # Main Flow
 label park:
@@ -171,8 +171,8 @@ label .day02:
 
     "The next day. "
     "I left Leo to handle showing Ewan the rest of town."
-    "I'm waiting at the fountain near the town plaza nervously. I had no ideas what the intentions of Ernest were, after he found out I was a magician. He said he wanted to thank me, but I couldn't help but be a bit suspicious. "
-    "There's no way someone would let a magician off like that... right?"
+    "I'm waiting at the fountain near the town plaza nervously. I had no ideas what the intentions of Ernest were, after he found out I was a magician. "
+    "He said he wanted to thank me, but I couldn't help but be a bit suspicious. There's no way someone would let a magician off like that... right?"
 
     "I hear a voice calling for me."
 
@@ -322,7 +322,7 @@ label .day03:
     "Julius doesn't look phased at all, as if he was expecting this to happen."
 
     jul "The topic of magicians is received quite unfavorably around these parts, not everyone is as open as you."
-    jul " Plus, you should be careful, not just from the public ears but also not all of us are good people, you know?"
+    jul "Plus, you should be careful, not just from the public ears but also not all of us are good people, you know?"
 
     "As he's saying that, Julius makes a smile that seems to suggest something I can't figure out."
 
@@ -495,7 +495,7 @@ label .day04:
     ern "I've looked through some, but they never really explained."
     ern "Why magicians are hated, huh? To be honest, I've never really thought about it before. "
     ern "It was only a natural thing in this country. "
-    ern "'Magicians are different from regular people'"
+    ern "\"Magicians are different from regular people\""
 
     lyr "Do you really think that magicians could be accepted by normal people?"
 
@@ -575,7 +575,8 @@ label .day05:
     # TODO: [Change scene to TOWN PLAZA (DAY)]
     scene bg plaza day
 
-    "Ernest and I head out from the flower shop. I was still holding onto the bunches of flowers Julius had told me to give to Ewan. I didn't know what kind of flowers they were, and Julius didn't tell me either. "
+    "Ernest and I head out from the flower shop. I was still holding onto the bunches of flowers Julius had told me to give to Ewan. "
+    "I didn't know what kind of flowers they were, and Julius didn't tell me either. "
     "I look up, and I just happen to see the person in question: Ewan was standing with Leo, a bit off in the distance. "
     "I tug Ernest's sleeve. "
 
@@ -676,8 +677,10 @@ label .day06:
     lyr "Uhm, did I do something wrong? If I did then-"
     ern "You didn't! It's just..."
     lyr "????"
-    ern "The other day, I heard some people talking about how magicians are bad, and useless, and a threat to society. I couldn't turn a blind eye to that, especially since I know personally that magicians aren't bad!"
-    ern "So I got into an argument with them. What made me really frustrated was how no one would even try to understand me when I said that I knew magicians weren't bad people! I could even show them!"
+    ern "The other day, I heard some people talking about how magicians are bad, and useless, and a threat to society."
+    ern "I couldn't turn a blind eye to that, especially since I know personally that magicians aren't bad!"
+    ern "So I got into an argument with them. What made me really frustrated was how no one would even try to understand me when I said that I knew magicians weren't bad people!"
+    ern "I could even show them!"
 
     "At this point, Ernest got really heated up and started talking loudly. "
     "Some people turned around to look at us, and I saw them making suspicious glances while whispering.  "
@@ -906,7 +909,8 @@ label .day08:
     lyr "Leo told me that apparently someone disappeared? Or mysteriously died all of a sudden..."
     ewa "Someone... mysteriously disappeared?"
 
-    "Ewan makes a really serious face upon hearing what I said. Leo looks confused. It wasn't a face that Ewan had usually wore. When Ewan had noticed us looking at him, concerned, he smiled reassuringly. "
+    "Ewan makes a really serious face upon hearing what I said. Leo looks confused. It wasn't a face that Ewan had usually wore."
+    "When Ewan had noticed us looking at him, concerned, he smiled reassuringly. "
 
     ewa "What do you plan on doing today? I heard you stayed home all week. If you don't want to go out, I'll just head out with Leo again today."
 
@@ -949,7 +953,7 @@ label .day08:
     lyr "..."
     jul "..."
     jul "He's been coming around more often, looking like a sad lost puppy."
-    jul "... but not the kind I like to tease."
+    jul "...but not the kind I like to tease."
     jul "It's usually not like him to be down for this long."
     lyr "I, I see..."
     jul "You were involved right? That incident that Ernest got himself into."
@@ -1165,7 +1169,7 @@ label .day11:
     # TODO: [Change scene back to INSIDE LEO AND LYRA'S HOUSE (DAY)]
     scene bg house inside
 
-    "Put Lya back in the protag corner, its back to present"
+    # Put Lya back in the protag corner, its back to present
 
     leo "...and that's what happened."
 
@@ -1467,7 +1471,7 @@ label .day11_bad:
 
     "..."
 
-    spo "You shouldn't have tried so hard."
+    spk "You shouldn't have tried so hard."
 
     "Julius comes out of the shadows after Lyra and Ernest ran back to town."
 
