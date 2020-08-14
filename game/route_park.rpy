@@ -385,3 +385,137 @@ label .day03:
     "Afterwards, I part ways with Ernest and head home. "
 
     return
+
+# Park, Day 04
+label .day04:
+
+    # TODO: [Change scene to TOWN PLAZA (DAY)]
+    scene bg plaza day
+
+    "The next day. "
+    "I walk around town with Leo for a bit. Ewan said he was busy with something today, so we just decided to idly spend our day off. "
+
+    lyr "So, I don't think Ernest is a bad person after all, so there's nothing to worry about."
+    leo "Well that's good to hear."
+    lyr "Though he's a bit idealistic about people coming to accept magicians..."
+    leo "That sounds a bit troublesome. Will you be okay?"
+    lyr "Well, I sure hope so."
+
+    "As Leo and I are talking, I hear a familiar voice calling out to me. "
+
+    ern "Lyra!"
+    lyr "Speaking of the person."
+
+    "Ernest runs up to where I was standing. "
+
+    lyr "Ernest! What are you doing?"
+    ern "I was planning on going to the library, there was something I wanted to search up! Do you want to come?"
+
+    "Ernest looks at Leo."
+
+    ern "Oh sorry! Are you two doing something right now? I'm Ernest, it's nice to meet you!"
+    leo "No, it's fine. I'm Leo."
+
+    "Leo gives me a look, as if he knew that hanging around Ernest would mean possibly delving into magician talk based on what I had told him before. "
+
+    leo "You should go with Ernest if you want to, Lyra. I'll just walk around the marketplace and see if there's anything we need to pick up."
+    lyr "Ah, okay... I'll see you later then."
+
+    "Leo nods, and walks off in the direction of the marketplace."
+    "Ernest and I start walking to the library. "
+
+    ern "Is Leo your friend?"
+    lyr "Leo? We've been friends since we were kids."
+    ern "Huuh. So does he know you're a magician?"
+    lyr "(I mean Leo is also a magician, but I can't just say that so easily.)"
+    lyr "Mhmm."
+    ern "So is he the person who you said you could confide in?"
+    lyr "Yeah, since he knew since we were younger."
+    ern "He doesn't hate you? For being a magician."
+    lyr "Huh? Of course not."
+    ern "See! There are people like me and Leo out there, who don't think magicians are terrible!"
+    ern "If people could realize that magicians aren't bad people then..."
+    lyr "..."
+
+    "I didn't know how to reply to Ernest's statement. "
+    "Before I knew it, we were already outside the library. "
+    "What did Ernest want to come here for? I didn't want to be rude, but he didn't seem like the type who'd go to the library often. "
+
+    ern "Alright! Let's head in!"
+    lyr "Ernest, you shouldn't shout inside a library!"
+
+    "I shouted at him, as he ran inside."
+
+    # TODO: [Change scene to LIBRARY]
+    scene bg library
+
+    "When we entered the library, Ernest seemed to be aimlessly wandering around. I didn't know what he came here for, so I followed him, confused. "
+    "Sooner or later, we came to a stop. "
+
+    lyr "What did you want to come here for?"
+    ern "Comics."
+    lyr "Huh?"
+
+    "Ernest takes out a book and shows me. It was a graphic novel. "
+
+    lyr "Are you going to take some of these out?"
+    ern "Yeah! They're fun to read in my spare time when I'm not agonizing over business ventures."
+
+    "Oh right, when I had first met Ernest he was chasing after some business documents."
+
+    lyr "So you run a business too?"
+    ern "Yeah!"
+
+    "Well, it's common in Veritas to be a trader or run a business. This IS a trading port town after all. "
+    "Ernest is already in his own world, reading whatever graphic novel he picks up. "
+    "I peer over his shoulder to see what he is reading. "
+
+    ern "Are you interested, Lyra?"
+    lyr "It'd be a waste if I came to the library to sit around."
+    ern "Oh, I didn't come to the library just to read, you know. I could just do that at home."
+
+    "Then what did you come here for?!"
+
+    "Ernest picks up a few books, and heads to another section of the library. I follow him, once again, confused. "
+
+    lyr "History?"
+    ern "Well I wanted to see what magicians did in the past that made people hate them so much."
+    ern "I've looked through some, but they never really explained."
+    ern "Why magicians are hated, huh? To be honest, I've never really thought about it before. "
+    ern "It was only a natural thing in this country. "
+    ern "'Magicians are different from regular people'"
+
+    lyr "Do you really think that magicians could be accepted by normal people?"
+
+    "Ernest answered, unwavering. "
+
+    ern "Of course!"
+
+    "If things could only be like that. "
+
+    lyr "Why are you trying to hard for the sake of magicians?"
+    ern "I want to show Julius that being a magician isn't something he should be afraid of."
+    ern "He always tells me not to be careful, saying that it's bad in some way or another."
+    ern "But meeting you proves that magicians can be accepted!"
+    lyr "..."
+
+    "I watch as Ernest looks through the books, and I think about his words. "
+    "If magicians can be accepted then..."
+
+    lyr "(I only survived this long hiding my status as a magician because I had Leo to rely on.) "
+    lyr "(If people could really accept magicians then...) "
+    lyr "(If it's Ernest then maybe...)"
+
+    # TODO: [Change scene to TOWN PLAZA (DAY)]
+    scene bg plaza day
+
+    "When Ernest and I left the library, it was still bright out. I still had some time to kill. "
+
+    ern "Do you have anything you need to do?"
+    lyr "Oh, no. It's my day off today. That's why earlier, I was doing nothing with Leo until you showed up."
+    ern "Is that right! C'mon, let's hang out then!"
+
+    "Before I could reply, Ernest is already dragging me off to... god knows where. "
+    "I ended up spending the entire day with him."
+
+    return
