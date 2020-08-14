@@ -4,6 +4,7 @@
 # Side Characters
 define tp1 = Character("Townsperson 1")
 define tp2 = Character("Townsperson 2")
+define chi = Character("Child")
 
 # Main Flow
 label secret:
@@ -12,6 +13,7 @@ label secret:
     call .day02
     call .day03
     call .day04
+    call .day05
 
     "end of route"
     jump finale
@@ -493,5 +495,116 @@ label .day04:
     lyr "Waah! Thank you!"
 
     "After receiving the flowers from Julius, Leo and Lyra head home."
+
+    return
+
+
+# Secret, Day 05
+label .day05:
+
+    # TODO: [Change scene to TOWN PLAZA]
+    scene bg plaza day
+
+    "A few days later. "
+
+    "Leo, Lyra, and Ewan are hanging out at the town plaza when they overhear people talking."
+
+    tp1 "Did you hear? Strange incidents are happening around town..."
+    tp2 "Oh, apparently they caught the person behind the incidents though! It was a rough magician that they've been looking for a while now."
+    tp1 "A magician? I always knew magicians were no good..."
+    tp2 "Yeah, all they do is cause trouble."
+    tp2 "Plus, the fact that they can use magic is so... scary. Don't you think?"
+
+    "Leo and Lyra listen from afar, and give each other worried glances. "
+
+    leo "Hmm. Wait, I feel like this has happened before... a long time ago."
+    leo "I can't remember thought, I'm drawing a blank."
+    lyr "About magicians being caught and hunted?"
+    lyr "Mmmm."
+
+    "Lyra crossed her arms and tries to think. "
+
+    lyr "I'm getting a sense of deja-vu too but I don't remember."
+    leo "If my memory fails, I was going to depend on yours."
+    lyr "Please don't put that burden on me."
+    ewa "..."
+    ewa "Even so... we should be careful."
+    ewa "These strange incidents happening around town, they're not pleasant."
+    ewa "Especially since people are quick to point fingers at magicians."
+    leo "Yeah that's true. Something about this is really bothering me though..."
+
+    "As the three walk around the town plaza, a small child suddenly bumps into Leo."
+
+    leo "Oh! Sorry. Are you alright?"
+    chi "Y-yes..."
+    nox "I told you to be careful."
+    nox "Sorry. My sibling wasn't paying attention to where they were going."
+    leo "I-it's fine. Nothing to be sorry about."
+
+    "The child runs off, as Nox runs after them. Leo, Lyra, and Ewan watches as they leave."
+
+    lyr "Hmm, that reminds me of when we were kids!"
+    leo "You were always the one running off though."
+    leo "Speaking of which, you also ran off the day we first met Ewan."
+    lyr "I did? Hm.. I don't remember though...?"
+    ewa "...."
+    leo "Ewan? Are you alright?"
+
+    "Ewan gives Leo and Lyra a smile. "
+
+    ewa "I'm fine."
+    ewa "Ah. Let's get moving, or it'll get late. Didn't you want to go to the park today, Lyra?"
+    lyr "Yeah!"
+    leo "..."
+    leo "(You don't seem okay, though.)"
+
+    "Leo runs after Ewan and Lyra."
+
+    # TODO: [Change scene to PARK]
+    scene bg park
+
+    lyr "We haven't been here in a while~"
+    leo "That's because we're always so busy, we don't have time to go out that often."
+    ewa "You two should take breaks more often."
+    lyr "We do! Right now! We specifically got time off so we could hang out with you!"
+    ewa "Aha."
+
+    "The three are walking around, when a shadow of someone running away bumps into Lyra. However, the shadow of the person doesn't stop, and disappears deeper into the park."
+
+    lyr "Huh? What was that..."
+    leo "They already headed into the forest..."
+    leo "Too fast for my eyes to catch up."
+    ewa "...?!"
+
+    "Lyra notices Ewan's expression change. "
+
+    lyr "Ewan?"
+
+    "Lyra's voice snaps Ewan out of it. "
+
+    lyr "Are you sure you're okay?"
+    lyr "You've been acting strange..."
+    ewa "Don't worry. I'm fine, really."
+    lyr "If you say so."
+    lyr "(Ewan...)"
+
+    "The three decides to head back to town. "
+
+    # TODO: [Change scene to TOWN PLAZA (NIGHT)]
+    scene bg plaza night
+
+    "When the three are back in the town plaza, Ewan stops all of a sudden."
+
+    ewa "I've had this feeling for a while but I... can't do this anymore."
+    leo "Ewan?"
+    ewa "I have to go somewhere."
+    lyr "Go where?"
+
+    "Ewan gives Leo and Lyra a sad smile. "
+
+    ewa "Even if I'm not here with you... my heart will be."
+    ewa "Here. A spell just for you guys."
+
+    "Ewan lifts his hand, and...."
 
     return
