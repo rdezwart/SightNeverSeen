@@ -12,6 +12,7 @@ label cafe:
     "end of route"
     jump finale
 
+
 # Cafe, Day 01
 label .day01:
 

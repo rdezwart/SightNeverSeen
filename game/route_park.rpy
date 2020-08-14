@@ -26,6 +26,7 @@ label park:
     "end of route"
     jump finale
 
+
 # Park, Day 01
 label .day01:
 
@@ -163,6 +164,7 @@ label .day01:
 
     return
 
+
 # Park, Day 02
 label .day02:
 
@@ -259,6 +261,7 @@ label .day02:
     "I head home for the day."
 
     return
+
 
 # Park, Day 03
 label .day03:
@@ -400,6 +403,7 @@ label .day03:
 
     return
 
+
 # Park, Day 04
 label .day04:
 
@@ -534,6 +538,7 @@ label .day04:
 
     return
 
+
 # Park, Day 05
 label .day05:
 
@@ -646,6 +651,7 @@ label .day05:
 
     return
 
+
 # Park, Day 06
 label .day06:
 
@@ -708,6 +714,7 @@ label .day06:
 
     return
 
+
 # Park, Day 06 (Good)
 label .day06_good:
 
@@ -755,6 +762,7 @@ label .day06_good:
 
     return
 
+
 # Park, Day 06 (Bad)
 label .day06_bad:
 
@@ -786,6 +794,7 @@ label .day06_bad:
     "Ernest hurries ahead, and I run after him."
 
     return
+
 
 # Park, Day 07
 label .day07:
@@ -862,6 +871,7 @@ label .day07:
     "Leo grabs my hand, and pushes me inside the house. I have to explain to him what happened..."
 
     return
+
 
 # Park, Day 08
 label .day08:
@@ -994,6 +1004,7 @@ label .day08:
 
     return
 
+
 # Park, Day 08 (Good)
 label .day08_good:
 
@@ -1010,6 +1021,7 @@ label .day08_good:
 
     return
 
+
 # Park, Day 08 (Bad)
 label .day08_bad:
 
@@ -1024,6 +1036,7 @@ label .day08_bad:
     jul "Being supportive can only take someone so far sometimes but if that's the path you chose then I won't tell you otherwise."
 
     return
+
 
 # Park, Day 09
 label .day09:
@@ -1101,6 +1114,7 @@ label .day09:
 
     return
 
+
 # Park, Day 10
 label .day10:
 
@@ -1168,6 +1182,7 @@ label .day10:
     "Which leads up to..."
 
     return
+
 
 # Park, Day 11
 label .day11:
@@ -1302,6 +1317,7 @@ label .day11:
 
     return
 
+
 # Park, Day 11 (Good)
 label .day11_good:
 
@@ -1377,6 +1393,7 @@ label .day11_good:
 
     return
 
+
 # Park, Day 11 (End)
 label .day11_end:
 
@@ -1438,6 +1455,7 @@ label .day11_end:
     ewa "Yeah. I'm back."
 
     return
+
 
 # Park, Day 11 (Bad)
 label .day11_bad:

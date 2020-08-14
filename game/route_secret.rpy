@@ -12,6 +12,7 @@ label secret:
     "end of route"
     jump finale
 
+
 # Secret, Day 01
 label .day01:
 

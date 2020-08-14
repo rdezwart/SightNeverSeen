@@ -31,6 +31,7 @@ label market:
     "end of route"
     jump finale
 
+
 # Market, Day 01
 label .day01:
 
@@ -214,6 +215,7 @@ label .day01:
 
     return
 
+
 # Market, Day 02
 label .day02:
 
@@ -314,6 +316,7 @@ label .day02:
 
     return
 
+
 # Market, Day 03
 label .day03:
 
@@ -341,6 +344,7 @@ label .day03:
     """
 
     return
+
 
 # Market, Day 04
 label .day04:
@@ -517,6 +521,7 @@ label .day04:
 
     return
 
+
 # Market, Day 05
 label .day05:
 
@@ -638,6 +643,7 @@ label .day05:
 
     return
 
+
 # Market, Day 06
 label .day06:
 
@@ -667,6 +673,7 @@ label .day06:
     """
 
     return
+
 
 # Market, Day 07
 label .day07:
@@ -718,6 +725,7 @@ label .day07:
             call .day07_bad
 
     return
+
 
 # Market, Day 07 (Good)
 label .day07_good:
@@ -860,6 +868,7 @@ label .day07_good:
 
     return
 
+
 # Market, Day 07 (Bad)
 label .day07_bad:
 
@@ -877,6 +886,7 @@ label .day07_bad:
     "I tried to get my mind off whatever those two townspeople said. If something was seriously happening, then Silas could handle it... right?"
 
     return
+
 
 # Market, Day 08
 label .day08:
@@ -907,6 +917,7 @@ label .day08:
     leo "Yeah, I will."
 
     return
+
 
 # Market, Day 09
 label .day09:
@@ -951,6 +962,7 @@ label .day09:
     sil "If you say so. I'll trust you to handle the investigation."
 
     return
+
 
 # Market, Day 10
 label .day10:
@@ -1014,6 +1026,7 @@ label .day10:
             call .day10_bad
 
     return
+
 
 # Market, Day 10 (Good)
 label .day10_good:
@@ -1128,6 +1141,7 @@ label .day10_good:
 
     return
 
+
 # Market, Day 10 (Bad)
 label .day10_bad:
 
@@ -1153,6 +1167,7 @@ label .day10_bad:
     """
 
     return
+
 
 # Market, Day 11
 label .day11:
@@ -1185,6 +1200,7 @@ label .day11:
     """
 
     return
+
 
 # Market, Day 12
 label .day12:
@@ -1375,6 +1391,7 @@ label .day12:
 
     return
 
+
 # Market, Day 12 (Good)
 label .day12_good:
 
@@ -1477,6 +1494,7 @@ label .day12_good:
     call .day12_end
 
     return
+
 
 # Market, Day 12 (End)
 label .day12_end:
@@ -1590,6 +1608,7 @@ label .day12_end:
     """
 
     return
+
 
 # Market, Day 12 (Bad)
 label .day12_bad:

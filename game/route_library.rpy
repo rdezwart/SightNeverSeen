@@ -12,6 +12,7 @@ label library:
     "end of route"
     jump finale
 
+
 # Library, Day 01
 label .day01:
 
