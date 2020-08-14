@@ -16,6 +16,7 @@ label park:
     call .day06
     call .day07
     call .day08
+    call .day09
 
     "end of route"
     jump finale
@@ -1006,5 +1007,81 @@ label .day08_bad:
     "Maybe they're closer than I had thought. "
 
     jul "Being supportive can only take someone so far sometimes but if that's the path you chose then I won't tell you otherwise."
+
+    return
+
+# Park, Day 09
+label .day09:
+
+    jul "But... despite everything that's happened, please take care of him."
+    jul "He's been coming around to ask about you, you know?"
+
+    "It was unlike Julius to look like this, it made me feel kind of uneasy. I try to give him a reassuring smile."
+
+    lyr "Yeah. I'll do my best."
+    jul "Ernest has told you right? We've known each other for a while."
+    lyr "He mentioned it, but I didn't feel like it was right to be prying."
+    jul "Well I refused to get close to anyone because I'm a magician. But Ernest, no matter how hard I tried to push him away, he'd bounce back up like it didn't matter."
+    jul "He might be stupidly straightforward but.... It's that trait about him that is able to reach out to others."
+    jul "Meeting him was probably one of the more positive points in my life."
+
+    "I laugh."
+
+    lyr "You know, even though you tease him all the time, you're surprisingly soft on him."
+    jul "It can't be helped right? We all have people who are special to us."
+    jul "It's the same for 'him' too."
+    jul "But I can't change what you want to do. That's for you to decide on your own. But I hope you and Ernest can get along again soon."
+
+    "Julius coughs."
+
+    jul "After all I'm not the type to kick a puppy while it's down."
+    lyr "Aha."
+
+    "He seems to have changed back to his usual persona now. "
+
+    lyr "Julius?"
+    jul "Yes?"
+    lyr "Thank you."
+
+    "I give him a smile and wave."
+
+    lyr "I'll take my leave now, but seriously... thanks."
+
+    "Julius laughs, and waves back at me."
+
+    jul "Yeah. Take care."
+
+    # TODO: [Change scene to TOWN PLAZA (DAY)]
+    scene bg plaza day
+
+    "I had decided to go look for Ernest after leaving the flower shop."
+
+    lyr "(After all, that's the only proper thing to do after talking with Julius, right?)"
+
+    "I ran around the town plaza and marketplace. While running around, there were some fireflies around. "
+
+    lyr "Hm? Fireflies out in the daytime? That's strange..."
+
+    "I notice that the fireflies were gathered in certain locations, but then kept moving along to elsewhere. "
+
+    lyr "(This isn't the time to be focused on the fireflies!)"
+
+    "I run around a bit more, but I still couldn't find Ernest at all."
+
+    lyr "Maybe I should head home and ask Leo for help..."
+
+    # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE]
+    scene bg house outside
+
+    "I open the door and was about to look for Leo, when I see Ernest sitting at the table with Leo. "
+
+    leo "Oh. Welcome back Lyra."
+    lyr "Y-yeah. Uhm."
+
+    "I make eye contact with Ernest, but look away immediately. "
+
+    leo "Are you wondering why Ernest is here?"
+    lyr "Y...yeah."
+    leo "Well..."
 
     return
