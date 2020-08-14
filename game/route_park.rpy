@@ -1290,3 +1290,78 @@ label .day11:
         call .day11_bad
 
     return
+
+# Park, Day 11 (Good)
+label .day11_good:
+
+    ern "..."
+
+    "Before the mysterious hooded person could reach me, Ernest had grabbed their arms and quickly unhooded them. "
+
+    ewa "...?!"
+    lyr "E-Ewan...?"
+    ern "So it was you...!"
+    lyr "Ewan... why are you doing this?"
+    ewa "It's like what I said earlier. I hate huma-"
+    ern "Cut the crap!"
+
+    "Before Ewan could get his sentence out, Ernest had punched him. Ewan falls over."
+
+    ern "Do you think doing this would make Lyra happy?!"
+    ern "Weren't you the one who told me to tell Lyra not to worry even though the situation might get dangerous?!"
+    ern "Sure, you might have good intentions behind your actions, but..."
+    ern "Didn't you stop to consider how taking actions into your own hands would affect other people?!"
+    ern "After all it was... Lyra who taught me that."
+    lyr "(Uwahhh-! This is the new Ernest?! He just pulled a reversal on Ewan!)"
+    lyr "(If this was the Ernest from before, he'd just sound like a hypocrite!) "
+
+    "Ewan laughs."
+
+    ewa "Hah, maybe you're not as naive as I thought you out to be."
+    ern "Of course, I... learned from my mistakes that hurt Lyra."
+    ewa "..."
+    ewa "You know I did this so the public eye would be off you two?"
+    ewa "Ever since those rumours started to spread."
+    ewa "If you didn't truly understand then I would've gone way further."
+    ewa "But now I..."
+    ewa "I can trust you with Lyra, right?"
+    ewa "Please make her happy."
+    ern " Of course!"
+
+    "Ewan stands up. "
+
+    lyr "Ewan-"
+    ewa "Well, I have something to do. Some towns people saw me, so I have to make sure the attention is directed onto me."
+    ewa "You two should head back, so no one gets suspicious."
+    ern "Right."
+
+    "Before I move, I had something I wanted to say to Ewan. "
+
+    lyr "You... will you promise to come back? After all... Leo is still waiting for you."
+
+    "Ewan smiles, and I could see light in his eyes. "
+
+    ewa "Of course."
+
+    "I smile back at Ewan, and hurry to rush back to town with Ernest. "
+
+    "..."
+
+    ewa "I know you're there."
+    jul "Well, I can't exactly hide from you."
+
+    "Julius emerges from the shadows, after Lyra and Ernest had left. "
+
+    ewa "Were you worried about him? Ernest, I mean."
+    jul "Just wanted to see how he'd grown. As expected, Lyra and him are a good match after all."
+    ewa "Hmm."
+    ewa "Have you found out about that person who caused the death of the person Lyra healed?"
+    jul "No clue. Disappeared without a trace, it seems."
+    ewa "Well."
+    jul "At least everything went well for those two."
+
+    "Ewan and Julius look at each other, before they turn to head off somewhere. "
+
+    call .day11_end
+
+    return
