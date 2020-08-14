@@ -1,21 +1,3 @@
-# Transforms
-transform close:
-    linear 0.1 zoom 1.1
-
-transform default:
-    linear 0.1 zoom 1.0
-
-init python:
-    def speakZoom(event, interact=True, **kwargs):
-        if not interact:
-            return
-        if event == "begin":
-            if renpy.showing("leo"):
-                renpy.show("leo", at_list=[close])
-        elif event == "end":
-            if renpy.showing("leo"):
-                renpy.show("leo", at_list=[default]);
-
 # Main Characters
 define leo = Character("Leo", image="leo")
 define lyr = Character("Lyra", image="lyr")
