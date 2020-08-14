@@ -1365,3 +1365,65 @@ label .day11_good:
     call .day11_end
 
     return
+
+# Park, Day 11 (End)
+label .day11_end:
+
+    # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE (DAY)]
+    scene bg house inside
+
+    "A week later. "
+    "When I had returned home after that incident, I had told Leo what had happened. "
+    "For some reason, he didn't seem surprised, as if he was kind of expecting that outcome. "
+    "I wonder if Leo already knew Ewan was a magician? "
+
+    lyr "I have to go out today. Ernest called me out."
+    leo "After a whole week, huh? That guy sure is taking his sweet time."
+    lyr "Taking his time with what?"
+    leo "Nothing. You should get going."
+    lyr "Ah. Right."
+
+    "I head out the door, and wave goodbye to Leo."
+
+    # TODO: [Change scene to TOWN PLAZA (DAY)]
+    scene bg plaza day
+
+    "I spot Ernest and run up to him. "
+
+    lyr "Ernest!"
+    ern "Lyra."
+    lyr "It's been a week since that incident. Are you alright?"
+    ern "Yeah. I've just been getting advice from Julius."
+    lyr "Advice? For what?"
+    ern "Oh. Uhm."
+    ern "Well I had Julius teach me about flower language, but I thought it was too complicated so I gave up."
+    lyr "Huh."
+    lyr "(What does he need to know flower language for...?)"
+    ern "What I really wanted to say was..."
+
+    "Ernest looks at me and grabs my shoulders."
+
+    ern "I'm in love with you-!"
+
+    "I stood there for a second, half paralyzed by what Ernest had just said. Eventually, I started laughing. Maybe I had tried to convince myself I didn't know, but deep down I did know. "
+    "It was already obvious from before, but it would be improper if I didn't tell him my feelings back. "
+
+    lyr "Mhmm. I love you too."
+    lyr "You told Ewan you'd make me happy right? So, I'll be looking forward to that."
+    ern "R-right! Leave it to me!"
+
+    "It was kind of funny seeing Ernest flustered, since he usually wasn't like this. Before I knew it, Ernest got really close and.... "
+
+    # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE (DAY)]
+    scene bg house inside
+
+    "There's a knock on the door. "
+    "Leo goes to open it, and smiles upon seeing who it is."
+
+    leo "Lyra is out right now, so it's just me."
+    leo "I thought I was going to get tired of waiting, you know?"
+    leo "But whatever the case, welcome back..."
+    leo "Ewan."
+    ewa "Yeah. I'm back."
+
+    return
