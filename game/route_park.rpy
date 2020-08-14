@@ -17,6 +17,7 @@ label park:
     call .day07
     call .day08
     call .day09
+    call .day10
 
     "end of route"
     jump finale
@@ -1083,5 +1084,73 @@ label .day09:
     leo "Are you wondering why Ernest is here?"
     lyr "Y...yeah."
     leo "Well..."
+
+    return
+
+# Park, Day 10
+label .day10:
+
+    # TODO: [Change scene to TOWN PLAZA (DAY)]
+    scene bg plaza day
+
+    # TODO: For this scene pls remove Lyra from the protagonist corner, it's a recounting flashback to Leo and Ewan
+
+    "Earlier that day."
+    "Leo and Ewan walks around town, after they saw Lyra head out. "
+
+    leo "Hmm, I wonder where she's heading off to?"
+    ewa "She didn't tell you about it?"
+    leo "Lyra didn't want to go out all week, so."
+    leo "I'm a bit worried about her..."
+    leo "Though if I had to guess, she's probably looking for Ernest."
+    leo "Especially when she made that face before she left, I could tell."
+    ewa "Well ever since she got involved with that guy, she seems a bit troubled..."
+    leo "..."
+    ewa "..."
+    leo "He's kind of troublesome in his own way. It doesn't do me any good that he's causing trouble for Lyra."
+    ewa "Mhmm. I agree."
+
+    "As they walk around, they spot Ernest."
+
+    leo "Speaking of the person we were just talking about..."
+    ern "You're... Leo and Ewan?"
+
+    "Leo sighs. Leo looks like he's about to scold Ernest, but Ewan stops him. "
+
+    leo "You know Lyra has been looking for you all day right?"
+    ern "She has?! I have been too but I can't find her..."
+    leo "She'll go home sooner or later, so how about we just head back to our house for a bit?"
+    ern "S-sure."
+
+    # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE]
+    scene bg house inside
+
+    leo "I'll get you some tea."
+
+    "Leo leaves the room. Ernest is about to strike a conversation with Ewan, but stops. Ewan is smiling, but his aura seemed more like he wanted to kill."
+
+    ewa "...No, 'he' wouldn't like that."
+    ern "...?"
+
+    "Ewan smiles more pleasantly at Ernest."
+
+    ewa "And... as long as Lyra is happy in the end then..."
+    ern "Huh...?"
+
+    "Leo comes back with the tea."
+
+    ewa "I'll go out to look for Lyra a bit more, you two stay here in case she comes back."
+    leo "Should I go with you?"
+    ewa "No it's better if you stayed here and watched him. Lyra would freak out if she came home and suddenly saw Ernest in her home right?"
+    leo "Ah, yeah. That's true."
+    leo "Mhmm, plus the situation with the magicians rumours is getting more dangerous."
+
+    "Ewan nods. As he passes Ernest, he whispers something subtle."
+
+    ewa "... Tell Lyra I'm sorry. The situation might get dangerous but... tell her not to worry."
+
+    "Ewan leaves the house."
+
+    "Which leads up to..."
 
     return
