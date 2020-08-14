@@ -8,6 +8,7 @@ define man = Character("Man")
 label park:
 
     call .day01
+    call .day02
 
     "end of route"
     jump finale
@@ -56,7 +57,9 @@ label .day01:
 
     "I squint, and notice those papers are ones of high value; since Leo and I ran a business, I could tell that if those documents were tarnished, then it would spell really bad news. "
 
-    "Without thinking, I instinctively used magic to gather the paper in my hands. The documents landed in my hands in a neat pile, and I sigh in relief seeing they were safe. But I didn't account for the young man that stood in front of me, who had seen what I've done. "
+    "Without thinking, I instinctively used magic to gather the paper in my hands. The documents landed in my hands in a neat pile, and I sigh in relief seeing they were safe."
+
+    "But I didn't account for the young man that stood in front of me, who had seen what I've done. "
 
     lyr "Uh..."
     lyr "(Oh no! I instinctively used my magic... I totally forgot that these papers weren't mine! What should I do? How do I explain this to him?)"
@@ -144,5 +147,102 @@ label .day01:
     leo "..."
     leo "Fine, but if any trouble happens, you come tell me immediately, okay?"
     lyr "Understood!"
+
+    return
+
+# Park, Day 02
+label .day02:
+
+    # TODO: [Change scene to TOWN PLAZA (DAY)]
+    scene bg plaza day
+
+    "The next day. "
+    "I left Leo to handle showing Ewan the rest of town."
+    "I'm waiting at the fountain near the town plaza nervously. I had no ideas what the intentions of Ernest were, after he found out I was a magician. He said he wanted to thank me, but I couldn't help but be a bit suspicious. "
+    "There's no way someone would let a magician off like that... right?"
+
+    "I hear a voice calling for me."
+
+    ern "Hey! Lyra!"
+
+    "Ernest runs up to me. "
+
+    ern "I'm so glad you came! I was worried because I thought you might not show up."
+    lyr "R-right."
+    lyr "(I don't know what he wants... should I ask him now-?)"
+    ern "Anyways, I'm really grateful you helped me yesterday,let me treat you to lunch today!"
+
+    "Before I could protest, Ernest is already running off. "
+
+    ern "This way! I know a place!"
+
+    "I follow after him. "
+
+    lyr "Uhm. Ernest? Yesterday you asked me if I was a magician-"
+    ern "Oh yeah! I wanted to ask you that! You know about magic and stuff!"
+    lyr "Huh?"
+    ern "People are always talking about magicians, and I didn't think they were real at first."
+    ern "Plus, I think magic is cool!"
+
+    "Ernest turns to me. "
+
+    ern "You know yesterday when you caught all my papers and they floated smoothly into your hands?! It was super cool!"
+    ern "Like you controlled the way they were moving and stuff!"
+    lyr "Eh? Uhm..."
+    lyr "(This kind of reaction is...)"
+    ern "Plus, you used it to help me! If those documents had landed in the water, I would've been in big trouble!"
+    lyr "B-but aren't magicians supposed to be bad people?"
+    ern "You helped me though right? So there's no way you can be a bad person!"
+    lyr "(This guy... is kind of simple minded, but..) "
+
+    "I laugh. "
+
+    ern "Hm?"
+    lyr "I've never met someone who reacted that way about magicians."
+    ern "Huuh."
+    lyr "You're a good person, Ernest!"
+    ern "You don't have to tell me for me to know!"
+    lyr "Though uhm, you shouldn't go around telling people that I'm a magician though."
+    ern "Hmm? Sure, I don't really understand why people hate magicians so much though..."
+
+    "Ernest trails off, and he brings me inside the cafe."
+
+    # TODO: [Change scene to CAFE]
+    scene bg cafe
+
+    "Ernest and I are seated by a waitress. We both look over the menu. "
+
+    ern "Order anything you like! It's on me."
+
+    "After ordering, Ernest and I talk for a bit. "
+
+    ern "Actually, I have a friend who is similar to you."
+    lyr "Oh?"
+    ern "Yeah! He's also a m-"
+
+    "Before Ernest could say the word 'magician,' I cut him off."
+
+    lyr "Is that right?! I'd uh, love to meet them sometime!"
+    ern "I can introduce you! He's my best friend!"
+    lyr "(Dangerous, too dangerous! If I didn't cut Ernest off then, it would've spelled trouble for me!)"
+
+    "We ate our food when it arrived. As promised, Ernest paid for my meal, and we left the cafe. "
+
+    # TODO: [Change scene to TOWN PLAZA (DAY)]
+    scene bg plaza day
+
+    ern "I would introduce you to my friend today but I have things to do at the marketplace..."
+    lyr "It's okay, don't worry about it."
+    ern "Oh! I know! You know that flower shop near the outskirts of the town plaza? Meet me there tomorrow!"
+    lyr "Huh?! Sure..."
+    ern "Alright, thanks for today! I'll get going now!"
+    lyr "B-bye..."
+
+    "I wave, and watch as Ernest runs off in the direction of the marketplace. "
+
+    lyr "(He has a lot of energy... I can't keep up.)"
+    lyr "(But he doesn't seem to be a bad person.)"
+
+    "I head home for the day."
 
     return
