@@ -23,6 +23,7 @@ label secret:
     call .day05
     call .day06
     call .day07
+    call .day08
 
     "end of route"
     jump finale
@@ -880,5 +881,105 @@ label .day07:
     lyr "Ah, yeah. Sure."
 
     "Leo gives Lyra a nod, as if he had seemed to figure something out."
+
+    return
+
+
+# Secret, Day 08
+label .day08:
+
+    # TODO: [Change scene to FLOWER SHOP]
+    scene bg flower
+
+    "The next day."
+    "Leo and Lyra walks into the flower shop, and Leo looks around to look for Julius."
+
+    jul "I've been expecting you two."
+    leo "So does that mean you know what's going on...?"
+    jul "Well. Maybe?"
+    jul "He didn't want you two to get involved, after all."
+    jul "Or maybe he thought it was better if you two weren't involved with him?"
+    lyr "Did you know Ewan is a..."
+
+    "Julius doesn't say anything, but the look he gave Leo and Lyra implied that he knew everything from the start."
+
+    jul "You two are different, you know what being involved with an actual magician means right?"
+    leo "..."
+    lyr "It doesn't matter to me! Because Ewan... is someone important to me and Leo!"
+    lyr "Even if he doesn't want us to get involved, I'll force my way through!"
+    leo "Lyra."
+    leo "Yeah, she's right."
+    jul "You two sure are persistent. It kind of reminds me of Ernest, in a way."
+    jul "Hmm."
+    jul "Here's a hint. If you see something unusual, would you run away? Or would you try to see what it is?"
+
+    "Julius smiles. Leo and Lyra thanks Julius for the somewhat confusing hint, and leaves."
+
+    # TODO: [Change scene to TOWN PLAZA (NIGHT)]
+    scene bg plaza night
+
+    leo "I'm pretty sure Julius was talking about the fireflies."
+    lyr "I mean you did call it, 'a sight never seen in Veritas' yesterday."
+    leo "Speaking of which-"
+
+    "The two spots some fireflies. "
+
+    leo "Somehow this is feeling like Deja-vu."
+    lyr "Don't say that. We've already experienced it enough!"
+
+    "Leo and Lyra look at each other and nod. They already knew what they had to do. "
+
+    # TODO: [Change scene to OPEN FIELD]
+    scene bg field
+
+    lyr "Ewan!"
+
+    "They run towards Ewan, who was standing in the middle of the open field. Except this time, only a few fireflies had surrounded him."
+
+    lyr "We were worried about you! Let's go home together, okay?"
+    ewa "No."
+    lyr "Huh?"
+    ewa "I don't think I deserve to be with you two."
+    leo "What do you mean?"
+
+    "Ewan looks down sadly, and clenches his hands into fists."
+
+    ewa "Being with me only brings pain. I'm barring you two from your happiness! Once people find out about the true meaning of being a magician, It'll only bring them pain and burden."
+    lyr "But aren't me and Leo magicians too?"
+    ewa "You guys are different. You managed to adapt to the life of a normal person but I..."
+    ewa "So, for both of your sakes, I'll bear the burden of being a \"magician.\" Maybe if I never gave you magic then-"
+    lyr "But you saved our lives back then! If you didn't, then both me and Leo would've been already dead!"
+
+    "Lyra looks angry. She grabs Ewan's hands, and grips it tight."
+
+    lyr "Why are you doing this?! Why are you bearing all of this alone?!"
+
+    "Ewan looks up in anguish, as if he's about to cry any moment."
+
+    ewa "Because I want you two to be happy!"
+
+    "Leo grabs Ewan's other hands and looks at Ewan with a frustrated face."
+
+    leo "That's not it! Don't assume that we'd be happy without you! Because You're important to us as well! So why? Aren't you only doing this because you think what's best for us, when it's not?!"
+
+    "Ewan stops, and Lyra looks at him sadly."
+
+    lyr "We want you to be happy, and for the three of us to be together like before."
+
+    "Upon hearing those words from Leo and Lyra, Ewan starts crying."
+
+    ewa "I just wanted the best for you two."
+
+    "Leo and Lyra go in to give Ewan a hug."
+
+    ewa "Because I always wanted you two to be smiling."
+    lyr "Yeah."
+    leo "Mhmm."
+
+    "Leo and Lyra let go of Ewan, and they both extend their hand to him."
+
+    lyr "Let's go home."
+    leo "Together."
+    ewa "Yeah."
 
     return
