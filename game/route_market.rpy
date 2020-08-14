@@ -220,7 +220,7 @@ label .day01:
 label .day02:
 
     # TODO: Change scene to outside LEO AND LYRA'S HOUSE
-    scene bg house outside
+    scene bg house outside day
 
     """
     The next day.
@@ -321,7 +321,7 @@ label .day02:
 label .day03:
 
     # TODO: Change scene to outside LEO AND LYRA'S HOUSE
-    scene bg house outside
+    scene bg house outside day
 
     """
     The next day.
@@ -679,7 +679,7 @@ label .day06:
 label .day07:
 
     # TODO: Change scene to OUTSIDE LEO AND LYRA'S HOUSE
-    scene bg house outside
+    scene bg house outside day
 
     """
     The next day.
@@ -1125,7 +1125,7 @@ label .day10_good:
     """
 
     # TODO: Change scene to OUTSIDE LEO AND LYRA'S HOUSE
-    scene bg house outside
+    scene bg house outside day
 
     "As I arrived in front of our house, Lyra rushes out."
 
@@ -1231,7 +1231,7 @@ label .day12:
     leo "(Is it really okay for someone like Silas to waltz around town casually like that?)"
 
     # TODO: Change scene to OUTSIDE LEO AND LYRA'S HOUSE
-    scene bg house outside
+    scene bg house outside day
 
     "When we arrive at the meeting spot Lyra and I had organized, I noticed her laying on the floor. I immediately run up to her in worry. I held up her head as she tried to speak."
 
@@ -1500,7 +1500,7 @@ label .day12_good:
 label .day12_end:
 
     # TODO: Change scene to OUTSIDE LEO AND LYRA'S HOUSE
-    scene bg house outside
+    scene bg house outside day
 
     """
     A couple days pass after the incident.

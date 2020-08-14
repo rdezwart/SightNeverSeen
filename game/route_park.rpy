@@ -267,7 +267,7 @@ label .day02:
 label .day03:
 
     # TODO: [Change scene to OUTSIDE LEO AND LYRA'S HOUSE (DAY)]
-    scene bg house outside
+    scene bg house outside day
 
     "The next day. "
 
@@ -856,7 +856,7 @@ label .day07:
     "I had to get out of here. My body moved on instinct, and I bolted out of the alleyway. "
 
     # TODO: [Change scene to OUTSIDE LEO AND LYRA'S HOUSE]
-    scene bg house outside
+    scene bg house outside day
 
     "I had ran all the way home. When I reached the entrance, I didn't realize how hard I was panting."
 
@@ -911,7 +911,7 @@ label .day08:
     "Leo opens the door, and I peer over his shoulder to see Ewan. "
 
     # TODO: [Change scene to OUTSIDE LEO AND LYRA'S HOUSE (DAY)]
-    scene bg house outside
+    scene bg house outside day
 
     ewa "I heard from Leo you weren't feeling well all week. Are you okay?"
     lyr "Ah, I wish I can say I am now... it might've gotten worse."
