@@ -4,6 +4,8 @@
 # Side Characters
 define man = Character("Man")
 define per = Character("Person")
+define mys = Character("Mysterious Hooded Person")
+define tp1 = Character("Townsperson 1")
 
 # Main Flow
 label park:
@@ -18,6 +20,7 @@ label park:
     call .day08
     call .day09
     call .day10
+    call .day11
 
     "end of route"
     jump finale
@@ -1152,5 +1155,138 @@ label .day10:
     "Ewan leaves the house."
 
     "Which leads up to..."
+
+    return
+
+# Park, Day 11
+label .day11:
+
+    # TODO: [Change scene back to INSIDE LEO AND LYRA'S HOUSE (DAY)]
+    scene bg house inside
+
+    "Put Lya back in the protag corner, its back to present"
+
+    leo "...and that's what happened."
+
+    "I look at Ernest. He looks like he wants to say something."
+
+    lyr "(Well now that we're both here, there's no going back right?)"
+
+    lyr "Ernest-! I'm sorry-!"
+    ern "Wait what? No, I should be the one that's sorry-!"
+    lyr "I was the one that avoided you for a whole week! I didn't try to explain to you my feelings and-"
+    ern "You have nothing to apologize about! I was the one who kept disregarding your feelings, and blindly believing in my own ideals without considering how you felt!"
+    lyr "But that's-!"
+    ern "I'm-!"
+
+    "Ernest and I are yelling at each other our apologies. Neither of us wanted to back down. "
+    "Leo just happened to be the poor bystander who had to deal with out yelling fit. "
+
+    lyr "Hey Ernest... can I punch you once?"
+    ern "Go for it! I deserve it after all!"
+
+    "I punch Ernest once. But then I decided that he deserved another one, so I swung again. "
+
+    ern "I thought you said you were only going to punch me once!"
+    lyr "I changed my mind!"
+    leo "Oooh, nice one Lyra."
+
+    "Ernest and I look over at Leo, whose face seemed to be in half amusement and half in pain. "
+    "We had completely forgotten he was also in the room with us. "
+
+    lyr "L-Leo. I'm sorry, I got too into it..."
+    ern "S-Same here. Sorry."
+
+    "Leo laughs."
+
+    leo "But you two have made up now right?"
+
+    "Ernest and I look at each other, and smile. "
+
+    lyr "Yeah!"
+
+    "Leo smiles, but then he steps over and purposefully steps on Ernest's foot. "
+
+    ern "Ow-?!"
+    leo "If you make Lyra upset again, Ewan and I won't be so nice the next time."
+
+    "Uwahh, Leo had the same scary smile Ewan did when he was angry. "
+    "Maybe Leo has been hanging out with Ewan too much in my absence? "
+
+    "Ernest smiles back at Leo weakly. "
+
+    ern "R-right..."
+
+    "Then all of a sudden, we hear an explosion from outside. "
+
+    leo "What was that...?"
+    leo "There's something going on in the town plaza...?"
+    lyr "Should we go check to see if everything is alright?"
+    ern "I'll go with you Lyra."
+    lyr "Then-"
+    leo "Don't worry about me. I'll wait here, since Ewan hasn't come back either."
+    leo "When he comes back he needs someone here to be waiting for him, right?"
+    leo "We'll catch up to you later."
+    lyr "Okay."
+
+    "Ernest grabs my hand, and we both head off to the town plaza."
+
+    # TODO: [Change scene to TOWN PLAZA (DAY)]
+    scene bg plaza day
+
+    "When Ernest and I arrived at the town plaza, we see havoc being brought upon the town. "
+
+    tp1 "That magician person....!"
+    lyr "(Huh...? Did a magician cause trouble? So those rumours about a rough magician were true?)"
+
+    "I look around, and I once again see the fireflies. "
+    "Before, I didn't give it any mind, but after seeing those fireflies again, it can't just be a coincidence... right? "
+
+    lyr "Ernest... those fireflies."
+    ern "Huh?"
+    lyr "Let's follow them."
+
+    "Before Ernest could say anything, I was already dragging him along with me. "
+    "If my suspicions were right then..."
+
+    # TODO: [Change scene to SECLUDED AREA]
+    scene bg woods
+
+    "When we arrived at the secluded area, there was a mysterious hooded person standing before us. "
+
+    lyr "Are you..."
+    ern "Why are you doing this?! You're the one who caused chaos all over town right?!"
+
+    "The mysterious hooded person laughs evilly. "
+
+    mys "Why am I doing this? Isn't it obvious?"
+    mys "I hate humans- those who treat us magicians like trash."
+    mys "After everything they put us through, they should deserve to feel the pain we did too!"
+    mys "I'm a danger to you. Even if we're both magicians, I'm stronger in magical power."
+
+    "The mysterious hooded person sets ablaze the grass in front of him."
+
+    lyr "(This is a dangerous situation we've gotten ourselves into...)"
+    lyr "(What should I...)"
+
+    mys "I'll set the entire town on fire!"
+    mys "Everyone can perish for all I care-!"
+    mys "There's nothing you two can do to stop me!"
+    lyr "(Aah, I feel like I might faint. I don't want to fight but-)"
+
+    "I peer over at Ernest. He looks like he wants to do something."
+    "But before I could react, the mysterious hooded person was already headed towards me, and seemed like they were about to do something."
+
+    lyr "?!"
+    mys "This is for your own good."
+
+    # BRANCH
+    # GOOD ENDING: >= 2 affection
+    # BAD ENDING: < 2 affection
+
+    if affection >= 2:
+        call .day11_good
+    else:
+        call .day11_bad
 
     return
