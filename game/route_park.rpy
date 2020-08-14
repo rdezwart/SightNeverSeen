@@ -867,7 +867,7 @@ label .day07:
 label .day08:
 
     # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE (DAY)]
-    scene bg house inside
+    scene bg house inside day
 
     "A week had passed since that incident. I didn't know what to do."
 
@@ -1086,7 +1086,7 @@ label .day09:
     lyr "Maybe I should head home and ask Leo for help..."
 
     # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE]
-    scene bg house outside
+    scene bg house inside day
 
     "I open the door and was about to look for Leo, when I see Ernest sitting at the table with Leo. "
 
@@ -1137,7 +1137,7 @@ label .day10:
     ern "S-sure."
 
     # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE]
-    scene bg house inside
+    scene bg house inside day
 
     leo "I'll get you some tea."
 
@@ -1173,7 +1173,7 @@ label .day10:
 label .day11:
 
     # TODO: [Change scene back to INSIDE LEO AND LYRA'S HOUSE (DAY)]
-    scene bg house inside
+    scene bg house inside day
 
     # Put Lya back in the protag corner, its back to present
 
@@ -1381,7 +1381,7 @@ label .day11_good:
 label .day11_end:
 
     # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE (DAY)]
-    scene bg house inside
+    scene bg house inside day
 
     "A week later. "
     "When I had returned home after that incident, I had told Leo what had happened. "
@@ -1426,7 +1426,7 @@ label .day11_end:
     "It was kind of funny seeing Ernest flustered, since he usually wasn't like this. Before I knew it, Ernest got really close and.... "
 
     # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE (DAY)]
-    scene bg house inside
+    scene bg house inside day
 
     "There's a knock on the door. "
     "Leo goes to open it, and smiles upon seeing who it is."

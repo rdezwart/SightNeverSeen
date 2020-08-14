@@ -174,7 +174,7 @@ label .day01:
     "Lyra and I wave goodbye to Ewan and head out separate ways. Lyra skips ahead of my happily."
 
     # TODO: Change scene to INSIDE LEO/LYR HOUSE
-    scene bg house inside
+    scene bg house inside day
 
     "As soon as we both entered our house, I closed the door and slumped against it."
 
@@ -882,7 +882,7 @@ label .day07_bad:
 label .day08:
 
     # TODO: Change scene to INSIDE LEO AND LYRA'S HOUSE
-    scene bg house inside
+    scene bg house inside day
 
     """
     A few days later.
@@ -1617,7 +1617,7 @@ label .day12_bad:
     leo "(So, this is how it all ends?)"
 
     # TODO: Change scene to INSIDE LEO AND LYRA'S HOUSE
-    scene bg house inside
+    scene bg house inside day
 
     leo """
     (Ngh.)

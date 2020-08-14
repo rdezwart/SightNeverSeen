@@ -9,7 +9,7 @@ define nox = Character("Nox", image="nox")
 define ern = Character("Ernest", image="ern")
 define aur = Character("Aurora", image="aur")
 
-# Available Routes
+# Enabled Routes
 default silRoute = True
 default noxRoute = False
 default ernRoute = True
@@ -26,7 +26,7 @@ define config.menu_include_disabled = True
 label start:
 
     # TODO: Start game with LEO HOUSE
-    scene bg house inside
+    scene bg house inside day
 
     show leo long at left
     leo "Lyra, hurry up or we'll be late to meet Ewan."
