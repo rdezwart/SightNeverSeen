@@ -10,6 +10,9 @@ label park:
     call .day01
     call .day02
     call .day03
+    call .day04
+    call .day05
+    call .day06
 
     "end of route"
     jump finale
@@ -628,5 +631,63 @@ label .day05:
     lyr "Mhmm!"
 
     "I spent the rest of the day with Leo and Ewan, while wondering why Ernest had run off earlier. He was giving me a weird look too..."
+
+    return
+
+# Park, Day 06
+label .day06:
+
+    # TODO: [Change scene to PARK]
+    scene bg park
+
+    "A few days later."
+    "I had come to the park to walk around. When Leo had asked me where I was going, I said I was going to clear my head. "
+    "I hadn't seen Ernest in a few days. I was so used to him dragging me around in recent times, it felt kind of strange having free time of my own. "
+
+    lyr "(Now that I think about it, didn't I first meet Ernest here?) "
+
+    "I laugh about the thought. As I was strolling around, I notice someone. "
+
+    lyr "(Hm? That red hair...)"
+
+    "It was Ernest. "
+    "He seemed to be sitting on the bench, lamenting about something. "
+    "I watch for a bit. Maybe I should go over and greet him? "
+    "I walk over to the bench where he was sitting and call out to him."
+
+    lyr "Ernest?"
+    ern "Gah! L-Lyra? What are you doing here?"
+    lyr "I haven't seen you around recently, so I was worried..."
+    lyr "Is something wrong?"
+    ern "N-no! Nothing at all."
+
+    "Ernest goes quiet. It felt strange. "
+    "I go sit next to him. "
+
+    lyr "Uhm, did I do something wrong? If I did then-"
+    ern "You didn't! It's just..."
+    lyr "????"
+    ern "The other day, I heard some people talking about how magicians are bad, and useless, and a threat to society. I couldn't turn a blind eye to that, especially since I know personally that magicians aren't bad!"
+    ern "So I got into an argument with them. What made me really frustrated was how no one would even try to understand me when I said that I knew magicians weren't bad people! I could even show them!"
+
+    "At this point, Ernest got really heated up and started talking loudly. "
+    "Some people turned around to look at us, and I saw them making suspicious glances while whispering.  "
+
+    lyr "(This guy...) "
+
+    # DECISION 2:
+    # → Hit him (+1 good end point)
+    # → Hug him (no increase in good end point)
+
+    menu:
+        "Hit him.":
+            # +1 affection
+            $ affection += 1
+            call .day06_good
+
+        "Hug him.":
+            # +0 affection
+            $ affection = affection
+            call .day06_bad
 
     return
