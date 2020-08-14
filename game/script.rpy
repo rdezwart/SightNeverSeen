@@ -18,14 +18,14 @@ init python:
 
 # Main Characters
 define leo = Character("Leo", image="leo")
-define lyr = Character("Lyra", image="lyra")
-define ewa = Character("Ewan", image="ewan")
+define lyr = Character("Lyra", image="lyr")
+define ewa = Character("Ewan", image="ewa")
 
 # Love Interests
-define sil = Character("Silas", image="silas")
+define sil = Character("Silas", image="sil")
 define nox = Character("Nox", image="nox")
-define ern = Character("Ernest", image="ernest")
-define aur = Character("Aurora", image="aurora")
+define ern = Character("Ernest", image="ern")
+define aur = Character("Aurora", image="aur")
 
 # Available Routes
 default silRoute = True
