@@ -5,6 +5,13 @@
 define tp1 = Character("Townsperson 1")
 define tp2 = Character("Townsperson 2")
 define chi = Character("Child")
+define yle = Character("Young Leo")
+define yly = Character("Young Lyra")
+define yew = Character("Young Ewan")
+define ad1 = Character("Adult 1")
+define ad2 = Character("Adult 2")
+define ad3 = Character("Adult 3")
+define ad4 = Character("Adult 4")
 
 # Main Flow
 label secret:
@@ -15,6 +22,7 @@ label secret:
     call .day04
     call .day05
     call .day06
+    call .day07
 
     "end of route"
     jump finale
@@ -665,5 +673,212 @@ label .day06:
     lyr "Okay maybe twice is okay. If it happens again, then something is definitely up."
 
     "The two walk around the marketplace, and Lyra gets Leo to pay for her stuff. "
+
+    return
+
+
+# Secret, Day 07
+label .day07:
+
+    # TODO: [Change scene to TOWN PLAZA (DAY)]
+    scene bg plaza day
+
+    "A few days later. "
+    "Leo and Lyra walks around town again. "
+
+    leo "Did we really decide to take this many days off?"
+    lyr "Hmm, what were we thinking?"
+    leo "There's something strange happening, but I don't know what."
+    leo "You know, how we keep getting a constant sense of deja-vu."
+    leo "At this point, I think we might be having an out of body experience."
+    lyr "D-don't say something so scary like that."
+    leo "I'm just thinking."
+
+    "The two spends their day off idly again. "
+
+    # TODO: [Change scene to TOWN PLAZA (NIGHT)]
+    scene bg plaza night
+
+    "When they returned to the town plaza, they spot some fireflies idling around. "
+
+    lyr "Fireflies...? You usually don't see them around."
+    leo "....?"
+    leo "But haven't we seen fireflies around a lot recently?"
+    lyr "We...have?"
+    leo "Remember when..."
+    leo "Wait no, I can't remember..."
+    lyr "Huh...?"
+    lyr "No you're right. This scene is... very familiar."
+    lyr "There was someone else."
+    lyr "Leo if we both don't remember, then there was someone else with us... right?"
+    leo "You're right. If one of us doesn't remember, then the other one of us would. So if we both don't then..."
+    leo "What are we forgetting...?"
+
+    "Leo and Lyra stare hard at the fireflies, illuminating the night sky. "
+    "What they were forgetting was...."
+
+    # TODO: Flashback
+    # TODO: [Change scene to SECLUDED AREA]
+    scene bg woods
+
+    "A young Leo and Lyra are seen playing together. The young Lyra rushed off, as a young Leo chase after her."
+
+    yly "Leo! I hear a voice! Could it be a ghost?"
+    yle "Why would you run towards a ghost?!"
+    yly "It's in the direction of the forest!"
+    yle "I don't think you're going to listen to me, but at least hold my hand so we don't get lost."
+
+    "Leo lifts up his lamp and holds Lyra's hands."
+
+    yly "Okay!"
+    yle "Our parents are going to get mad at us later."
+    yly "I know! But I have you with me Leo, so it's okay!"
+
+    "Leo sighs, and they both walk into the forest. They follow the voice and find a young Ewan, who is crying."
+
+    yly "Uwahh! So it wasn't a ghost after all!"
+
+    "Lyra runs up to the crying Ewan, dragging Leo along with her."
+
+    yly "Are you okay? Why are you crying?"
+
+    "Ewan doesn't reply, but shakes his head. Leo reaches his hand out towards the boy."
+
+    yle "Are you lost? We can help!"
+    yew "Why?"
+    yly "Why? You're crying! I don't like it when other people cry! It makes me sad! So we want to help you!"
+    yew "Shouldn't you be scared of me?"
+    yle "Why?"
+    yew "Because I..."
+
+    "Ewan uses magic to set off a small flicker of lights in an attempt to scare Leo and Lyra off. "
+
+    yly "Wooah! That's so cool! Do it again! Do it again!"
+    yew "Huh? You're not scared?"
+    yle "Why should we be?"
+    yew "My mom told me not to talk to strangers. They said that people hate magicians."
+    yly "Those people are just mean! C'mon you can come with us! Everyone in our town is really really nice!"
+    yle "Why are you alone anyways?"
+    yew "Uhm. Some scary people came to my house, and mom told me to go hide. I ended up getting lost here."
+    yle "Then we can bring you back to the entrance!"
+
+    "Ewan looks at Leo and Lyra in awe. He wipes his tears, and accepts the outstretched hands that Leo and Lyra offered him. "
+    "To Ewan, at that moment, meeting Leo and Lyra was like seeing the light from within the darkness. "
+
+    "Leo and Lyra lead Ewan to the entrance of the forest."
+
+    yew "If it's okay, can we meet again?"
+    yly "Of course!"
+    yle "Let's play together soon!"
+
+    # TODO: [Change scene to TOWN PLAZA (DAY)]
+    scene bg plaza day
+
+    "Over time, Ewan would meet up with Leo and Lyra to play together and have fun. "
+    "Those moments that Ewan spent with Leo and Lyra were the most previous times of his life. "
+    "But one day..."
+
+    ad1 "We've finally caught that brat."
+    ad2 "The witch's son. It sure was a pain in the ass to find him. Never expected him to go over to the next town over."
+    ad3 "It was really easy to spot him. He's got the same hair colour as his mother after all."
+
+    "Leo and Lyra looked at each other with worried expressions and nod. They both run into the forest. The two had heard the adults talking about a witch before, and how they had a special place for locking up the witch. "
+
+    "In fact, Lyra had once dragged Leo off to that location to explore, despite his protest. "
+    "But in the end, it turned out to be not for naught, as they could use this information to save Ewan."
+
+    # TODO: [Change scene to SECLUDED AREA]
+    scene bg woods
+
+    "When Leo and Lyra reach the secluded house, they break into the house and find Ewan, who is trembling."
+
+    yly "Ewan?! Ewan! We've come here to save you!"
+    yew "Leo? Lyra?"
+    yle "Come on, we have to get you out of here!"
+
+    "Before Ewan could protest, Leo and Lyra is already dragging him towards the entrance. "
+
+    "As the three run through the forest, they're spotted by some unknown adults who were going to check up on Ewan."
+
+    ad4 "We came to check up on the witches son, but he's getting away!"
+
+    "Perhaps in an attempt to recapture Ewan, the adults run at the children. The adults aim to strike at Ewan, but Leo and Lyra shield Ewan with their bodies. "
+
+    "Leo and Lyra hit the grass, and the adults look in panic as they harmed the two innocent children. The adult runs away. "
+
+    "Ewan shakes Leo and Lyra's bodies with panic."
+
+    yew "Leo?! Lyra?! Why did you do that?"
+    yly "We didn't want you to get hurt."
+    yle "As long as you're fine then-"
+    yew "Stop! Don't say anything more!"
+
+    "Ewan starts crying and does everything he can to save Leo and Lyra."
+
+    yew "I'm sorry-! I'm sorry I'm so weak!"
+
+    "There's a moment of silence before Ewan holds both Leo and Lyra's hands and transfers some of his magic into them in an attempt to save their lives. He prays in desperation."
+
+    yew "It's okay. Everything was just a bad dream. I'll come see you guys again, okay?"
+
+    "Ewan checks to see if Leo and Lyra are alive, and sighs in relief. Ewan then hears voices, and panics. Before Ewan turns to leave, he pats Leo and Lyra."
+
+    yew "Next time. Next time, I'll definitely protect you two."
+
+    # TODO: [flashback ends]
+
+    # TODO: [Change scene to TOWN PLAZA (NIGHT)]
+    scene bg plaza night
+
+    leo "Ewan."
+    lyr "Ewan!"
+    leo "So that memory of the past that we forgot..."
+    lyr "Yeah, I remember it all now. So the reason why we suddenly became magicians is because Ewan gave us his magic."
+    leo "Wait, doesn't that mean we were both killed?"
+    lyr "..."
+    leo "..."
+    lyr "I kind of don't want to think about that."
+    leo "Wait, where did Ewan go?"
+    leo "We forgot about his existence, like if he was never in our lives at all..."
+    lyr "Those fireflies, it's Ewan's thing."
+    leo "Well, if you think about it, fireflies are a sight never seen in Veritas anyways."
+    leo "They only started showing up when Ewan returned, right?"
+    lyr "Mhmm!"
+
+    "Leo looks back up at the fireflies."
+
+    leo "But where's Ewan now?"
+    leo "If I think about it, he's probably the one who wiped our memory of him."
+    leo "But... why?"
+    lyr "Hmm..."
+    lyr "If we had saw him around town these past few days, we would've instantly regained our memories."
+    leo "..."
+    leo "Let's head home, now, maybe."
+    leo "If we clear our heads, maybe we'll be able to think of something."
+    lyr "yeah, that's true."
+
+    "Leo and Lyra starts heading home."
+
+    # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE (NIGHT)]
+    scene bg house inside night
+
+    "When Leo and Lyra arrives home, Leo takes notice of the begonias they had got from Julius before. "
+
+    leo "..."
+    lyr "Leo?"
+    leo "Hey, do you know what the meaning of begonias are?"
+    lyr "Like in flower language? I don't."
+    lyr "I only know red asters because, uhm, Mr Silas told me that one time."
+    lyr "Do you?"
+    leo "No but..."
+    leo "(Julius... knows Ewan, right?)"
+    leo "(He's a florist, so he'd know what flower language means.)"
+    leo "Do you think... Julius gave us these flowers for a reason?"
+    lyr "...?"
+    leo "We should go visit the flower shop tomorrow."
+    leo "I have a feeling Julius might know."
+    lyr "Ah, yeah. Sure."
+
+    "Leo gives Lyra a nod, as if he had seemed to figure something out."
 
     return
