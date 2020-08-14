@@ -338,6 +338,8 @@ label .day03:
     # "If you're a good person, then people would surely understand." (no increase in good end point)
 
     menu:
+        "{i}What do you think?{/i}"
+
         "We can't speak for every magician out there.":
             # +1 affection
             $ affection += 1
@@ -692,6 +694,8 @@ label .day06:
     # → Hug him (no increase in good end point)
 
     menu:
+        "{i}What do you do?{/i}"
+
         "Hit him.":
             # +1 affection
             $ affection += 1
@@ -976,12 +980,14 @@ label .day08:
     # → "Well-intentioned" (no increase in good end point)
 
     menu:
-        "Naive.":
+        "{i}What do you think about Ernest?{/i}"
+
+        "He's naive.":
             # +1 affection
             $ affection += 1
             call .day08_good
 
-        "Well-intentioned.":
+        "He's well-intentioned.":
             # +0 affection
             $ affection = affection
             call .day08_bad

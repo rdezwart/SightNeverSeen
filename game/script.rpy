@@ -105,6 +105,7 @@ label routeChoice:
     # If game has been finished at least once
     if persistent.secretRoute:
         menu:
+            "{i}Where should we take Ewan?{/i}"
 
             "Go to the Market - Play as Leo" if silRoute:
                 jump market
@@ -124,6 +125,7 @@ label routeChoice:
     # If first time through
     else:
         menu:
+            "{i}Where should we take Ewan?{/i}"
 
             "To the Market - Play as Leo" if silRoute:
                 jump market

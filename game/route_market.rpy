@@ -596,6 +596,8 @@ label .day05:
 
     # TODO: Affection points
     menu:
+        "{i}How have you been doing with Silas?{/i}"
+
         "It's a bit odd, but I'm having more fun than I expected.":
             # +1 affection point
             $ affection += 1
@@ -703,6 +705,8 @@ label .day07:
 
     "Lyra gives me a worried expression."
     menu:
+        "{i}What do you do?{/i}"
+
         "Go check up on Silas.":
             # +1 affection point
             $ affection += 1
@@ -997,6 +1001,7 @@ label .day10:
     """
 
     menu:
+        "{i}What do you do?{/i}"
 
         "Run inside the greenhouse and attempt to save that 'one' plant.":
             # +1 affection
