@@ -37,6 +37,8 @@ label start:
     # TODO: Change BG to meeting spot
     scene bg plaza day
 
+    show leo at left
+    show lyr at right
     lyr "I'm not sure if you heard, since you tend to mind your own business, but there have been some concerning rumours going around."
 
     leo "What kind of rumours?"
