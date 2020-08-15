@@ -7,7 +7,7 @@
 # Main Flow
 label cafe:
 
-    call .day01 from _call_cafe_day01
+    call .day01
 
     "end of route"
     jump finale

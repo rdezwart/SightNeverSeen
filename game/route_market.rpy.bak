@@ -15,19 +15,20 @@ define gls = Character("Group of Girls")
 # Main Flow
 label market:
 
-    call .day01 from _call_market_day01
-    call .day02 from _call_market_day02
-    call .day03 from _call_market_day03
-    call .day04 from _call_market_day04
-    call .day05 from _call_market_day05
-    call .day06 from _call_market_day06
-    call .day07 from _call_market_day07
-    call .day08 from _call_market_day08
-    call .day09 from _call_market_day09
-    call .day10 from _call_market_day10
-    call .day11 from _call_market_day11
-    call .day12 from _call_market_day12
+    call .day01
+    call .day02
+    call .day03
+    call .day04
+    call .day05
+    call .day06
+    call .day07
+    call .day08
+    call .day09
+    call .day10
+    call .day11
+    call .day12
 
+    "end of route"
     jump finale
 
 
@@ -960,12 +961,12 @@ label .day07:
         "Go check up on Silas.":
             # +1 affection point
             $ affection += 1
-            call .day07_good from _call_market_day07_good
+            call .day07_good
 
         "Trust Silas to handle the situation.":
             # +0 affection point
             $ affection = affection
-            call .day07_bad from _call_market_day07_bad
+            call .day07_bad
 
     return
 
@@ -1353,12 +1354,12 @@ label .day10:
         "Run inside the greenhouse and attempt to save that 'one' plant.":
             # +1 affection
             $ affection += 1
-            call .day10_good from _call_market_day10_good
+            call .day10_good
 
         "Tell Silas to not act rashly.":
             # +0 affection
             $ affection = affection
-            call .day10_bad from _call_market_day10_bad
+            call .day10_bad
 
     return
 
@@ -1850,9 +1851,9 @@ label .day12:
     # BAD ENDING: < 2 affection
 
     if affection >= 2:
-        call .day12_good from _call_market_day12_good
+        call .day12_good
     else:
-        call .day12_bad from _call_market_day12_bad
+        call .day12_bad
 
     return
 
@@ -1997,7 +1998,7 @@ label .day12_good:
     Ewan is, once again, gone without a trace.
     """
 
-    call .day12_end from _call_market_day12_end
+    call .day12_end
 
     return
 

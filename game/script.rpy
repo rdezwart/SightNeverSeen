@@ -25,6 +25,8 @@ define config.menu_include_disabled = True
 
 label start:
 
+    play music "peaceful1.mp3" loop
+
     # TODO: Start game with LEO HOUSE
     scene bg house inside day
 
@@ -139,7 +141,17 @@ label routeChoice:
 
 # Label for ending the game
 label finale:
-    "end of game"
+
+    scene bg black
+
+    "Thank you for playing! We hope you enjoyed your experience of \"A Sight Never Seen\"."
+
+    if persistent.secretRoute:
+        """
+        This is all the content this game has to offer. Have you tried all the routes? More is to come in future versions.
+        """
+    else:
+        "You have now unlocked an additional secret route! Begin the experience again, and enjoy!"
 
     $ persistent.secretRoute = True
 

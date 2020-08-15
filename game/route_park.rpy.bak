@@ -11,18 +11,19 @@ define spk = Character("???")
 # Main Flow
 label park:
 
-    call .day01 from _call_park_day01
-    call .day02 from _call_park_day02
-    call .day03 from _call_park_day03
-    call .day04 from _call_park_day04
-    call .day05 from _call_park_day05
-    call .day06 from _call_park_day06
-    call .day07 from _call_park_day07
-    call .day08 from _call_park_day08
-    call .day09 from _call_park_day09
-    call .day10 from _call_park_day10
-    call .day11 from _call_park_day11
+    call .day01
+    call .day02
+    call .day03
+    call .day04
+    call .day05
+    call .day06
+    call .day07
+    call .day08
+    call .day09
+    call .day10
+    call .day11
 
+    "end of route"
     jump finale
 
 
@@ -77,9 +78,6 @@ label .day01:
     lyr "Ah!"
 
     "I hear the shriek of someone behind me. I turned around, and see a cluster of papers flying towards me; probably ones that got blown away from the wind. "
-
-    show ern at left
-
     "A young man was running, trying to catch the papers. "
 
     "I squint, and notice those papers are ones of high value; since Leo and I ran a business, I could tell that if those documents were tarnished, then it would spell really bad news. "
@@ -114,8 +112,6 @@ label .day01:
     lyr "Huh-? Uhm, sure?"
     ern "Thanks! See you then!"
 
-    hide ern
-
     "Ernest smiles brightly, then runs off into the direction of town. "
     "I put my hands to my face. What was that...?"
     "It all happened so quickly that I couldn't process it. Someone had found out that I was a magician, but they didn't even bat an eye to it...?"
@@ -123,9 +119,6 @@ label .day01:
     lyr "(I should meet him tomorrow to make sure he doesn't say anything...)"
 
     "While I was lamenting to myself, I hear Leo and Ewan call out to me."
-
-    show leo at left
-    show ewa at center
 
     ewa "Lyra? Are you alright? Why are you covering your face with your hands?"
     lyr "(Ah, I need to make up an excuse!)"
@@ -148,10 +141,6 @@ label .day01:
     # TODO: Change scene to TOWN PLAZA (NIGHT)
     scene bg plaza night
 
-    show leo at left
-    show ewa at center
-    show lyr at right
-
     leo "Ah, it's getting late now."
     lyr "Already? I guess we'll show you more of the town tomorrow!"
     ewa "Yeah, that's fine. I'll see you guys tomorrow then."
@@ -161,12 +150,7 @@ label .day01:
     # TODO: Change scene to INSIDE LEO AND LYRA'S HOUSE (NIGHT)
     scene bg house inside night
 
-    "When me and Leo arrived home, I closed the door behind us and laughed nervously. "
-
-    show leo at left
-    show lyr at center
-
-    "Leo turned around and gave me a questioning look. "
+    "When me and Leo arrived home, I closed the door behind us and laughed nervously. Leo turned around and gave me a questioning look. "
 
     leo "Lyra? What's wrong?"
     lyr "Uhmm, Leo? Remember what you said this morning about being careful? About our magic?"
@@ -199,16 +183,11 @@ label .day02:
     scene bg plaza day
 
     "The next day. "
-
-    show lyr at right
-
     "I left Leo to handle showing Ewan the rest of town."
     "I'm waiting at the fountain near the town plaza nervously. I had no ideas what the intentions of Ernest were, after he found out I was a magician. "
     "He said he wanted to thank me, but I couldn't help but be a bit suspicious. There's no way someone would let a magician off like that... right?"
 
     "I hear a voice calling for me."
-
-    show ern at left
 
     ern "Hey! Lyra!"
 
@@ -232,8 +211,6 @@ label .day02:
     ern "Plus, I think magic is cool!"
 
     "Ernest turns to me. "
-
-    show ern at center
 
     ern "You know yesterday when you caught all my papers and they floated smoothly into your hands?! It was super cool!"
     ern "Like you controlled the way they were moving and stuff!"
@@ -261,9 +238,6 @@ label .day02:
 
     "Ernest and I are seated by a waitress. We both look over the menu. "
 
-    show ern at left
-    show lyr at center
-
     ern "Order anything you like! It's on me."
 
     "After ordering, Ernest and I talk for a bit. "
@@ -283,17 +257,12 @@ label .day02:
     # TODO: [Change scene to TOWN PLAZA (DAY)]
     scene bg plaza day
 
-    show ern at left
-    show lyr at center
-
     ern "I would introduce you to my friend today but I have things to do at the marketplace..."
     lyr "It's okay, don't worry about it."
     ern "Oh! I know! You know that flower shop near the outskirts of the town plaza? Meet me there tomorrow!"
     lyr "Huh?! Sure..."
     ern "Alright, thanks for today! I'll get going now!"
     lyr "B-bye..."
-
-    hide ern
 
     "I wave, and watch as Ernest runs off in the direction of the marketplace. "
 
@@ -313,9 +282,6 @@ label .day03:
 
     "The next day. "
 
-    show leo at left
-    show lyr at right
-
     leo "Are you going to meet, uhm, Ernest again? That's his name right?"
     lyr "Yeah. He said he wanted to introduce me to another one of us."
     leo "I didn't think there would be another person like us in town."
@@ -326,9 +292,6 @@ label .day03:
 
     # TODO: [Change scene to TOWN PLAZA (DAY)]
     scene bg plaza day
-
-    show ern at left
-    show lyr at right
 
     "I see Ernest standing outside the mentioned flower shop."
 
@@ -341,10 +304,6 @@ label .day03:
 
     # TODO: [Change scene to FLOWER SHOP]
     scene bg flower
-
-    show ern at left
-    show jul at center
-    show lyr at right
 
     "When Ernest and I walked inside, there was no customers inside. However, the florist noticed us. "
 
@@ -428,9 +387,6 @@ label .day03:
     # TODO: [Change to TOWN PLAZA (NIGHT)]
     scene bg plaza night
 
-    show ern at left
-    show lyr at center
-
     "I didn't realize how late it was until we had left the flower shop. "
 
     ern "You know Lyra, I was thinking about what you said earlier."
@@ -438,8 +394,6 @@ label .day03:
     ern "When I first met Julius, he wasn't close to anyone, but he didn't try to get close to anyone either."
     ern "I managed to befriend him by hanging around him because he always seemed lonely."
     lyr "(That's...)"
-
-    show lyr at right
 
     "I skipped ahead of Ernest, then turn back to face him. "
 
@@ -456,9 +410,6 @@ label .day03:
 
     ern "Yeah! You're right. You can trust me and Julius!"
 
-    hide ern
-    hide lyr
-
     "Afterwards, I part ways with Ernest and head home. "
 
     return
@@ -471,10 +422,6 @@ label .day04:
     scene bg plaza day
 
     "The next day. "
-
-    show leo at left
-    show lyr at center
-
     "I walk around town with Leo for a bit. Ewan said he was busy with something today, so we just decided to idly spend our day off. "
 
     lyr "So, I don't think Ernest is a bad person after all, so there's nothing to worry about."
@@ -487,8 +434,6 @@ label .day04:
 
     ern "Lyra!"
     lyr "Speaking of the person."
-
-    show ern at right
 
     "Ernest runs up to where I was standing. "
 
@@ -504,8 +449,6 @@ label .day04:
 
     leo "You should go with Ernest if you want to, Lyra. I'll just walk around the marketplace and see if there's anything we need to pick up."
     lyr "Ah, okay... I'll see you later then."
-
-    hide leo
 
     "Leo nods, and walks off in the direction of the marketplace."
     "Ernest and I start walking to the library. "
@@ -528,18 +471,12 @@ label .day04:
     "What did Ernest want to come here for? I didn't want to be rude, but he didn't seem like the type who'd go to the library often. "
 
     ern "Alright! Let's head in!"
-
-    hide ern
-
     lyr "Ernest, you shouldn't shout inside a library!"
 
     "I shouted at him, as he ran inside."
 
     # TODO: [Change scene to LIBRARY]
     scene bg library
-
-    show lyr at right
-    show ern at left
 
     "When we entered the library, Ernest seemed to be aimlessly wandering around. I didn't know what he came here for, so I followed him, confused. "
     "Sooner or later, we came to a stop. "
@@ -601,9 +538,6 @@ label .day04:
     # TODO: [Change scene to TOWN PLAZA (DAY)]
     scene bg plaza day
 
-    show ern at left
-    show lyr at right
-
     "When Ernest and I left the library, it was still bright out. I still had some time to kill. "
 
     ern "Do you have anything you need to do?"
@@ -623,18 +557,12 @@ label .day05:
     scene bg flower
 
     "A few days later. "
-
-    show ern at left
-    show lyr at right
-
     "Ernest brings me to the flower shop again. "
     "He seems to like annoying Julius a lot. But I don't think Julius seems to mind, considering how Julius seems used to whatever Ernest pulls. "
 
     ern "Julius! I'm here again! And with Lyra!"
 
     "Ernest opens the door of the flower shop and shouts inside. "
-
-    show jul at center
 
     jul "Welcome back."
     lyr "Welcome back?"
@@ -665,9 +593,6 @@ label .day05:
     # TODO: [Change scene to TOWN PLAZA (DAY)]
     scene bg plaza day
 
-    show ern at left
-    show lyr at center
-
     "Ernest and I head out from the flower shop. I was still holding onto the bunches of flowers Julius had told me to give to Ewan. "
     "I didn't know what kind of flowers they were, and Julius didn't tell me either. "
     "I look up, and I just happen to see the person in question: Ewan was standing with Leo, a bit off in the distance. "
@@ -683,13 +608,7 @@ label .day05:
 
     "I call out to Leo and Ewan. They take notice of me, and I hurry over with Ernest. "
 
-    hide ern
-    show lyr at left
-    show ewa at center
-    show leo at right
-
     ewa "Lyra. I haven't seen you in a while. Are you doing fine?"
-
     leo "You have flowers?"
     lyr "Mhmm! Uhm, Julius says it's for you, Ewan."
 
@@ -703,11 +622,6 @@ label .day05:
     ewa "Thank you."
 
     "Ewan takes notice of Ernest. "
-
-    hide leo
-    show ewa at right
-    show lyr at center
-    show ern at left
 
     ewa "Oh. You must be Ernest. Leo told me about you."
     ern "A-ah. Yeah. I heard Lyra and Julius talk about you earlier. It's finally nice to meet you."
@@ -728,16 +642,10 @@ label .day05:
 
     ern "Ah! I have to do something now! I'll see you later!"
 
-    hide ern
-
     "Before any of us could reply, Ernest runs off back in the direction of the flower shop. "
     "Is he really alright...?"
 
     lyr "I wonder if he's okay..."
-
-    show lyr at left
-    show ewa at center
-    show leo at right
 
     "Leo sighs, and Ewan laughs nervously. "
 
@@ -762,9 +670,6 @@ label .day06:
     scene bg park
 
     "A few days later."
-
-    show lyr at center
-
     "I had come to the park to walk around. When Leo had asked me where I was going, I said I was going to clear my head. "
     "I hadn't seen Ernest in a few days. I was so used to him dragging me around in recent times, it felt kind of strange having free time of my own. "
 
@@ -777,9 +682,6 @@ label .day06:
     "It was Ernest. "
     "He seemed to be sitting on the bench, lamenting about something. "
     "I watch for a bit. Maybe I should go over and greet him? "
-
-    show ern at left
-
     "I walk over to the bench where he was sitting and call out to him."
 
     lyr "Ernest?"
@@ -814,12 +716,12 @@ label .day06:
         "Hit him.":
             # +1 affection
             $ affection += 1
-            call .day06_good from _call_park_day06_good
+            call .day06_good
 
         "Hug him.":
             # +0 affection
             $ affection = affection
-            call .day06_bad from _call_park_day06_bad
+            call .day06_bad
 
     return
 
@@ -829,9 +731,6 @@ label .day06_good:
 
     # TODO: [Change scene to PARK]
     scene bg park
-
-    show ern at left
-    show lyr at center
 
     "I'm sure Ernest had good intentions towards us magicians. "
     "I'm absolutely sure. "
@@ -881,9 +780,6 @@ label .day06_bad:
     # TODO: [Change scene to PARK]
     scene bg park
 
-    show ern at left
-    show lyr at center
-
     "I had to make him stop talking before people started getting suspicious."
     "But he seemed in pain, thinking about the sake of us magicians, I felt a bit bad. "
     "I was touched, but also it's not a topic you should deluge into in public. "
@@ -908,9 +804,6 @@ label .day06_bad:
 
     "Ernest hurries ahead, and I run after him."
 
-    hide lyr
-    hide ern
-
     return
 
 
@@ -919,9 +812,6 @@ label .day07:
 
     # TODO: [Change scene to TOWN PLAZA (DAY)]
     scene bg plaza day
-
-    show ern at center
-    show lyr at right
 
     "As Ernest and I were walking back, a question appeared in my mind. "
 
@@ -942,15 +832,8 @@ label .day07:
 
     lyr "E-Ernest?!"
 
-    hide lyr
-    hide ern
-
     # TODO: [Change scene to ALLEYWAY]
     scene bg alley
-
-    show ern at left
-    show lyr at center
-    show npc at right
 
     "Upon entering the alleyway, I spot an injured person. They were laying on the floor, and I could easily tell they seemed really badly injured. "
 
@@ -981,18 +864,12 @@ label .day07:
     ern "Huh?!"
 
     "Ernest wasn't expecting that kind of reaction from someone who had just been saved, so he stood there in shock. "
-
-    hide lyr
-
     "I had to get out of here. My body moved on instinct, and I bolted out of the alleyway. "
 
     # TODO: [Change scene to OUTSIDE LEO AND LYRA'S HOUSE]
     scene bg house outside day
 
     "I had ran all the way home. When I reached the entrance, I didn't realize how hard I was panting."
-
-    show lyr at right
-    show leo at left
 
     leo "Lyra?!"
     leo "What happened?! Are you alright? You're crying..."
@@ -1015,9 +892,6 @@ label .day08:
 
     "A week had passed since that incident. I didn't know what to do."
 
-    show leo at left
-    show lyr at right
-
     leo "This is bad... you know that person you said you healed?"
     lyr "Yeah...?"
     leo "Apparently there are rumours that they mysteriously passed away..."
@@ -1034,9 +908,6 @@ label .day08:
 
     leo "Use the same healing magic on me that you used on that person."
     lyr "Huh? Sure..."
-
-    show lyr at center
-
     leo "You can check up on me in a few days. I won't be dead."
     lyr "..."
     leo "What?"
@@ -1052,10 +923,6 @@ label .day08:
 
     # TODO: [Change scene to OUTSIDE LEO AND LYRA'S HOUSE (DAY)]
     scene bg house outside day
-
-    show leo at left
-    show lyr at center
-    show ewa at right
 
     ewa "I heard from Leo you weren't feeling well all week. Are you okay?"
     lyr "Ah, I wish I can say I am now... it might've gotten worse."
@@ -1082,8 +949,6 @@ label .day08:
     leo "Do you want us to come with you?"
     lyr "I can go alone, it's fine. Keep Ewan company."
 
-    hide lyr
-
     "I wave goodbye to Leo and Ewan, and head out."
     "If there's one place Ernest could be it's there right?"
     "I couldn't keep avoiding him forever."
@@ -1092,14 +957,9 @@ label .day08:
     scene bg flower
 
     "I rush in and push open the door of the flower shop. I had ended up running to the flower shop before I could stop myself."
-
-    show lyr at right
-
     "I looked around and saw no one at first, but then I heard Julius' voice. "
 
     jul "Ernest? You're back again? We've talked about this befo-"
-
-    show jul at left
 
     "Julius appeared and realized that I am not Ernest."
     "He laughs."
@@ -1146,12 +1006,12 @@ label .day08:
         "He's naive.":
             # +1 affection
             $ affection += 1
-            call .day08_good from _call_park_day08_good
+            call .day08_good
 
         "He's well-intentioned.":
             # +0 affection
             $ affection = affection
-            call .day08_bad from _call_park_day08_bad
+            call .day08_bad
 
     return
 
@@ -1235,8 +1095,6 @@ label .day09:
 
     "I had decided to go look for Ernest after leaving the flower shop."
 
-    show lyr at right
-
     lyr "(After all, that's the only proper thing to do after talking with Julius, right?)"
 
     "I ran around the town plaza and marketplace. While running around, there were some fireflies around. "
@@ -1253,10 +1111,6 @@ label .day09:
 
     # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE]
     scene bg house inside day
-
-    show lyr at right
-    show leo at left
-    show ern at center
 
     "I open the door and was about to look for Leo, when I see Ernest sitting at the table with Leo. "
 
@@ -1277,15 +1131,10 @@ label .day10:
 
     # TODO: [Change scene to TOWN PLAZA (DAY)]
     scene bg plaza day
-    show flash
 
     # TODO: For this scene pls remove Lyra from the protagonist corner, it's a recounting flashback to Leo and Ewan
 
     "Earlier that day."
-
-    show leo at left
-    show ewa at center
-
     "Leo and Ewan walks around town, after they saw Lyra head out. "
 
     leo "Hmm, I wonder where she's heading off to?"
@@ -1302,8 +1151,6 @@ label .day10:
 
     "As they walk around, they spot Ernest."
 
-    show ern at right
-
     leo "Speaking of the person we were just talking about..."
     ern "You're... Leo and Ewan?"
 
@@ -1317,15 +1164,7 @@ label .day10:
     # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE]
     scene bg house inside day
 
-    show flash
-
-    show leo at left
-    show ewa at right
-    show ern at center
-
     leo "I'll get you some tea."
-
-    hide leo
 
     "Leo leaves the room. Ernest is about to strike a conversation with Ewan, but stops. Ewan is smiling, but his aura seemed more like he wanted to kill."
 
@@ -1336,8 +1175,6 @@ label .day10:
 
     ewa "And... as long as Lyra is happy in the end then..."
     ern "Huh...?"
-
-    show leo at left
 
     "Leo comes back with the tea."
 
@@ -1365,10 +1202,6 @@ label .day11:
     scene bg house inside day
 
     # Put Lya back in the protag corner, its back to present
-
-    show leo at left
-    show ern at center
-    show lyr at right
 
     leo "...and that's what happened."
 
@@ -1433,19 +1266,12 @@ label .day11:
     leo "We'll catch up to you later."
     lyr "Okay."
 
-    hide ern
-    hide lyr
-
     "Ernest grabs my hand, and we both head off to the town plaza."
 
     # TODO: [Change scene to TOWN PLAZA (DAY)]
     scene bg plaza day
 
     "When Ernest and I arrived at the town plaza, we see havoc being brought upon the town. "
-
-    show ern at left
-    show lyr at center
-    show npc at right
 
     tp1 "That magician person....!"
     lyr "(Huh...? Did a magician cause trouble? So those rumours about a rough magician were true?)"
@@ -1458,21 +1284,12 @@ label .day11:
     lyr "Let's follow them."
 
     "Before Ernest could say anything, I was already dragging him along with me. "
-
-    hide ern
-    hide lyr
-    hide npc
-
     "If my suspicions were right then..."
 
     # TODO: [Change scene to SECLUDED AREA]
     scene bg woods
 
     "When we arrived at the secluded area, there was a mysterious hooded person standing before us. "
-
-    show ern at center
-    show lyr at left
-    show who at right
 
     lyr "Are you..."
     ern "Why are you doing this?! You're the one who caused chaos all over town right?!"
@@ -1505,9 +1322,9 @@ label .day11:
     # BAD ENDING: < 2 affection
 
     if affection >= 2:
-        call .day11_good from _call_park_day11_good
+        call .day11_good
     else:
-        call .day11_bad from _call_park_day11_bad
+        call .day11_bad
 
     return
 
@@ -1518,9 +1335,6 @@ label .day11_good:
     ern "..."
 
     "Before the mysterious hooded person could reach me, Ernest had grabbed their arms and quickly unhooded them. "
-
-    hide who
-    show ewa at right
 
     ewa "...?!"
     lyr "E-Ewan...?"
@@ -1569,15 +1383,10 @@ label .day11_good:
 
     "I smile back at Ewan, and hurry to rush back to town with Ernest. "
 
-    hide lyr
-    hide ern
-
     "..."
 
     ewa "I know you're there."
     jul "Well, I can't exactly hide from you."
-
-    show jul at left
 
     "Julius emerges from the shadows, after Lyra and Ernest had left. "
 
@@ -1591,7 +1400,7 @@ label .day11_good:
 
     "Ewan and Julius look at each other, before they turn to head off somewhere. "
 
-    call .day11_end from _call_park_day11_end
+    call .day11_end
 
     return
 
@@ -1603,10 +1412,6 @@ label .day11_end:
     scene bg house inside day
 
     "A week later. "
-
-    show leo at left
-    show lyr at right
-
     "When I had returned home after that incident, I had told Leo what had happened. "
     "For some reason, he didn't seem surprised, as if he was kind of expecting that outcome. "
     "I wonder if Leo already knew Ewan was a magician? "
@@ -1617,17 +1422,12 @@ label .day11_end:
     leo "Nothing. You should get going."
     lyr "Ah. Right."
 
-    hide lyr
-
     "I head out the door, and wave goodbye to Leo."
 
     # TODO: [Change scene to TOWN PLAZA (DAY)]
     scene bg plaza day
 
     "I spot Ernest and run up to him. "
-
-    show ern at left
-    show lyr at right
 
     lyr "Ernest!"
     ern "Lyra."
@@ -1639,8 +1439,6 @@ label .day11_end:
     lyr "Huh."
     lyr "(What does he need to know flower language for...?)"
     ern "What I really wanted to say was..."
-
-    show ern at center
 
     "Ernest looks at me and grabs my shoulders."
 
@@ -1658,24 +1456,13 @@ label .day11_end:
     # TODO: [Change scene to INSIDE LEO AND LYRA'S HOUSE (DAY)]
     scene bg house inside day
 
-    show leo at left
-
     "There's a knock on the door. "
-
-    show leo at center
-
     "Leo goes to open it, and smiles upon seeing who it is."
-
-    show npc at right
 
     leo "Lyra is out right now, so it's just me."
     leo "I thought I was going to get tired of waiting, you know?"
     leo "But whatever the case, welcome back..."
     leo "Ewan."
-
-    hide npc
-    show ewa at right
-
     ewa "Yeah. I'm back."
 
     return
@@ -1690,8 +1477,6 @@ label .day11_bad:
 
     lyr "Y-you had a knife?!"
     ern "I always carry it around-! For self defence! And in case a bad ending would strike us!"
-
-    hide who
 
     "Ernest stabs the mysterious hooded person, and they fall to the ground. "
 
@@ -1719,17 +1504,9 @@ label .day11_bad:
 
     "We both run back to town, with that plan in mind."
 
-    hide ern
-    hide lyr
-
     "..."
 
-    show npc at right
-
     spk "You shouldn't have tried so hard."
-
-    hide npc
-    show jul at right
 
     "Julius comes out of the shadows after Lyra and Ernest ran back to town."
 
