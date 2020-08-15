@@ -4,7 +4,7 @@
 # Side Characters
 define man = Character("Man")
 define per = Character("Person")
-define mys = Character("Mysterious Hooded Person")
+define mys = Character("???")
 define tp1 = Character("Townsperson 1")
 define spk = Character("???")
 
