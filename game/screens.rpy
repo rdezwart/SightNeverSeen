@@ -145,6 +145,8 @@ style namebox:
     ypos gui.name_ypos
     ysize gui.namebox_height
 
+    yoffset +5
+
     background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
@@ -261,6 +263,8 @@ screen quick_menu():
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
+
+            yoffset -20
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
