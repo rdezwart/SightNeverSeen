@@ -35,6 +35,10 @@ label market:
 # Market, Day 01
 label .day01:
 
+    show leo at left
+    show lyr closed smile at center
+    show ewa at right
+
     leo "What about the marketplace? It is what Veritas is known for, anyways."
 
     lyr "Ooh, that's a good idea!"
@@ -44,6 +48,10 @@ label .day01:
     # TODO: Change scene to marketplace
     scene bg market
 
+    show lyr happy at center
+    show leo at left
+    show ewa at right
+
     lyr """
     Oh wow, the market sells some extravagantly expensive items, like those crystals.
 
@@ -51,10 +59,15 @@ label .day01:
 
     We have to check that item out. Let's go!
     """
+    show ewa upset at right
+    show leo why at left
 
     ewa "Huh? Lyra-?!"
 
     "I watched as Lyra grabbed Ewan --the poor soul who happened to be standing next to her-- and she darts off with him in hand. In less than a few seconds, I've lost them in the crowd already."
+
+    hide lyr
+    hide ewa
 
     leo """
     Ah, and just like that, I've been separated from them.
@@ -63,12 +76,14 @@ label .day01:
 
     (Maybe I'll walk around by myself until I can regroup with them.)
     """
+    show leo at left
 
     """
     I wander around the marketplace for a little bit. A little company alone sometimes is nice.
 
     Suddenly, a strange man bumps into me. An item from his hand slips out.
     """
+    show leo surprised at left
 
     leo """
     Oh, sorr-
@@ -80,17 +95,21 @@ label .day01:
 
     "A group of bodyguards are gathered around, shouting. I peer at the strange man in front of me. There's a look of panic in his eyes, as he scrambled to grab the item and get up to run away."
 
+    show leo annoyed at left
+
     leo """
     (What should I do? That guy was holding a potentially dangerous magic item...)
 
     ...
     """
+    show leo suffer at left
 
     """
     I stand for a moment to contemplate my options.
 
     Actually, is there a even a reason why I shouldn't act?!
     """
+    show leo annoyed at left
 
     leo "(Ah, whatever! If that man uses that magic item and blames it on magicians, then it'd be bad for Lyra and I.)"
 
@@ -111,13 +130,19 @@ label .day01:
 
     "With a look of fear in his eyes, the man darts out of the alleyway faster than he had entered."
 
+    show leo suffer at left
+
     leo "Seriously?"
 
     "I inspect the magic item to see if it's safe."
+    show leo at left
 
     leo "It's fine... I think. I should probably go return this to whoever was selling it."
 
     "As I turn around to exit the alleyway, I come face to face with someone who wasn't there before."
+
+    show leo surprised at left
+    show sil at right
 
     leo """
     Oh.
@@ -134,8 +159,11 @@ label .day01:
 
     (I can't think of any good excuses-!)
     """
+    show leo suffer at left
 
     sil "I'll take that as yes. How about we make a deal: I'll keep quiet about what I saw, in exchange for some information."
+
+    show leo annoyed at left
 
     leo "What kind of information are you looking for? How do you want me to find it?"
 
@@ -146,6 +174,8 @@ label .day01:
 
     I put my hands to my head.
     """
+    show leo suffer at left
+    hide sil
 
     leo "(What have I done? I hope I don't get Lyra into trouble as well...)"
 
@@ -154,11 +184,18 @@ label .day01:
 
     "I sigh, and exit the alleyway. Making a mental note to inform Lyra that our secret was out, I go to look for Lyra and Ewan."
 
+    show lyr surprised at center
+    show leo at left
+    show ewa at right
+
     lyr "There he is! Sorry for draggin Ewan off and leaving you alone, Leo."
 
     leo "Yeah, it's fine."
 
     "I smile at Lyra, pretending to be fine. I'll tell her later when we get home, then..."
+
+    show ewa sad smile at right
+    show lyr angry at center
 
     ewa "Lyra was about to buy that item but decided to change her mind after noticing the price."
 
@@ -168,22 +205,32 @@ label .day01:
 
     leo "Ah, it's getting late now."
 
+    show lyr surprised at center
+    show ewa at right
+
     lyr "Already? I guess we'll show you more of town tomorrow, Ewan!"
 
     ewa "Yeah, that's fine. I'll see you guys tomorrow!"
 
-    "Lyra and I wave goodbye to Ewan and head out separate ways. Lyra skips ahead of my happily."
+    hide ewa
+
+    "Lyra and I wave goodbye to Ewan and head out separate ways. Lyra skips ahead of me happily."
 
     # TODO: Change scene to INSIDE LEO/LYR HOUSE
     scene bg house inside day
 
     "As soon as we both entered our house, I closed the door and slumped against it."
 
+    show leo suffer at left
+    show lyr at center
+
     leo "Uh, Lyra. There's something I have to tell you."
 
     lyr "Huh? What is it?"
 
     leo "Uh. Well, earlier when I got separated from you and Ewan, I got caught by someone using magic-"
+
+    show lyr surprised at center
 
     "Lyra suddenly begins to shake me in a panic."
 
@@ -193,13 +240,18 @@ label .day01:
 
     lyr "But what?! Just tell me already!"
 
+    show leo at left
+
     leo """
     Turns out that item belonged to Silas. You know, THAT Silas, the head of that famous trading company?
 
     He said he would keep my identity a secret if I provided him with whatever information he wanted. Said he'd call me when he needed me, but I honestly don't know...
     """
+    show lyr sad at center
 
     "I look up and see Lyra's worried expression."
+
+    show leo sad at left
 
     leo """
     (Ahhh, this is bad, I can't let her be worried about me...)
@@ -222,11 +274,15 @@ label .day02:
     # TODO: Change scene to outside LEO AND LYRA'S HOUSE
     scene bg house outside day
 
+    show lyr at center
+    show leo at left
+
     """
     The next day.
 
     As Lyra and I were heading out for the day again, I notice a person standing by the entrance. They seemed to be dressed in a bodyguard outfit. Lyra and I exchange eye contact and we approach the person. Who are they exactly?
     """
+    show leo annoyed at left
 
     leo "Uhm. Is there something you need?"
 
@@ -237,10 +293,13 @@ label .day02:
 
     (I wonder how they even managed to find where I live?)
     """
+    show lyr angry at center
 
     lyr "Wait! If you're going to take Leo, I'm coming too!"
 
     bod "Who is this young lady?"
+
+    show leo suffer at left
 
     leo """
     Ah, she's like my family member.
@@ -248,7 +307,11 @@ label .day02:
     Lyra, it's okay. I can go alone. Plus, we still have to show Ewan around, right? Tell him something came up for me.
     """
 
+    show leo at left
+
     "Lyra looks like she wants to protest my words."
+
+    show lyr sad at center
 
     lyr "Fine. But you better tell me what happens later!"
 
@@ -256,10 +319,14 @@ label .day02:
 
     "I try to give Lyra a reassuring smile, then wave goodbye to her as I follow the bodyguard."
 
+    hide lyr
+
     # TODO: Change scene to INSIDE TRADE OFFICE
     scene bg trade
 
     "When we arrive at the Trade Headquarters, I couldn't help but look around."
+
+    show leo surprised at left
 
     leo "(Woah. This place is way bigger on the inside than it seemed.)"
 
@@ -272,15 +339,21 @@ label .day02:
     # TODO: Change scene to SILAS' OFFICE
     scene bg office
 
+    show leo at left
+
     "When I stepped into the office, I take notice of Silas immediately. I walk up to his desk."
 
     leo "We only met yesterday, but you called me in pretty quickly."
 
     sil "..."
 
+    show leo suffer at left
+
     leo "So, what was it that you called me for?"
 
     sil "I want to see what the capabilities of a magician are. Since people like you hide yourself all the time, it would be wise to take advantage of this situation, no?"
+
+    show leo annoyed at left
 
     leo "(Huh, so that's what he wanted to know?)"
 
@@ -298,6 +371,8 @@ label .day02:
 
     sil "Hm. That's fine. There are some questions I'd like to ask you too."
 
+    show leo suffer at left
+
     """
     Silas starts rapid-firing questions relating to magic towards me, and I tried my best to keep up.
 
@@ -308,11 +383,15 @@ label .day02:
 
     sil "I think that's all for today. You may leave now."
 
+    show leo annoyed at left
+
     leo "Right."
 
     "I stand up and walk towards the door."
 
     leo "(Should I be expecting more calls from that guy soon?)"
+
+    hide sil
 
     return
 
@@ -322,6 +401,9 @@ label .day03:
 
     # TODO: Change scene to outside LEO AND LYRA'S HOUSE
     scene bg house outside day
+
+    show leo annoyed at left
+    show lyr angry at center
 
     """
     The next day.
@@ -337,6 +419,8 @@ label .day03:
     (Ah... I have a feeling it's going to be like this for a little while.)
     """
 
+    show leo suffer at left
+
     """
     Unfortunately for me, I was right. The next few days pass quickly with always the same routine: the bodyguard would be at our front doors to take me to Silas for questioning.
 
@@ -349,6 +433,9 @@ label .day03:
 # Market, Day 04
 label .day04:
 
+    show leo at left
+    show lyr at center
+
     """
     A few more days later.
 
@@ -359,13 +446,21 @@ label .day04:
 
     "She takes the letter out and hands it to me. I open it to find a single slip of paper reading \"Come.\""
 
+    show leo suffer at left
+
     leo "This letter would have only come from one place."
 
     "I sigh and slip the letter into my pocket. Even if there was no signature or anything, I had already known it came from Silas. And here's to thinking I'd get a break..."
 
+    show leo annoyed at left
+    show lyr sad at center
+
     leo "Seems like I have to head over again."
 
     lyr "Aw, again? You've been saying that for the past few days, and it gets lonely with only Ewan and I."
+
+    show leo at left
+    show lyr at center
 
     leo "It can't be helped. At least he didn't send a bodyguard this time."
 
@@ -376,9 +471,13 @@ label .day04:
     # TODO: Change scene to INSIDE TRADE OFFICE
     scene bg trade
 
+    show leo annoyed at left
+
     "When I arrived at the Trade Headquarters, the bodyguards take notice of me."
 
     bod "The meeting isn't for another hour."
+
+    show leo suffer at left
 
     leo """
     Ah, okay. I'll come back in an hour, then.
@@ -388,9 +487,15 @@ label .day04:
 
     "As I turn to leave, another bodyguard stops me."
 
+    show hug at center
+
     leo "(This person is... I think I heard Silas call him Hugh a few times?)"
 
+    show hug smile at center
+
     hug "Excuse me. It's actually fine that you're early. Please follow me."
+
+    show leo annoyed at left
 
     leo "Huh?"
 
@@ -402,6 +507,9 @@ label .day04:
 
     # TODO: Change scene to OUTSIDE GREENHOUSE
     scene bg greenhouse outside
+
+    show leo annoyed at left
+    show hug smile at center
 
     "Eventually, a greenhouse comes into view. Hugh stops a short distance from the entrance."
 
@@ -426,7 +534,11 @@ label .day04:
 
     "When I stepped inside the greenhouse, I notice the abundant amount of flowers immediately. There were more kinds than I could name, and they all look well taken care of."
 
+    show leo surprised at left
+
     leo "(These flowers are really nice! Whoever looks after the greenhouse probably works hard to keep it nice.)"
+
+    show leo annoyed at left
 
     """
     I peer around, trying to look for Silas.
@@ -438,17 +550,25 @@ label .day04:
 
     sil "Samantha!"
 
+    show leo surprised at left
+
     "I freeze in my tracks."
+
+    show leo suffer at left
 
     leo "(Oh god, did I come at a bad time? First having my magic being found out by this man, and now I'm probably intruding on a moment between him and his secret lover?! What's with all these landmines I'm stepping on recently?!)"
 
     "In the middle of my mental dillema and lamenting, I squint to take a closer look to try and calm myself. In Silas' arms is... a plant?"
+
+    show leo why at left
 
     leo """
     (Samantha is a plant? Ah, that means Silas is the person who tends the greenhouse. I guess even someone like him would have hobbies.)
 
     (Maybe it would be better if I left and pretended like I didn't see anything. He does have an image to maintain, after all.)
     """
+
+    show leo at left
 
     """
     I turn to leave. It'd be best to sneak out and pretend like I was clueless. Right. Feign ignorance.
@@ -457,11 +577,15 @@ label .day04:
 
     Whatever it was, it made a crack sound that could draw anyone's attention in the midst of a quiet atmosphere like this.
     """
+    show leo suffer at left
+
     # TODO: Make the crack word italic
 
     leo "(Not good, not good! I stepped on another land mine! Is he going to chew me out for catching him in the act?! How am I going to explain this?!)"
 
     "I cursed silently"
+
+    show leo annoyed at left
 
     leo """
     Um.
@@ -475,9 +599,13 @@ label .day04:
     He looks a bit uneasy, and I point to the plant in his hands. Maybe if I compliment him, he'll let me go?
     """
 
+    show leo at left
+
     leo "Um. Is gardening your hobby? If it is, then your greenhouse is really nice! I'm, err, not saying that just to flatter you or anything, I really do think it's nice! All the plants here look well taken care of."
 
     sil "So you're not here to find out about my secrets?"
+
+    show leo annoyed at left
 
     leo """
     Uh, no? I mean, I DID find out, but it was by accident. I don't think it's a big deal, because maintaining a greenhouse like this just proves you work hard?
@@ -493,6 +621,8 @@ label .day04:
 
     sil "I see. Thank you. Since you're here this early, do you want to see the rest of the greenhouse?"
 
+    show leo at left
+
     leo "Oh, sure. Uhh, your letter just had the words \"Come.\", and I'm a little confused."
 
     "Silas ignores me and starts talking about his various plants in the greenhouse. I try to keep up, but at some point, his words went out one ear to another. Before I knew it, an hour had already passed."
@@ -501,13 +631,19 @@ label .day04:
 
     "Hoever much he likes plants, I notice that it's about time for our meeting. If we don't leave now, we would be late."
 
+    show leo annoyed at left
+
     leo "Silas, isn't it time for our meeting?"
 
     "Silas doesn't hear me and keeps talking."
 
+    show leo suffer at left
+
     leo "(He's really into the plant talk, but I have to snap him out of it.)"
 
     "I lightly tug at his sleeve."
+
+    show leo at left
 
     leo "Uhhh, isn't it time for us to get going for our appointed meeting?"
 
@@ -527,6 +663,8 @@ label .day05:
 
     # TODO: Change scene to SILAS' OFFICE
     scene bg office
+
+    show leo at left
 
     """
     A few days later.
@@ -550,6 +688,8 @@ label .day05:
 
     sil "Gather your belongings. We're heading out somewhere."
 
+    show leo annoyed at left
+
     leo """
     Huh?! Wait, where are we going?
 
@@ -567,8 +707,12 @@ label .day05:
 
     leo "(Aah. Maybe I should start getting used to this straightforwardly vague aspect of him.)"
 
+    show leo suffer at left
+
     # TODO: Change scene to FLOWERSHOP
     scene bg flower
+
+    show leo at left
 
     leo "A flower shop?"
 
@@ -576,13 +720,25 @@ label .day05:
 
     leo "Right."
 
+    show lyr at center
+    show ewa at right
+
     "When we entered the flower shop, I saw Lyra and Ewan."
+
+    show lyr surprised at center
 
     lyr "Leo? What are you doing here?"
 
     leo "Silas had something he had to pick up here, and made me follow him. Though, I could ask you the same thing."
 
+    show lyr at center
+
     lyr "Apparently, Ewan knows the florist who works here! His name is Julius!"
+
+    hide leo
+    hide lyr
+    hide ewa
+    show jul at right
 
     "The florist --Julius-- approached Silas."
 
@@ -590,12 +746,18 @@ label .day05:
 
     jul "Ah, Mr. Silas, I've been expecting you. I'll have it ready right away."
 
+    hide jul
+    show leo at left
+    show lyr surprised at center
+
     "Julius leads Silas away to look at some flowers. Lyra puts one hand on my shoulders and whispers something into my ear."
 
     # NOTE: Maybe make italic?
     lyr "I didn't think that someone like Silas would personally come and pick out flowers for himself!"
 
     leo "Aha."
+
+    show ewa at right
 
     ewa "I haven't seen you in a while, have you been doing well?"
 
@@ -615,7 +777,11 @@ label .day05:
 
     leo "Yeah, thanks."
 
+    show lyr angry at center
+
     lyr "It's so lonely without Leo, ever since Mr. Grouchy Businessman keeps calling for him every single day!"
+
+    hide ewa
 
     "Lyra skips over to Silas and Julius."
 
@@ -625,13 +791,20 @@ label .day05:
 
     leo "Lyra, don't threaten Silas like that."
 
+    hide lyr
+    show jul at center
+
     "As Silas pays for his initial purchase, Julius hands him an extra bundle of yellow flowers."
 
     jul "Take these as well."
 
     sil "Hmm? What type of flowers are these?"
 
+    show jul smile misch at center
+
     jul "Haha, I'll tell you next time."
+
+    show leo annoyed at left
 
     "While saying so, Julius looked at me and winked."
 
@@ -650,6 +823,8 @@ label .day06:
     # TODO: Change scene to SILAS'S OFFICE
     scene bg office
 
+    show leo at left
+
     """
     A few days later.
 
@@ -659,6 +834,8 @@ label .day06:
     bod "Sir! I have something I need to discuss with you in private."
 
     "Silas stands up, and the bodyguard whispers something to him."
+
+    show leo annoyed at left
 
     leo "(I wonder if it's somethign serious? Silas looks a bit concerned.)"
 
@@ -681,6 +858,9 @@ label .day07:
     # TODO: Change scene to OUTSIDE LEO AND LYRA'S HOUSE
     scene bg house outside day
 
+    show leo at left
+    show lyr at center
+
     """
     The next day.
 
@@ -689,12 +869,18 @@ label .day07:
 
     leo "It seems like I'm finally free today."
 
+    show lyr happy at center
+
     lyr "Really?! Yay! You can come hang out with Ewan and I today!"
 
     "Lyra happily grabs my arm and drags me to meet with Ewan."
 
     # TODO: Change scene to TOWN PLAZA
     scene bg plaza day
+
+    show leo at left
+    show lyr happy at center
+    show ewa at right
 
     lyr "I'm so happy we could all hang out like this! It's been such a long time."
 
@@ -707,6 +893,10 @@ label .day07:
     tp1 "Did you hear about the rumour recently? Apparently, the head of the famous trade company in town might be harbouring a magician!"
 
     tp2 "That's terrible! How could anyone hide a magician like that... There's a law that states we have to turn in magicians for a reason! Maybe we should stop relying on his company."
+
+    show leo annoyed at left
+    show lyr sad at center
+    show ewan sad at right
 
     leo "(That's...)"
 
@@ -730,15 +920,26 @@ label .day07:
 # Market, Day 07 (Good)
 label .day07_good:
 
+    show leo suffer at left
+    show lyr sad at center
+    show ewan sad at right
+
     """
     The situation is bad.
 
     I abruptly stand up.
     """
 
+    show leo annoyed at left
+
     leo "Sorry! There's something important I remembered I have to do. I gotta run, see you later!"
 
+    hide leo
+
     "Before Lyra or Ewan could react, I run off--but not in the direction of home, but rather in the direction of the Trade Headquarters."
+
+    show lyr surprised at center
+    show ewa sad smile at right
 
     lyr "Don't worry, Ewan! Leo is just worried abou that flower-loving, grouchy-faced businessman. After all, they managed to become friends!"
 
@@ -747,11 +948,14 @@ label .day07_good:
     # TODO: Change scene to TRADE OFFICE
     scene bg trade
 
+    show leo annoyed at left
+
     """
     When I entered the trade headquarters, I noticed that the amount of bodyguards has increased. Heightened security, possibly?
 
     I hide behind a pillar to contemplate my thoughts.
     """
+    show leo suffer at left
 
     leo "(I don't think they'll let me in so easily. Maybe I can use magic?)"
 
@@ -760,6 +964,7 @@ label .day07_good:
 
     It was almost like invisibility, but not quite. I just lowered my presence so I could sneak in.
     """
+    show leo at left
 
     leo "(Sometimes I think magic is really too overpowered. Ah, whatever, I'll worry about it another time!)"
 
@@ -772,14 +977,18 @@ label .day07_good:
     leo """
     (Surprisingly, there aren't many people inside.)
 
-    (It's probably save now...)
+    (It's probably safe now...)
     """
+    show leo surprised at left
+    show hugh at center
 
     "I increased my pace, but came face to face with Hugh, who was standing in front of the door."
 
     leo "(Damn, I let my guard down too easily! I forgot this guy's always near Silas-)"
 
     hug "Mr. Leo? How did you get in here? Maybe it's better not to ask. Sorry, I'm going to have to ask you to leave. Silas said to keep everyone out."
+
+    show leo angry at left
 
     leo """
     (That guy is an even bigger pain than I thought he'd be!)
@@ -793,16 +1002,25 @@ label .day07_good:
 
     "I had just insulted Silas to Hugh's face, but he just started laughing."
 
+    show leo surprised at left
+    show hug smile at center
+
     leo "Huh?"
+
+    show shug at center
 
     hug "It's just, I've been serving Silas since he was a child. I've never seen him enjoy himself as much as he did until you were around, so go ahead! Give him a good beating."
 
     leo "(Since Silas was a child...?)"
 
+    show leo annoyed at left
+
     "Hugh nodded towards me and gestured to the door. I look at him one last time, and open the door to Silas' office."
 
     # TODO: Change scene to SILAS' OFFICE
     scene bg office
+
+    show leo annoyed at left
 
     """
     As I entered the office, Silas immediately noticed me.
@@ -816,11 +1034,15 @@ label .day07_good:
 
     sil "Maybe the stress is making me hallucinate? It hasn't been that long since I saw him, but my mind is probably playing tricks on me because I wanted to see him again."
 
+    show leo suffer at left
+
     leo """
     ...
 
     (Yeah, I don't think he's alright.)
     """
+
+    show leo angry at left
 
     "I walk up to Silas and grab his shoulders and start shaking him."
 
@@ -832,11 +1054,15 @@ label .day07_good:
 
     sil "Why are you here? I didn't call for you."
 
+    show leo suffer at left
+
     leo """
     (He seriously...)
 
     And I just so happen to hear about the rumours going around town about me, that you've been trying to hide?
     """
+
+    show leo angry at left
 
     sil "It doesn't concern you. I can handle it myself."
 
@@ -856,9 +1082,13 @@ label .day07_good:
     I'll tell you everything after I investigate something, then I'm yours.
     """
 
+    show leo annoyed at left
+
     leo "I trust you to tell me everything afterwards."
 
     sil "By the way, how did you get in here?"
+
+    show leo at left
 
     "I laugh sheepishly. About that..."
 
@@ -875,11 +1105,19 @@ label .day07_bad:
     # TODO: Change scene to TOWN PLAZA
     scene bg plaza day
 
+    show leo annoyed at left
+    show lyr sad at center
+    show ewa sad smile at right
+
     leo """
     (It might be best to lay low. I can trust Silas to handle this situation, I think.)
 
     Should we get going? We've rested enough and I think there are some places Lyra still wants to check out.
     """
+
+    show lyr at center
+    show ewa at right
+    show leo at left
 
     lyr "Right! Let's get going!"
 
@@ -893,6 +1131,9 @@ label .day08:
 
     # TODO: Change scene to INSIDE LEO AND LYRA'S HOUSE
     scene bg house inside day
+
+    show lyra sad at center
+    show leo annoyed at right
 
     """
     A few days later.
@@ -925,6 +1166,8 @@ label .day09:
     # TODO: Change scene to SILAS' OFFICE
     scene bg office
 
+    show leo annoyed at left
+
     """
     A few days later.
 
@@ -937,6 +1180,8 @@ label .day09:
     There were rumours about me harbouring a magician, and while that's true, it's not something the general public should know. Because of the recent spike in incidents as well, people have been warier.
     """
 
+    show leo suffer at left
+
     leo "I guess people are willing to blame those incidents on magicians?"
 
     sil """
@@ -945,9 +1190,13 @@ label .day09:
     I've been trying to solve it without getting you involved, but people have noticed you frequenting and are getting suspicious.
     """
 
+    show leo sad at left
+
     leo "(Silas looks way more stressed than I've ever seen him. There's probably something I can do to help.)"
 
     sil "There are even rumours about how I've been using a magician to do underhanded tactics, like taking out my rivals."
+
+    show leo at left
 
     leo """
     (Ah, I know what I can do.)
@@ -956,6 +1205,8 @@ label .day09:
     """
 
     sil "But-"
+
+    show leo suffer at left
 
     leo "Also, you should be handling your own business affairs for now, so just leave everything else to me."
 
@@ -970,11 +1221,17 @@ label .day10:
     # TODO: Change scene to TOWN PLAZA
     scene bg plaza day
 
+    show leo at left
+    show lyr at center
+
     """
     The next day.
 
     Lyra had offered to help me with the investigation. We talked to people around town to see if they knew anything, then regrouped after.
     """
+
+    show lyr sad at center
+    show leo annoyed at left
 
     lyr "Sorry, Leo. Everyone I asked only had the same information that we do."
 
@@ -982,6 +1239,8 @@ label .day10:
 
     # TODO: Change scene to SILAS' OFFICE
     scene bg office
+
+    show leo sad at left
 
     leo """
     Sorry, I couldn't find more information about the incidents after all. They all seemed like random attacks more than anything.
@@ -991,18 +1250,26 @@ label .day10:
 
     sil "Why don't we head to the greenhouse and get some fresh air?"
 
+    show leo at left
+
     leo "Sure. That sounds like a good idea."
 
     # TODO: Change scene to OUTSIDE GREENHOUSE
     scene bg greenhouse outside fire
 
+    show leo at left
+
     "As we were heading towards the greenhouse, a bodyguard runs up to us."
 
     bod "Sir! We've got trouble! The greenhouse, it's on-"
 
+    show leo surprised at left
+
     leo "Fire?"
 
     "Silas and I rush over, and see the greenhouse engulfed in flames."
+
+    show leo annoyed at left
 
     leo """
     (Aah, Silas looks like he wants to faint!)
@@ -1031,6 +1298,8 @@ label .day10:
 # Market, Day 10 (Good)
 label .day10_good:
 
+    show leo suffer at left
+
     leo "(Well, if I can't use magic, then I should at least...)"
 
     "This might've been a dumb decision, but I broke out into a run towards the greenhouse."
@@ -1040,13 +1309,19 @@ label .day10_good:
     # TODO: Change scene to INSIDE BURNING GREENHOUSE
     scene bg greenhouse inside fire
 
+    show leo surprised at left
+
     leo """
     (Everything really is up in flame, this entire place is a fire hazard!)
 
     (I should just 'Samantha' and leave as fast as I can.)
     """
 
+    show leo annoyed at left
+
     "I look around and spot 'Samantha'."
+
+    show leo at left
 
     leo """
     (There it is!)
@@ -1059,17 +1334,23 @@ label .day10_good:
     # TODO: Change scene to OUTSIDE GREENHOUSE
     scene bg greenhouse outside fire
 
+    show leo annoyed at left
+
     "When I arrived back outside, I turn to look at the greenhouse. The bodyguards are going everything they can to put out the fire."
 
     leo "Whoah. The greenhouse is more like a flame-house."
 
     "When I turned back around, Silas was immediately in front of me, shaking my shoulders."
 
+    show leo surprised at left
+
     sil """
     What were you thinking?! Why did you run inside a flaming building like that!
 
     Don't you know how worried I was?! If something happened to you, then-
     """
+
+    show leo suffer at left
 
     leo """
     Oh. Uhm. Sorry?
@@ -1079,9 +1360,13 @@ label .day10_good:
 
     "I hold up the plant Silas referred to as 'Samantha' in front of him."
 
+    show leo at left
+
     leo "I got Samantha at least?"
 
     "Silas stops."
+
+    show leo sad at left
 
     leo "Are you alright? You look like you want to cry."
 
@@ -1099,11 +1384,15 @@ label .day10_good:
     Out of the corner of my eyes, I notice something.
     """
 
+    show leo why at left
+
     leo """
     (Hm? Are those... Fireflies?)
 
     (I probably shouldn't think much of it.)
     """
+
+    show leo annoyed at left
 
     """
     I blink my eyes a few times and noticed the fireflies were gone again, probably just my imagination.
@@ -1113,6 +1402,8 @@ label .day10_good:
 
     # TODO: Change scene to SILAS' OFFICE
     scene bg office
+
+    show leo annoyed at left
 
     "After making myself presentable again, Silas spoke."
 
@@ -1126,6 +1417,9 @@ label .day10_good:
 
     # TODO: Change scene to OUTSIDE LEO AND LYRA'S HOUSE
     scene bg house outside day
+
+    show lyr surprised at center
+    show leo at left
 
     "As I arrived in front of our house, Lyra rushes out."
 
@@ -1145,11 +1439,15 @@ label .day10_good:
 # Market, Day 10 (Bad)
 label .day10_bad:
 
+    show leo suffer at left
+
     leo """
     (Even though this situation is bad...)
 
     Don't act rashly. Your position is delicat right now.
     """
+
+    show leo annoyed at left
 
     sil "You're right..."
 
@@ -1157,6 +1455,8 @@ label .day10_bad:
 
     # TODO: Change scene to SILAS' OFFICE
     scene bg office
+
+    show leo annoyed at left
 
     sil "I don't have anything for you to do, so... You can leave for the day."
 
@@ -1175,11 +1475,18 @@ label .day11:
     # TODO: Change scene to TOWN PLAZA
     scene bg plaza day
 
+    show leo at left
+    show lyr at center
+    show ewa at right
+
     """
     A few days later.
 
     Lyra and Ewan had offered to help me with my investigations today.
     """
+
+    show lyr sad at center
+    show ewa upset at right
 
     lyr "It's the same as last time. No one knows what's happening."
 
@@ -1187,9 +1494,15 @@ label .day11:
 
     ewa "Maybe things aren't what they seem? There's probably something deeper to it."
 
+    show leo suffer at left
+
     leo "(Something deeper, huh...?)"
 
+    show lyra at center
+
     lyr "We can try investigating another day. Ewan, didn't you say you have something to do later? Sorry for taking some of your time."
+
+    show ewa at right
 
     ewa "It's fine. You two should head home. I have to get going, I'll see you later."
 
@@ -1208,6 +1521,8 @@ label .day12:
     # TODO: Change scene to SILAS' OFFICE
     scene bg office
 
+    show leo annoyed at left
+
     """
     A few days later.
 
@@ -1224,14 +1539,21 @@ label .day12:
 
     leo "Huh? Will that be okay? I mean, sure, I don't think she'll mind."
 
+    show hug smile at right
+
     sil "Don't worry, we'll be bringing Hugh with us."
 
     "Silas gestures to Hugh, who gives me a smile."
+
+    show leo suffer at left
 
     leo "(Is it really okay for someone like Silas to waltz around town casually like that?)"
 
     # TODO: Change scene to OUTSIDE LEO AND LYRA'S HOUSE
     scene bg house outside day
+
+    show lyra sad at center
+    show leo surprised at left
 
     "When we arrive at the meeting spot Lyra and I had organized, I noticed her laying on the floor. I immediately run up to her in worry. I held up her head as she tried to speak."
 
@@ -1240,6 +1562,8 @@ label .day12:
     lyr "Those incidents, I think I found a lead, but someone attacked me. The fireflies..."
 
     "Before Lyra could finish, she passed out."
+
+    show leo annoyed at left
 
     leo """
     It can't be...
@@ -1255,9 +1579,13 @@ label .day12:
     Leo, I'll go with you.
     """
 
+    show leo surprised at left
+
     leo "Huh? Will that be okay?"
 
     "Silas quietly reveals a hidden rapier to me."
+
+    show leo suffer at left
 
     leo "You just carry that kind of weapon around town?"
 
@@ -1274,11 +1602,15 @@ label .day12:
     # TODO: Change scene to SECLUDED AREA / FIELD
     scene bg woods
 
+    show leo annoyed at left
+
     leo "The fireflies are gone now."
 
     sil "It seems so. Keep your guard up."
 
     "I look around and see a mysterious person draped in a cloak, concealing their identity."
+
+    show leo surprised at left
 
     leo """
     ?!
@@ -1296,6 +1628,8 @@ label .day12:
 
     sil "I don't think that matters when someone's out to kill us!"
 
+    show leo suffer at left
+
     """
     Trying my best to dodge everything, I begin to fire my own bursts of magic in retaliation.
 
@@ -1303,6 +1637,8 @@ label .day12:
 
     I don't like it at all.
     """
+
+    show leo annoyed at left
 
     leo "(I need to fight back, but I've never used magic like this before, and I hate the feeling. Maybe I can unmask the person...)"
 
@@ -1312,11 +1648,16 @@ label .day12:
 
     "The gust of wind manages to blow the hood off the person, revealing..."
 
+    show leo surprised at left
+    show ewa upset at right
+
     ewa "Ah."
 
     sil "So, it's you!"
 
     leo "Ewan..."
+
+    show ewa evil at right
 
     ewa "I didn't want you to discover my involvement in the incidents. Everything that happened around town was my doing."
 
@@ -1338,6 +1679,8 @@ label .day12:
     You. You're not actually aiming at us seriously, are you?
     """
 
+    show leo annoyed at left
+
     leo "Huh?"
 
     sil """
@@ -1348,13 +1691,21 @@ label .day12:
     None of your actions make sense; if you actually wanted us dead, you could've done so easily. Why are you hesitating?
     """
 
+    show ewa upset at right
+
     "Ewan flinches."
+
+    show ewa angry at right
 
     ewa "None of you understand! The way we magicians are treated! I'm sick of it! We're less than human to everyon, and for what?! For just possessing magic? And it's just..."
 
     sil "Just what?"
 
+    show ewa upset at right
+
     ewa "Leo and Lyra are important to me. Your involvement with Leo is making him suffer, do you really think you can make him happy?"
+
+    show leo suffer at left
 
     leo """
     (Those incidents around town, they were strange, but no one actually got hurt. Why is Ewan doing all of this? Why--)
@@ -1364,7 +1715,11 @@ label .day12:
 
     ewa "Huh?"
 
+    show leo angry at left
+
     leo "I get it now. But why? Why are you acting like this, as if it'll make me happy?"
+
+    show ewa angry at right
 
     ewa "I do want you to be happy. That's why I'm willing to bear the burden of these crimes! That's why--"
 
@@ -1395,6 +1750,9 @@ label .day12:
 # Market, Day 12 (Good)
 label .day12_good:
 
+    show leo annoyed at left
+    show ewa angry at left
+
     sil """
     ...
 
@@ -1409,13 +1767,19 @@ label .day12_good:
     You asked me if I was willing to throw away everything to keep Leo by my side, Right? If it's to make Leo happy, then I'd gladly give up my status right now.
     """
 
+    show leo suffer at left
+
     leo "(W-wait, how can he say that with a straight face when I'm standing right here?!)"
+
+    show ewa at right
 
     ewa "I see."
 
     sil "If you don't believe me, then I can establish a contract to cover the case in which I don't keep my word and betray Leo --"
 
     "I grab Silas' arm to cut him off."
+
+    show leo why at left
 
     leo "Wait! Wait, no contracts or anything. I'm fine, I've already heard enough! No need to write it down officially on paper!"
 
@@ -1429,15 +1793,22 @@ label .day12_good:
     I'm happy it didn't end up like last time.
     """
 
+    show leo annoyed at left
+
     leo "Huh?"
 
     "Silas coughs."
 
     sil "With this situation handled, we probably have to hand Ewan over to the authorities to clear up your name, Leo."
 
+    show leo sad at left
+    show ewa sad smile at right
+
     "I shoot Ewan a worried glance."
 
     ewa "It's fine. I expected this outcome. I just wanted to make sure you would be fine at the end of all this."
+
+    show leo suffer at left
 
     leo "(So... is this the end?)"
 
@@ -1445,6 +1816,9 @@ label .day12_good:
 
     # TODO: Change scene to TOWN PLAZA
     scene bg plaza day
+
+    show leo sad at left
+    show ewa sad smile at right
 
     "Silas and I turned Ewan into the authorities who placed him into a carriage, ready be transported to the magician's equivalent of prison."
 
@@ -1454,12 +1828,16 @@ label .day12_good:
 
     ewa "I'm sorry for hiding that I was a magician. It's fine."
 
+    hide ewa
+
     """
     Ewan gives me a sad smile as he was taken away, and we watched as the carriage began to move down the road.
 
     Before it left our view, the sound of an explosion filled the air.
     """
     # NOTE: Sound effect?
+
+    show leo surprised at left
 
     leo "That sound was--"
 
@@ -1473,6 +1851,8 @@ label .day12_good:
 
     leo "These flowers are..."
 
+    show leo annoyed at left
+
     """
     I remember that man --Julius-- from the flower shop.
 
@@ -1480,6 +1860,8 @@ label .day12_good:
 
     Those flowers are... daffodils.
     """
+
+    show leo suffer at left
 
     leo "(So that guy is also...)"
 
@@ -1502,11 +1884,16 @@ label .day12_end:
     # TODO: Change scene to OUTSIDE LEO AND LYRA'S HOUSE
     scene bg house outside day
 
+    show leo at left
+    show lyr at center
+
     """
     A couple days pass after the incident.
 
     Once Lyra recovers enough, I explain to her what happened.
     """
+
+    show lyr sad at center
 
     leo "So, yeah, Ewan was the magician behind the incidents that were going around town. He disappeared in an explosion of daffodils as he was being taken away."
 
@@ -1520,16 +1907,25 @@ label .day12_end:
 
     "I nod. Lyra peers over my shoulder as I read Ewan's letter."
 
+    show leo sad at left
+
     # NOTE: Italic?
     ewa "Don't look for me, I'll be fine. I wish you two happiness."
 
     "Lyra and I give each other a glance, then I tuck the letters into my pocket."
 
+    show leo at left
+    show lyr closed smile at center
+
     leo "You wanted to go to the flower shop today, right? I'll walk you there before heading to Silas' office."
 
     lyr "Yeah! Julius sent some cryptic letter yesterday, saying to come to his shop to see some daffodil flowers and \"something interesting\". I figured, why not?"
 
+    show leo annoyed at left
+
     leo "Flowers, huh?"
+
+    show lyr wink at right
 
     "Lyra gives me a mischievous grin and skips ahead."
 
@@ -1539,6 +1935,8 @@ label .day12_end:
     I still can't believe you managed to catch the interest of a rich man! Maybe we can finally live without worrying about expenses, and--
     """
 
+    show leo suffer at left
+
     leo "Don't say it like that."
 
     "I run after Lyra, who laughs at me before running even further ahead."
@@ -1546,9 +1944,17 @@ label .day12_end:
     # TODO: Change scene to FLOWER SHOP
     scene bg flower
 
+    show lyr closed smile at center
+    show leo at left
+    show jul at right
+
     lyr "Julius, I'm here!"
 
     gls "Kyaa-! That new worker here is soooo my type!"
+
+    show lyr at center
+    show leo annoyed at left
+    show jul closed smile at right
 
     """
     Lyra and I turn our attention to where the noise was coming from, a small crowd of girls swarming around someone.
@@ -1558,24 +1964,38 @@ label .day12_end:
 
     jul "Ah. That's my new worker."
 
+    show lyr sad at center
+    show leo why at left
+
     leo "That's..."
+
+    show lyr at center
 
     "Lyra pats my back."
 
     lyr "You should probably get going now. Thanks for walking me here!"
 
+    show leo at left
+
     leo "Yeah. I'll see you later."
 
     "I turn to leave the flower shop."
+
+    show lyra sad at center
+    show jul sad smile at right
 
     lyr "That guy. He's--"
 
     jul "It's probably better not to say anything."
 
+    show lyr at center
+
     lyr "I guess so."
 
     # TODO: Change scene to SILAS' OFFICE
     scene bg office
+
+    show leo at left
 
     "As I arrive at Silas' Office, I call out in greeting."
 
@@ -1613,6 +2033,9 @@ label .day12_end:
 # Market, Day 12 (Bad)
 label .day12_bad:
 
+    show leo annoyed at left
+    show ewa angry at right
+
     sil """
     ...
 
@@ -1625,6 +2048,8 @@ label .day12_bad:
 
     sil "Sorry. For everything. And thank you for your service. I won't report you, since you kept your end of the deal by providing information, but as of right now, I'll end our ties."
 
+    show leo surprised at left
+
     leo "Huh?"
 
     """
@@ -1633,10 +2058,14 @@ label .day12_bad:
     Ewan walks up beside me, and all I can see is his sad smile. I turn back to watch Silas walks off.
     """
 
+    show ewa sad smile at center
+
     leo "(So, this is how it all ends?)"
 
     # TODO: Change scene to INSIDE LEO AND LYRA'S HOUSE
     scene bg house inside day
+
+    show leo suffer at left
 
     leo """
     (Ngh.)
@@ -1644,15 +2073,22 @@ label .day12_bad:
     (A voice...?)
     """
 
+    show lyr angry at center
+
     lyr "Leo, wake up! It's already noon!"
 
     leo "Lyra...?"
+
+    show leo annoyed at left
+    show lyr sad at center
 
     lyr "Are you alright? When you returned home yesterday, you went straight to bed and passed out almost instantly."
 
     leo "So it wasn't all just a fever dream?"
 
     lyr "Also, Ewan is gone. He disappeared suddenly, I haven't seen him in days. I tried looking all over time for him this morning, but it's as if he was never here."
+
+    show leo surprised at left
 
     leo """
     Huh?!
@@ -1662,6 +2098,8 @@ label .day12_bad:
 
     lyr "Also, I can't feel any more traces of magic left in me. Is it the same for you?"
 
+    show leo annoyed at left
+
     leo """
     (So strange... does this really mean...?)
 
@@ -1669,6 +2107,8 @@ label .day12_bad:
     """
 
     lyr "Leo, what happened?"
+
+    show leo sad at left
 
     "I grip my blanket and try to process everything that's happened to me."
 
