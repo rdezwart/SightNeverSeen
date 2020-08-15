@@ -28,10 +28,10 @@ label start:
     # TODO: Start game with LEO HOUSE
     scene bg house inside day
 
-    show leo long at left
+    show leo at left
     leo "Lyra, hurry up or we'll be late to meet Ewan."
 
-    show lyr long at right
+    show lyr at right
     lyr "I'm hurrying, I'm hurrying!"
 
     # TODO: Change BG to meeting spot
