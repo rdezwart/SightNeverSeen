@@ -1,13 +1,13 @@
 # Main Characters
-define leo = Character("Leo", image="leo")
-define lyr = Character("Lyra", image="lyr")
-define ewa = Character("Ewan", image="ewa")
+define leo = Character("Leo")
+define lyr = Character("Lyra")
+define ewa = Character("Ewan")
 
 # Love Interests
-define sil = Character("Silas", image="sil")
-define nox = Character("Nox", image="nox")
-define ern = Character("Ernest", image="ern")
-define aur = Character("Aurora", image="aur")
+define sil = Character("Silas")
+define nox = Character("Nox")
+define ern = Character("Ernest")
+define aur = Character("Aurora")
 
 # Enabled Routes
 default silRoute = True
