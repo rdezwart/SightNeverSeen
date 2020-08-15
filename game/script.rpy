@@ -37,8 +37,9 @@ label start:
     # TODO: Change BG to meeting spot
     scene bg plaza day
 
-    show leo at left
-    show lyr at right
+    show lyr sad at right
+    show leo annoyed at left
+
     lyr "I'm not sure if you heard, since you tend to mind your own business, but there have been some concerning rumours going around."
 
     leo "What kind of rumours?"
@@ -51,6 +52,8 @@ label start:
 
     leo "That's true, I mean, magicians like us tend to lay low because of our bad status anyway. It might be a good idea to be careful though, I don't want you to cause trouble."
 
+    show leo suffer
+
     lyr "When have I caused trouble?"
 
     leo """
@@ -59,9 +62,16 @@ label start:
     I can remember all the things you did when we were kids. Our parents would scold me and you all the time because of all the things you did.
     """
 
+    show lyr angry
+
     lyr "That was when we were kids! It's different now!"
 
     # QUESTION: Maybe scene change?
+
+    show lyr smile closed
+    show leo
+    show ewa
+
     "When they approach the meeting spot, Lyra spots Ewan and waves her hand."
 
     lyr "Ewan! It's been so long!"
@@ -76,6 +86,9 @@ label start:
     leo "We've finally got some free time since our trading business has been going well. Is there anywhere you want to go?"
 
     ewa "Ah, since I don't know the town that well, maybe you guys can decide?"
+
+    show leo annoyed
+    show lyr
 
     "Leo and Lyra look at each other, and they both start thinking."
 
